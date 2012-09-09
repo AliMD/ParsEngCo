@@ -5,7 +5,7 @@ The website for a **Architecture** company
 
 ###Contributing
 
-* Check our projec's website and report any bugs or ideas in issues
+* Check our projec's website and report any bugs or ideas in [issues] (https://github.com/1schools-projects/ciw-des-30-d-repo/issues)
 * Clone this project and check source code
 * Fork this for your self and do some develope and pull request to us
 
