@@ -25,7 +25,7 @@ The website for a **Architecture** company
 ### All rights reserved
 
 The [sarv-arch.com](http://sarv-arch.com) code and website is released under a [MIT License](http://opensource.org/licenses/MIT).
-
+	Summer 2012
 ### A 1devs website
 
-Produced by 1Devs Web Department
+Produced by 1Devs Web Department 
