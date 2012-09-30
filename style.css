@@ -1,4 +1,10 @@
 /*-----Home Page-----*/
+body{
+	background-image: url('images/background.jpg');
+	background-repeat: no-repeat;
+	background-color: #111;
+}
+
 div.container{
 	width: 950px;
 	min-height: 600px;
@@ -6,21 +12,20 @@ div.container{
 	border: 1px solid darkmagenta;
 }
 
-div.container > div{
+/*div.container > div{
 	border: 1px solid red;
 }
 
 div.container > div *{
 	border: 1px solid black;
-}
+}*/
 
 div.menu{
 	width: 240px;
+	padding: 5px;
 	position: fixed;
 	top: 5px;
-	left: 
 	background-image:url('./images/menu_back.png'); 
-	background-color: #333;
 	background-repeat: repeat-y;
 	background-position: top left;
 	z-index: 999;
@@ -33,6 +38,36 @@ div.menu div.logo h1 a{
 	background-image: url('./images/logo.png') ;
 	background-repeat: no-repeat;
 	background-position: top center;
+}
+
+div.menu nav menu li{
+	padding-left: 20px;
+	padding-right: 30px;
+	color: #A3A3A3;
+	
+} 
+
+div.menu nav menu li:first-child {
+	color: #fff;
+}
+
+div.menu nav menu li a{
+	display:block;
+	padding: 15px 15px ;
+	text-decoration: none;
+	color: #fff;
+	font: 12px "Helvetica Neue", Verdana, Helvetica, sans-serif;
+	border: 1px solid #343434;
+}
+
+
+div.menu nav menu li a span{
+	background-image: url('./images/menu_hover_arrow.png');
+	display: block;
+	vertical-align: middle;
+	margin-right: 5px;
+	width: 30px;
+	height: 30px;
 }
 
 
