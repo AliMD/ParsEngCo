@@ -1,1 +1,0 @@
-* you can follow our project's website from this [link](https://github.com/1schools-projects/Sarv-Architecture)
