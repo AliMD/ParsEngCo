@@ -9,29 +9,59 @@
 </head>
 <body>
 	<div class="w24 mlra container mh60">
-		<div class="menu">
-			<div class="logo cover">
-				<h1>
-					<a href="#"></a>
-				</h1>	
+		<div id="menu" class="menu_wrap">
+			<div class="menu">
+				<div class="logo cover">
+					<h1>
+						<a href="#"></a>
+					</h1>	
+				</div>
+				<nav>
+					<menu>
+						<li>
+							<a href="#">HOME
+								<img src="./images/menu_hover_arrow.png"/>
+								<span>back to home page</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">EXAMPLE
+								<img src="./images/menu_hover_arrow.png"/>
+								<span>what we're offering</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">GALLERIES
+								<img src="./images/menu_hover_arrow.png"/>
+								<span>what we're proud of</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">PORTFOLIOS
+								<img src="./images/menu_hover_arrow.png"/>
+								<span>show casing our work</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">BLOG
+								<img src="./images/menu_hover_arrow.png"/>
+								<span>latest news & totorials</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">COTACT US
+								<img src="./images/menu_hover_arrow.png"/>
+								<span>get in touch</span>
+							</a>
+						</li>
+					</menu>	
+				</nav>
 			</div>
-			<nav>
-				<menu>
-					<li>
-						<a href="#">
-							HOME
-							<br />
-							back to home page
-							<span></span>
-						</a>
-					</li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-				</menu>	
-			</nav>
+			<div class="hide">
+					<a  onclick="document.getElementById('menu').style.top='-545px';" href="#">
+						<img src="./images/menu_hide_arrow_top.png" />
+					</a>
+			</div>	
 		</div>
 	</div>
 </body>
