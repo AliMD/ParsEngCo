@@ -46,15 +46,16 @@ div.menu div.logo h1 a{
 }
 
 div.menu nav menu li{
+	position: relative;
 	padding-left: 20px;
-	padding-right: 30px;
+	padding-right: 20px;
 	color: #A3A3A3;
 	line-height: 0;
 	font-weight: normal;
 	
 } 
 
-div.menu nav menu li:first-child a{
+div.menu nav menu > li:first-child a{
 	color: #fff;
 	border-top: 1px solid #343434;
 }
@@ -84,8 +85,40 @@ div.menu nav menu li:hover a img{
 div.menu nav menu li span{
 	font: italic 10px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
 	text-transform: lowercase;
-	opacity: 0.7;
+	opacity: 0.8;
 
+}
+
+div.menu li menu{
+	position: absolute;
+	left: 100%;
+	top:0;
+	display: none;
+}
+
+div.menu li:hover menu{
+	display: block;
+	background-image:url('./images/menu_back.png'); 
+	background-repeat: repeat-y;
+	background-position: top left;
+	border: 1px solid #343434;
+
+}
+
+div.menu li menu li a{
+	white-space: nowrap;
+	font: italic 10px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	text-transform: uppercase;
+	padding:8px 0 8px 10px;
+	opacity: 0.8;
+	float: left;
+}
+
+div.menu li menu li a img{
+	display: block;
+	float: left;
+	margin-right: 20px;
+	margin-left: 100px;
 }
 
 div.menu_wrap div.hide{
