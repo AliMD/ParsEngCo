@@ -1,68 +1,121 @@
-<!DOCTYPE HTML>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<title> .:Carpet:. </title>
-	<link rel="stylesheet" type="text/css" href="1styles.css"/>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<script type="text/javascript" src="html5shiv.js"></script>
-</head>
-<body>
-	<div class="w24 mlra container mh60">
-		<div id="menu" class="menu_wrap">
-			<div class="menu">
-				<div class="logo cover">
-					<h1>
-						<a href="#"></a>
-					</h1>	
+<div>
+	<!DOCTYPE HTML>
+	<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title> .:Carpet:. </title>
+		<link rel="stylesheet" type="text/css" href="1styles.css"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" src="html5shiv.js"></script>
+	</head>
+	<body>
+		<div class="w24 mlra container mh40">
+			<div class="open" id="anim">
+				<div id="menu" class="menu_wrap">
+					<div class="menu">
+						<div class="logo cover">
+							<h1>
+								<a href="#"></a>
+							</h1>	
+						</div>
+						<nav >
+							<menu>
+								<li>
+									<a href="#">HOME
+										<img src="./images/menu_hover_arrow.png"/>
+										<span>back to home page</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">EXAMPLE
+										<img src="./images/menu_hover_arrow.png"/>
+										<span>what we're offering</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">GALLERIES
+										<img src="./images/menu_hover_arrow.png"/>
+										<span>what we're proud of</span>
+									</a>
+									<menu >
+										<li>
+											<a href="#">colorbox
+												<img src="./images/submenu_hover_arrow.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">fancybox
+												<img src="./images/submenu_hover_arrow.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">galleria
+												<img src="./images/submenu_hover_arrow.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">prettyphoto
+												<img src="./images/submenu_hover_arrow.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="#">sliderviwer
+												<img src="./images/submenu_hover_arrow.png" alt="">
+											</a>
+										</li>
+									</menu>
+								</li>
+								<li>
+									<a href="#">PORTFOLIOS
+										<img src="./images/menu_hover_arrow.png"/>
+										<span>show casing our work</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">BLOG
+										<img src="./images/menu_hover_arrow.png"/>
+										<span>latest news & totorials</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">COTACT US
+										<img src="./images/menu_hover_arrow.png"/>
+										<span>get in touch</span>
+									</a>
+								</li>
+							</menu>	
+						</nav>
+					</div>
+					<div class="hide">
+							<a id='hideupdn' onclick="function()" href="#">
+								<img src="./images/menu_hide_arrow_top.png" />
+							</a>
+					</div>	
 				</div>
-				<nav>
-					<menu>
-						<li>
-							<a href="#">HOME
-								<img src="./images/menu_hover_arrow.png"/>
-								<span>back to home page</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">EXAMPLE
-								<img src="./images/menu_hover_arrow.png"/>
-								<span>what we're offering</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">GALLERIES
-								<img src="./images/menu_hover_arrow.png"/>
-								<span>what we're proud of</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">PORTFOLIOS
-								<img src="./images/menu_hover_arrow.png"/>
-								<span>show casing our work</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">BLOG
-								<img src="./images/menu_hover_arrow.png"/>
-								<span>latest news & totorials</span>
-							</a>
-						</li>
-						<li>
-							<a href="#">COTACT US
-								<img src="./images/menu_hover_arrow.png"/>
-								<span>get in touch</span>
-							</a>
-						</li>
-					</menu>	
-				</nav>
 			</div>
-			<div class="hide">
-					<a  onclick="document.getElementById('menu').style.top='-545px';" href="#">
-						<img src="./images/menu_hide_arrow_top.png" />
-					</a>
-			</div>	
 		</div>
-	</div>
-</body>
-</html>
+		<script type="text/javascript">
+		(function(){	
+			var hideupdn = $('div.container > div.hide #hideupdn'),
+				mode = false;
+			
+			hideupdn.click(function(){
+				if (!mode) {
+					$(document.getElementById('anim')).animate({
+			
+						className:'close'
+					});
+					mode=true;
+				}
+				else if (mode) {
+					$(document.getElementById('anim')).animate({
+						className:'open'
+					});
+					mode=false;
+				}
+			});
+		});
+		</script>
+	</body>
+	</html>
+</div>
