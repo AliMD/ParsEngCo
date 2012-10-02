@@ -154,7 +154,7 @@ div.menu li menu li a img {
 	opacity: 0;
 }
 
-div.menu li menu li:hover a img{
+div.menu li menu li:hover > a img{
 	opacity: 1;
 }
 div.menu_wrap div.hide {
