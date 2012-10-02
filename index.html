@@ -6,9 +6,6 @@
 	<link rel="stylesheet" type="text/css" href="1styles.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 	<script type="text/javascript" src="./scripts/html5shiv.js"></script>
-	<script type="text/javascript" src="./scripts/zepto.js"></script>
-	<script type="text/javascript" src="./scripts/jquery.js"></script>
-	<script type="text/javascript" src="./scripts/script.js"></script>
 </head>
 <body>
 	<div class="w24 mlra container mh40">
@@ -109,16 +106,17 @@
 		</div>
 	</div>
 	<section class="slideshow">
-		<section class="background">
-			<div style="background-image:url('./images/backgrounds/background.jpg')"></div>
-			<div style="background-image:url('./images/backgrounds/background1.jpg')"></div>
-			<div style="background-image:url('./images/backgrounds/background2.jpg')"></div>
-			<div style="background-image:url('./images/backgrounds/background3.jpg')"></div>
-			<div style="background-image:url('./images/backgrounds/background4.jpg')"></div>
-		</section>
+		<div class="noise"> </div>
+			<section class="background">
+				<div style="background-image:url('./images/backgrounds/background.jpg');"></div>
+				<div style="background-image:url('./images/backgrounds/background1.jpg');"></div>
+				<div style="background-image:url('./images/backgrounds/background2.jpg');"></div>
+				<div style="background-image:url('./images/backgrounds/background3.jpg');"></div>
+				<div style="background-image:url('./images/backgrounds/background4.jpg');"></div>
+			</section>
 	</section>
 
 	<script type="text/javascript"> document.write('<script type="text/javascript" src=scripts/' + ('__proto__' in {} ? 'zepto' : 'jquery') + '.js><\/script>'); </script>
 	<script type="text/javascript" src="scripts/underdev.js"></script>
-</body>
+	<script type="text/javascript" src="./scripts/script.js"></script>
 </html>
