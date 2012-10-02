@@ -23,7 +23,7 @@ div.menu_wrap {
 	position: fixed;
 	width: 240px;
 	z-index: 999;
-	-webkit-transition: all 2s ease-in-out;
+	-webkit-transition: all 1.5s ease-in-out;
 }
 
 .open,
@@ -36,17 +36,17 @@ div.menu_wrap {
 }
 
 .close .menu_wrap {
-	top: -545px;
+	top: -540px;
 }
 
 .close .menu_wrap div.hide a img {
 	-webkit-transform: rotate(180deg);
-	-webkit-transition: all 2s ease-in-out;
+	-webkit-transition: all 1.5s ease-in-out;
 }
 
 .open .menu_wrap div.hide a img {
 	-webkit-transform: rotate(0deg);
-	-webkit-transition: all 2s ease-in-out;
+	-webkit-transition: all 1.5s ease-in-out;
 }
 
 div.menu_wrap div.menu {
@@ -110,7 +110,8 @@ div.menu nav menu li span {
 
 div.menu li menu {
 	position: absolute;
-	left: 220px;
+	/*left: 220px;*/
+	left: 92% ;
 	top:0;
 	display: none;
 	padding:2px 7px 2px;
@@ -119,12 +120,13 @@ div.menu li menu {
 	border: 1px solid #343434;
 }
 
-div.menu li:hover menu {
+div.menu li:hover > menu {
 	display: block;
 }
 
 div.menu li li{
 	line-height: 30px;
+	position: relative;
 }
 
 div.menu li li a {
