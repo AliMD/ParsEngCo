@@ -1,13 +1,13 @@
-## Sarv-Architecture Website
+## Swastika-Rugs Website
 =======================
-The website for the **[Sarv-Architecture](http://sarv-arch.com)** company
+The website for the **[Swastika-Rugs](http://swastikarugs.com)** company
 
 ### Contributing
 
-* Check our project's website and report any bugs or ideas in [issues](https://github.com/1schools-projects/Sarv-Architecture/issues)
-* Clone our project and check the source codes from [here](https://github.com/1schools-projects/Sarv-Architecture)
+* Check our project's website and report any bugs or ideas in [issues](https://github.com/1schools-projects/Swastika-Rugs/issues)
+* Clone our project and check the source codes from [here](https://github.com/1schools-projects/Swastika-Rugs)
 ```
-      https://github.com/1schools-projects/Sarv-Architecture
+      https://github.com/1schools-projects/Swastika-Rugs
 ```
 
 * Fork this for yourself and do some developing and pull request to us, if you want !
@@ -22,16 +22,16 @@ The website for the **[Sarv-Architecture](http://sarv-arch.com)** company
 
 ### The Team
 
-* [Ali Mihandoost](https://github.com/alimd) Teacher / Technical Manager
-* [Omid Gharib](https://github.com/omidgharib) Project Manager / Programmer / Developer
-* [Yashar Ahmadi](https://github.com/YasharAMD) Programmer / Developer
-* [Arash Sadeghizade](https://github.com/arastoo) Datagather
+* [Ali Mihandoost](https://github.com/alimd) Teacher / Project Manager
+* [Arash Sadeghizade](https://github.com/arastoo) Developer
+* [Omid Gharib](https://github.com/omidgharib) Developer
+* [Yashar Ahmadi](https://github.com/YasharAMD) Developer
 
 ### All rights reserved
 
-Copyright (c) 2012, The [sarv-arch.com](http://sarv-arch.com) code and website is released under a [MIT License](http://opensource.org/licenses/MIT).
+Copyright (c) 2012, The [swastikarugs.com](http://swastikarugs.com) code and website is released under a [MIT License](http://opensource.org/licenses/MIT).
 
-      ( September 2012 )
+      ( October 2012 )
 
 ### A 1devs website
 
