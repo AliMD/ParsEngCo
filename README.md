@@ -22,10 +22,10 @@ The website for the **[Sarv-Architecture](http://sarv-arch.com)** company
 
 ### The Team
 
-* [Ali Mihandoost](https://github.com/alimd) Teacher / Project Manager
-* [Arash Sadeghizade](https://github.com/arastoo) Developer
-* [Omid Gharib](https://github.com/omidgharib) Developer
-* [Yashar Ahmadi](https://github.com/YasharAMD) Developer
+* [Ali Mihandoost](https://github.com/alimd) Teacher / Technical Manager
+* [Omid Gharib](https://github.com/omidgharib) Project Manager / Programmer / Developer
+* [Yashar Ahmadi](https://github.com/YasharAMD) Programmer / Developer
+* [Arash Sadeghizade](https://github.com/arastoo) Datagather
 
 ### All rights reserved
 
