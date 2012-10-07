@@ -4,14 +4,9 @@ div.container {
 	position: relative;
 }
 
-/*div.container > div{
-	border: 1px solid red;
+.font{
+	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 }
-
-div.container > div *{
-	border: 1px solid black;
-}*/
-
 /*-----Background Slider -----*/
 div.noise {
 	position :fixed;
@@ -97,8 +92,6 @@ div.menu div.logo h1 a span {
 	text-align: center;
 	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 	font-size: 30px;
-	font-weight: bold;
-
 }
 div.menu nav > menu > li {
 	position: relative;
@@ -219,3 +212,31 @@ div.menu_wrap div.hide img {
 
 
 /*-----End-Home Page-----*/
+
+
+/*-----Gallery col2 Page-----*/
+
+div.gallery {
+	width:700px;
+	background-color: #111;
+	opacity:.9;
+	color:#fff;
+	border: 1px solid #343434;
+}
+
+div.gallery header.head h2 {
+	font-size: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+div.gallery div.content section.row {
+
+}
+
+div.gallery div.content section.row section.box {
+	background-color: darkmagenta;
+	width:290px;	
+}
+
+/*-----End-Gallery col2 Page-----*/
