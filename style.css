@@ -97,8 +97,6 @@ div.menu div.logo h1 a span {
 	text-align: center;
 	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 	font-size: 30px;
-	font-weight: bold;
-
 }
 div.menu nav > menu > li {
 	position: relative;
@@ -219,3 +217,12 @@ div.menu_wrap div.hide img {
 
 
 /*-----End-Home Page-----*/
+
+
+/*-----End-Gallery col2 Page-----*/
+
+div.gallery{
+	
+}
+
+/*-----End-Gallery col2 Page-----*/
