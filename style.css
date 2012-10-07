@@ -1,6 +1,6 @@
 /*-----Home Page-----*/
 div.container {
-	-webkit-transition: all 2s;
+	-webkit-transition: all 700ms;
 	position: relative;
 }
 
@@ -79,14 +79,28 @@ div.menu_wrap div.menu {
 
 div.menu div.logo h1 a {
 	display: block;
-	width: 220px;
-	height: 200px;
-	background-image: url('./images/logo.png') ;
+	width: 230px;
+	height: 180px;
+	background-image: url('./images/oie_transparent.png') ;
 	background-repeat: no-repeat;
-	background-position: top center;
-	margin-left: 10px;
+	background-position: center 40px;
+	background-size: 130px 130px;
+	text-decoration: none;
+	margin-left: 5px;
 }
 
+div.menu div.logo h1 a span {
+	display: block;
+	margin-left: 5px;
+	margin-top: 10px;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+
+}
 div.menu nav > menu > li {
 	position: relative;
 	line-height: 0;
