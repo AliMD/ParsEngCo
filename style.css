@@ -105,32 +105,27 @@ div.menu nav > menu > li:first-child a{
 
 div.menu nav > menu > li > a {
 	display:block;
-	padding: 0 10px ;
+	padding: 17px 10px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 	font-size:17px;
 	color: #ccc;
-	padding-bottom: 4px;
-	padding-top: 11px;
-
 }
 
-div.menu nav > menu > li > a > img {
-	vertical-align: middle;
-	margin-left: 140px;
-	opacity: 0;
-}
-
-div.menu nav menu >li:hover > a > img {
-	opacity: 1;
+div.menu nav > menu > li:hover {
+	background-image: url("./images/menu_hover_arrow.png");
+	background-repeat: no-repeat;
+	background-position: right center;
 }
 
 div.menu nav menu li span {
+	display:block;
 	font: italic 10px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
 	text-transform: lowercase;
-	opacity: 0.8;
-
+	margin-top: 11px;
+	margin-left: 2px;
+	color: #555;
 }
 
 div.menu li menu {
@@ -170,6 +165,12 @@ div.menu li li a {
 
 div.menu li li:first-child a{
 	border-top: 0;
+}
+
+div.menu li li:hover{
+	background-image: url("./images/submenu_hover_arrow.png");
+	background-repeat: no-repeat;
+	background-position: right center;
 }
 
 div.menu li menu li a img {
