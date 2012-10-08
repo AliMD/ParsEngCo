@@ -250,6 +250,7 @@ div.gallery div.content section.row section.box:hover {
 	background-repeat: no-repeat;
 	background-position: center;
 	opacity:0.3;
+	box-shadow: -1px 1px 10px 1px #ccc;
 }
 
 div.gallery div.content section.text p {
@@ -293,6 +294,7 @@ div.gallery footer section.fmenu section.get_in_touch ul li a {
 	display: block;
 	font: normal 13px Verdana, Arial, sans-serif;
 	text-decoration: none;
+	text-transform: capitalize;
 	padding:5px 10px 5px;
 	color:#ccc;
 }
