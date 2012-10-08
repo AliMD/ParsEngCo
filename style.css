@@ -218,8 +218,9 @@ div.menu_wrap div.hide img {
 
 div.gallery {
 	width:700px;
-	background-color: #111;
-	opacity:.9;
+/*	background-color: #111;
+	opacity:.9;*/
+	background-color: rgba(0,0,0,0.85);
 	color:#fff;
 	border: 1px solid #343434;
 }
@@ -258,4 +259,9 @@ div.gallery footer section.fmenu{
 	border-top: 1px solid #646464;
 }
 
+div.gallery footer section.fmenu section.learn_more,
+div.gallery footer section.fmenu section.get_in_touch,
+div.gallery footer section.fmenu section.need_to_know {
+	background-color: darkblue;
+}
 /*-----End-Gallery col2 Page-----*/
