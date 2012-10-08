@@ -92,6 +92,7 @@ div.menu div.logo h1 a span {
 	text-align: center;
 	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 	font-size: 30px;
+	text-shadow: 1px 1px 1px #fff;
 }
 div.menu nav > menu > li {
 	position: relative;
@@ -220,7 +221,8 @@ div.gallery {
 	width:700px;
 /*	background-color: #111;
 	opacity:.9;*/
-	background-color: rgba(0,0,0,0.85);
+	background-color: #000;
+	background-color: rgba(0,0,0,0.9);
 	color:#fff;
 	border: 1px solid #343434;
 }
@@ -257,11 +259,53 @@ div.gallery div.content section.text p {
 
 div.gallery footer section.fmenu{
 	border-top: 1px solid #646464;
+	border-bottom: 1px solid #646464;
 }
 
-div.gallery footer section.fmenu section.learn_more,
-div.gallery footer section.fmenu section.get_in_touch,
-div.gallery footer section.fmenu section.need_to_know {
-	background-color: darkblue;
+div.gallery footer section.fmenu section.learn_more ,
+div.gallery footer section.fmenu section.get_in_touch {
+	margin-right: 20px;
 }
+
+div.gallery footer section.fmenu section.learn_more h3,
+div.gallery footer section.fmenu section.get_in_touch h3,
+div.gallery footer section.fmenu section.need_to_know h3 {
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom:10px;
+	text-shadow: 0 0 1px #ccc;
+}
+
+div.gallery footer section.fmenu section.learn_more ul li,
+div.gallery footer section.fmenu section.get_in_touch ul li{
+	border-bottom:1px solid #343434;
+}
+
+div.gallery footer section.fmenu section.learn_more ul li:first-child,
+div.gallery footer section.fmenu section.get_in_touch ul li:first-child{
+	border-top:1px solid #343434;
+}
+
+div.gallery footer section.fmenu section.learn_more ul li a,
+div.gallery footer section.fmenu section.get_in_touch ul li a {
+	display: block;
+	font: normal 13px Verdana, Arial, sans-serif;
+	text-decoration: none;
+	padding:5px 10px 5px;
+	color:#ccc;
+}
+
+div.gallery footer section.fmenu section.learn_more ul li a:hover,
+div.gallery footer section.fmenu section.get_in_touch ul li a:hover {
+	color:#fff;
+	background-color: #121212;
+}
+
+div.gallery footer section.fmenu section.need_to_know p{
+	color:#ccc;
+	font: normal 12px Verdana, Arial, sans-serif;
+}
+
 /*-----End-Gallery col2 Page-----*/
