@@ -236,7 +236,8 @@ div.gallery div.content section.row {
 
 div.gallery div.content section.row section.box {
 	background-color: darkmagenta;
-	width:290px;	
+	width:290px;
+	min-height: 160px;	
 }
 
 /*-----End-Gallery col2 Page-----*/
