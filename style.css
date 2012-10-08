@@ -237,7 +237,25 @@ div.gallery div.content section.row {
 div.gallery div.content section.row section.box {
 	background-color: darkmagenta;
 	width:290px;
-	min-height: 160px;	
+	min-height: 200px;	
+	-webkit-transition: opacity 900ms;
+}
+
+div.gallery div.content section.row section.box:hover {
+	background-color: #000;
+	background-image: url('./images/hover_image_gallery.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity:0.3;
+}
+
+div.gallery div.content section.text p {
+	font: normal 12px Verdana, Arial, sans-serif;
+	line-height: 18px
+}
+
+div.gallery footer section.fmenu{
+	border-top: 1px solid #646464;
 }
 
 /*-----End-Gallery col2 Page-----*/
