@@ -258,4 +258,9 @@ div.gallery footer section.fmenu{
 	border-top: 1px solid #646464;
 }
 
+div.gallery footer section.fmenu section.learn_more,
+div.gallery footer section.fmenu section.get_in_touch,
+div.gallery footer section.fmenu section.need_to_know {
+	background-color: darkblue;
+}
 /*-----End-Gallery col2 Page-----*/
