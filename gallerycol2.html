@@ -5,6 +5,7 @@
 	<title> .:Carpet:. </title>
 	<link rel="stylesheet" type="text/css" href="1styles.css"/>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link type="text/css" rel="stylesheet" href="lightbox.css" />
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="./scripts/html5shiv.js"></script>
 </head>
@@ -93,20 +94,24 @@
 			</header>
 			<div class="pl1 pr1 pb4 content">
 				<section class="mh5 mt2 row cover">
-					<section class="w7 mh9 box left"></section>
-					<section class="w7 mh9 mt1 box mla"></section>
+					<div class="w7 mh9 box left">
+						<a href="./images/galleries/original/Koala.jpg" title="Item 1 title ..." data-desc="Item 1 description " rel="lightbox[group1]">
+							<img src="./images/galleries/thumbs/Koala.jpg" alt="Koala"/>
+						</a>
+					</div>
+					<div class="w7 mh9 mt1 box mla"></div>
 				</section>
 				<section class="mh5 mt2 row cover">
-					<section class="w7 mh9 box left"></section>
-					<section class="w7 mh9 mt1 box mla"></section>
+					<div class="w7 mh9 box left"></div>
+					<div class="w7 mh9 mt1 box mla"></div>
 				</section>
 				<section class="mh5 mt2 row cover">
-					<section class="w7 mh9 box left"></section>
-					<section class="w7 mh9 mt1 box mla"></section>
+					<div class="w7 mh9 box left"></div>
+					<div class="w7 mh9 mt1 box mla"></div>
 				</section>
 				<section class="mh5 mt2 row cover">
-					<section class="w7 mh9 box left"></section>
-					<section class="w7 mh9 mt1 box mla"></section>
+					<div class="w7 mh9 box left"></div>
+					<div class="w7 mh9 mt1 box mla"></div>
 				</section>
 				<section class="mt2 text">
 					<p>
@@ -149,6 +154,8 @@
 					</div>
 					<div class="w8 mla social">
 						Social Links
+<!-- 						<g:plusone href="http://omidgharib.ir"></g:plusone>
+						<g:plus action='share' href='http://omidgharib.ir'> </g:plus> -->
 					</div>
 				</section>
 			</footer>
@@ -170,4 +177,8 @@
 	<script type="text/javascript"> document.write('<script type="text/javascript" src=scripts/' + ('__proto__' in {} ? 'zepto' : 'jquery') + '.js><\/script>'); </script>
 	<script type="text/javascript" src="scripts/underdev.js"></script>
 	<script type="text/javascript" src="./scripts/script.js"></script>
+		<script type="text/javascript" src="./scripts/jquery.js"></script>
+	<script type="text/javascript" src="./scripts/jquery-ui.js"></script>
+	<script type="text/javascript" src="./scripts/lightbox.js"></script>
+	<script src="https://apis.google.com/js/plusone.js"></script>
 </html>
