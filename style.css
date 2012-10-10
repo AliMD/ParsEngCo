@@ -245,6 +245,14 @@ div.gallery div.content section.row div.box {
 	-webkit-transition: opacity 900ms;
 }
 
+div.gallery div.content section.row div.box a {
+	display:block;
+}
+
+div.gallery div.content section.row div.box img {
+	display: block;
+}
+
 div.gallery div.content section.row div.box:hover {
 	background-color: #000;
 	background-image: url('./images/hover_image_gallery.png');

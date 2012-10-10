@@ -31,11 +31,12 @@
 			})();
 		}
 	});
-})($)
 
-$(function(){
-	$('.background > div').fadeLoop({
-		duration : 1500,
-		delay : 2000
+	$(function(){
+		$('.background > div').fadeLoop({
+			duration : 1500,
+			delay : 2000
+		});
 	});
-});
+
+})(window.Zepto || window.jQuery);
