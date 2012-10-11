@@ -242,6 +242,7 @@ div.gallery div.content section.row div.box {
 	background-color: darkmagenta;
 	width:290px;
 	min-height: 217px;	
+	position:relative;
 	-webkit-transition: opacity 900ms;
 }
 
@@ -255,10 +256,20 @@ div.gallery div.content section.row div.box img {
 
 div.gallery div.content section.row div.box:hover {
 	background-color: #000;
+	opacity:0.3;
+}
+
+div.gallery div.content section.row div.box:hover span {
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:290px;
+	height:210px;
 	background-image: url('./images/hover_image_gallery.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	opacity:0.3;
+	z-index: 100;
 }
 
 div.gallery div.content section.row div.box:hover img{
