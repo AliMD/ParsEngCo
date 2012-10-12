@@ -405,6 +405,18 @@ div.contact-us div.content section.info ul li {
 	border-bottom: 1px solid #2b2b2b;
 }
 
+div.contact-us div.content section.info ul li:first-child{
+	border-top: 1px solid #2b2b2b;
+}
+
+div.contact-us div.content section.info iframe {
+	opacity:.5;
+	border-radius: 3px;
+}
+
+div.contact-us div.content section.info iframe:hover {
+	opacity:1;
+}
 
 /*-----End-Contact Us Page-----*/
 
