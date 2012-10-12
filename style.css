@@ -6,6 +6,7 @@ div.container {
 .font{
 	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 }
+
 /*-----Background Slider -----*/
 div.noise {
 	position :fixed;
@@ -39,7 +40,7 @@ div.menu_wrap {
 	position: fixed;
 	width: 240px;
 	z-index: 999;
-	-webkit-transition: all 900ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
 }
 
 .open,
@@ -52,17 +53,17 @@ div.menu_wrap {
 }
 
 .close .menu_wrap {
-	top: -510px;
+	top: -530px;
 }
 
 .close .menu_wrap div.hide a img {
 	-webkit-transform: rotate(180deg);
-	-webkit-transition: all 900ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
 }
 
 .open .menu_wrap div.hide a img {
 	-webkit-transform: rotate(0deg);
-	-webkit-transition: all 900ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
 }
 
 div.menu_wrap div.menu {
@@ -70,15 +71,16 @@ div.menu_wrap div.menu {
 	background-repeat: repeat-y;
 	background-position: top left;
 	z-index: 999;
+	min-height: 535px;
 }
 
 div.menu div.logo h1 a {
 	display: block;
 	width: 230px;
-	height: 180px;
+	height: 215px;
 	background-image: url('./images/oie_transparent.png') ;
 	background-repeat: no-repeat;
-	background-position: center 40px;
+	background-position: center 65px;
 	background-size: 130px 130px;
 	text-decoration: none;
 	margin-left: 5px;
