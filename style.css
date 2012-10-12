@@ -6,6 +6,7 @@ div.container {
 .font{
 	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 }
+
 /*-----Background Slider -----*/
 div.noise {
 	position :fixed;
@@ -39,7 +40,7 @@ div.menu_wrap {
 	position: fixed;
 	width: 240px;
 	z-index: 999;
-	-webkit-transition: all 900ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
 }
 
 .open,
@@ -52,17 +53,17 @@ div.menu_wrap {
 }
 
 .close .menu_wrap {
-	top: -510px;
+	top: -530px;
 }
 
 .close .menu_wrap div.hide a img {
 	-webkit-transform: rotate(180deg);
-	-webkit-transition: all 900ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
 }
 
 .open .menu_wrap div.hide a img {
 	-webkit-transform: rotate(0deg);
-	-webkit-transition: all 900ms ease-in-out;
+	-webkit-transition: all 800ms ease-in-out;
 }
 
 div.menu_wrap div.menu {
@@ -70,15 +71,16 @@ div.menu_wrap div.menu {
 	background-repeat: repeat-y;
 	background-position: top left;
 	z-index: 999;
+	min-height: 535px;
 }
 
 div.menu div.logo h1 a {
 	display: block;
 	width: 230px;
-	height: 180px;
+	height: 215px;
 	background-image: url('./images/oie_transparent.png') ;
 	background-repeat: no-repeat;
-	background-position: center 40px;
+	background-position: center 65px;
 	background-size: 130px 130px;
 	text-decoration: none;
 	margin-left: 5px;
@@ -86,7 +88,7 @@ div.menu div.logo h1 a {
 
 div.menu div.logo h1 a span {
 	display: block;
-	margin-top: 10px;
+	padding-top: 20px;
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
@@ -112,7 +114,7 @@ div.menu nav > menu > li:first-child a{
 
 div.menu nav > menu > li > a {
 	display:block;
-	padding: 17px 10px 10px;
+	padding: 16px 10px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
@@ -206,7 +208,6 @@ div.menu_wrap div.hide {
 
 div.menu_wrap div.hide img {
 	margin-left: 90px;
-	margin-top: 20px;
 }
 
 /*-----End-Menu Nav -----*/
@@ -409,6 +410,14 @@ div.contact-us div.content section.info ul li:first-child{
 	border-top: 1px solid #2b2b2b;
 }
 
+div.contact-us div.content section.info iframe {
+	opacity:.5;
+	border-radius: 3px;
+}
+
+div.contact-us div.content section.info iframe:hover {
+	opacity:1;
+}
 
 /*-----End-Contact Us Page-----*/
 
