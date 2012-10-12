@@ -1,6 +1,6 @@
 ## Swastika-Rugs Website
 =======================
-The website for the **[Swastika-Rugs](http://swastikarugs.com)** company
+The website for the **[Swastika-Rugs](http://swastikarugs.pro)** company
 
 ### Contributing
 
@@ -29,7 +29,7 @@ The website for the **[Swastika-Rugs](http://swastikarugs.com)** company
 
 ### All rights reserved
 
-Copyright (c) 2012, The [swastikarugs.com](http://swastikarugs.com) code and website is released under a [MIT License](http://opensource.org/licenses/MIT).
+Copyright (c) 2012, The [swastikarugs.pro](http://swastikarugs.pro) code and website is released under a [MIT License](http://opensource.org/licenses/MIT).
 
       ( October 2012 )
 
