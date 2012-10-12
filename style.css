@@ -1,4 +1,3 @@
-/*-----Home Page-----*/
 div.container {
 	-webkit-transition: all 700ms;
 	position: relative;
@@ -213,9 +212,6 @@ div.menu_wrap div.hide img {
 /*-----End-Menu Nav -----*/
 
 
-/*-----End-Home Page-----*/
-
-
 /*-----Gallery col2 Page-----*/
 
 div.gallery,
@@ -231,10 +227,6 @@ div.gallery header.head h2 {
 	font-size: 30px;
 	font-weight: normal;
 	text-transform: uppercase;
-}
-
-div.gallery div.content section.row {
-
 }
 
 div.gallery div.content section.row div.box {
@@ -339,8 +331,59 @@ footer.footers div.copyright {
 /*-----End-Gallery col2 Page-----*/
 
 /*-----Contact Us Page-----*/
+div.contact-us header.head h2 {
+	font-size: 30px;
+	font-style: bold;
+	text-transform: uppercase;
+}
 
+div.contact-us div.content section.form input {
+	width: 200px;
+	height: 30px;
+	color: #eee;
+	margin: 6px 0;
+	border: 1px solid #333;
+	border-radius: 5px;
+	background-color: #1b1b1b;
+}
 
+div.contact-us div.content section.form textarea {
+	width: 320px;
+	height: 150px;
+	margin: 6px 0;
+	color: #eee;
+	border: 1px solid #333;
+	border-radius: 5px;
+	background-color: #1b1b1b;
+
+}
+
+div.contact-us div.content section.form input:focus,
+div.contact-us div.content section.form textarea:focus {
+	background-color: #555;
+	font: 12px 'Helvetica Neue', Verdana, Helvetica, sans-serif;
+}
+
+div.contact-us div.content section.form input.btn_submit {
+	width: 150px;
+	height: 30px;
+	margin-top: 10px;
+	background-color: gray;
+	background: gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -moz-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
+	border: none;
+}
+
+div.contact-us div.content section.form input.btn_submit:hover{
+	background: gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -moz-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
+}
 
 /*-----End-Contact Us Page-----*/
 
