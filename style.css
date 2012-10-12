@@ -405,6 +405,10 @@ div.contact-us div.content section.info ul li {
 	border-bottom: 1px solid #2b2b2b;
 }
 
+div.contact-us div.content section.info ul li:first-child{
+	border-top: 1px solid #2b2b2b;
+}
+
 
 /*-----End-Contact Us Page-----*/
 
