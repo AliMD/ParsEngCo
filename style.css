@@ -88,7 +88,7 @@ div.menu div.logo h1 a {
 
 div.menu div.logo h1 a span {
 	display: block;
-	margin-top: 10px;
+	padding-top: 20px;
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
@@ -114,7 +114,7 @@ div.menu nav > menu > li:first-child a{
 
 div.menu nav > menu > li > a {
 	display:block;
-	padding: 17px 10px 10px;
+	padding: 16px 10px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
@@ -208,7 +208,6 @@ div.menu_wrap div.hide {
 
 div.menu_wrap div.hide img {
 	margin-left: 90px;
-	margin-top: 20px;
 }
 
 /*-----End-Menu Nav -----*/
