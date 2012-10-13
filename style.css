@@ -226,8 +226,8 @@ div.gallery header.head h2 {
 
 div.gallery div.content section.row div.box {
 	background-color: silver;
-	width: 290px;
-	min-height: 217px;	
+	width: 195px;
+	min-height: 145px;	
 	position: relative;
 	-webkit-transition: opacity 800ms;
 }
@@ -250,8 +250,8 @@ div.gallery div.content section.row div.box:hover span {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 290px;
-	height: 210px;
+	width: 195px;
+	height: 145px;
 	background-image: url('./images/hover_image_gallery.png');
 	background-repeat: no-repeat;
 	background-position: center;
