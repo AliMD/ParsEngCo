@@ -226,7 +226,7 @@ div.gallery header.head h2 {
 
 div.gallery div.content section.row div.box {
 	background-color: silver;
-	width: 195px;
+	width: 196px;
 	min-height: 145px;	
 	position: relative;
 	-webkit-transition: opacity 800ms;
@@ -234,8 +234,8 @@ div.gallery div.content section.row div.box {
 
 div.gallery div.content section.row div.box.clmn2 {
 	background-color: silver;
-	width: 220px;
-	min-height: 170px;	
+	width: 295px;
+	min-height: 215px;	
 	position: relative;
 	-webkit-transition: opacity 800ms;
 }
