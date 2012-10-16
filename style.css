@@ -258,8 +258,21 @@ div.gallery div.content section.row div.box:hover span {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 195px;
+	width: 196px;
 	height: 145px;
+	background-image: url('./images/hover_image_gallery.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 100;
+}
+
+div.gallery div.content section.row div.box.clmn2:hover span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 295px;
+	height: 215px;
 	background-image: url('./images/hover_image_gallery.png');
 	background-repeat: no-repeat;
 	background-position: center;
