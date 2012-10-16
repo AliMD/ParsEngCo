@@ -19,6 +19,9 @@ The website for the **[Swastika-Rugs](http://swastikarugs.pro)** company
 * [html5shiv](http://ali.md/html5shiv)
 * [1Styles](http://ali.md/1styles)
 * [JavaScript](http://ali.md/wiki/javascript)
+* [jQuery] (http://ali.md/jq.js)
+* [Zepto] (http://ali.md/zepto)
+* [LightBox] (http://ali.md/lightbox)
 
 ### The Team
 
