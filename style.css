@@ -209,7 +209,7 @@ div.menu_wrap div.hide img {
 	margin-left: 90px;
 }
 
-/*-----Gallery col2 Page-----*/
+/*-----Gallery col2 & col3 Page-----*/
 div.gallery,
 div.contact-us {
 	width: 700px;
@@ -228,6 +228,14 @@ div.gallery div.content section.row div.box {
 	background-color: silver;
 	width: 195px;
 	min-height: 145px;	
+	position: relative;
+	-webkit-transition: opacity 800ms;
+}
+
+div.gallery div.content section.row div.box.clmn2 {
+	background-color: silver;
+	width: 220px;
+	min-height: 170px;	
 	position: relative;
 	-webkit-transition: opacity 800ms;
 }
