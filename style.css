@@ -148,7 +148,7 @@ div.menu li menu {
 	left: 100%;
 	top: 0;
 	display: none;
-	padding: 2px 7px 2px;
+	padding: 0px 7px;
 	background-color: #000;
 	opacity: 0.9;
 	border: 1px solid #343434;
@@ -163,20 +163,20 @@ div.menu li li {
 	position: relative;
 }
 
-div.menu li li a {
+div.menu li li > a {
 	display: block;
 	min-width: 120px;
 	white-space: nowrap;
 	text-decoration: none;
-	text-transform: uppercase;
-	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
-	font-size: 11px;
+	text-transform: capitalize;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-size: 12px;
 	color: #A3A3A3;
 	padding: 5px 5px 10px;
 	border-top: 1px solid #343434;
 }
 
-div.menu li li:first-child a {
+div.menu li li:first-child > a {
 	border-top: 0;
 }
 
