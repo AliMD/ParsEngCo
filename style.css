@@ -384,7 +384,7 @@ div.contact-us div.content section.form input.btn_submit {
 	background-color: gray;
 	background: gradient(linear, left top, left bottom, from(#666), to(#333));
 	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background: -moz-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
 	background: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
 	background: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
 	border: none;
@@ -393,7 +393,7 @@ div.contact-us div.content section.form input.btn_submit {
 div.contact-us div.content section.form input.btn_submit:hover {
 	background: gradient(linear, left top, left bottom, from(#333), to(#666));
 	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background: -moz-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
 	background: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
 	background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
 }
