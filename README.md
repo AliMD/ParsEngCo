@@ -30,6 +30,9 @@ The website for the **[Swastika-Rugs](http://swastikarugs.pro)** company
 * [Yashar Ahmadi](https://github.com/YasharAMD) Developer / Programmer / Data Gather
 * [Arash Sadeghizade](https://github.com/arastoo)  Data Gather
 
+### Our Desire Design :
+ [KingSize](http://www.kingsizetheme.com)
+
 ### All rights reserved
 
 Copyright (c) 2012, The [swastikarugs.pro](http://swastikarugs.pro) code and website is released under a [MIT License](http://opensource.org/licenses/MIT).
