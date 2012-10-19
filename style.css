@@ -40,7 +40,11 @@ section.background div {
 div.menu_wrap {
 	position: fixed;
 	width: 240px;
+	transition: all 800ms ease-in-out;
 	-webkit-transition: all 800ms ease-in-out;
+	-moz-transition: all 800ms ease-in-out;
+	-ms-transition: all 800ms ease-in-out;
+	-o-transition: all 800ms ease-in-out;
 }
 
 .open,
@@ -58,13 +62,29 @@ div.menu_wrap {
 }
 
 .close .menu_wrap div.hide a img {
+	transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transition: all 800ms ease-in-out;
 	-webkit-transition: all 800ms ease-in-out;
+	-moz-transition: all 800ms ease-in-out;
+	-ms-transition: all 800ms ease-in-out;
+	-o-transition: all 800ms ease-in-out;
 }
 
 .open .menu_wrap div.hide a img {
+	transform: rotate(0deg);
 	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transition: all 800ms ease-in-out;
 	-webkit-transition: all 800ms ease-in-out;
+	-moz-transition: all 800ms ease-in-out;
+	-ms-transition: all 800ms ease-in-out;
+	-o-transition: all 800ms ease-in-out;
 }
 
 div.menu_wrap div.menu {
@@ -224,19 +244,25 @@ div.gallery header.head h2 {
 }
 
 div.gallery div.content section.row div.box {
-	background-color: silver;
 	width: 196px;
 	min-height: 145px;	
 	position: relative;
+	transition: opacity 800ms;
 	-webkit-transition: opacity 800ms;
+	-moz-transition: opacity 800ms;
+	-ms-transition: opacity 800ms;
+	-o-transition: opacity 800ms;
 }
 
 div.gallery div.content section.row div.box.clmn2 {
-	background-color: silver;
 	width: 295px;
 	min-height: 215px;	
 	position: relative;
+	transition: opacity 800ms;
 	-webkit-transition: opacity 800ms;
+	-moz-transition: opacity 800ms;
+	-ms-transition: opacity 800ms;
+	-o-transition: opacity 800ms;
 }
 
 div.gallery div.content section.row div.box a {
@@ -518,9 +544,13 @@ div.social ul li a.rss:hover {
 /*--------- Portfolio Model page ------------*/
 div.gallery div.content section.row article.box {
 	width: 290px;
-	min-height: 217px;    
+	min-height: 210px;    
 	position: relative;
+	transition: opacity 800ms;
 	-webkit-transition: opacity 800ms;
+	-moz-transition: opacity 800ms;
+	-ms-transition: opacity 800ms;
+	-o-transition: opacity 800ms;
 }
 
 div.gallery div.content section.row article.box h3 {
