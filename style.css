@@ -384,7 +384,7 @@ div.contact-us div.content section.form input.btn_submit {
 	background-color: gray;
 	background: gradient(linear, left top, left bottom, from(#666), to(#333));
 	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background: -moz-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
 	background: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
 	background: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
 	border: none;
@@ -393,7 +393,7 @@ div.contact-us div.content section.form input.btn_submit {
 div.contact-us div.content section.form input.btn_submit:hover {
 	background: gradient(linear, left top, left bottom, from(#333), to(#666));
 	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background: -moz-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
 	background: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
 	background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
 }
@@ -517,75 +517,74 @@ div.social ul li a.rss:hover {
 
 /*--------- Portfolio Model page ------------*/
 div.gallery div.content section.row article.box {
-    width: 290px;
-    min-height: 217px;    
-    position: relative;
-    -webkit-transition: opacity 800ms;
+	width: 290px;
+	min-height: 217px;    
+	position: relative;
+	-webkit-transition: opacity 800ms;
 }
 
 div.gallery div.content section.row article.box h3 {
-    display: block;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-bottom: 10px;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-bottom: 10px;
 }
 
 div.gallery div.content section.row article.box a {
-    display: block;
+	display: block;
 }
 
 div.gallery div.content section.row article.box img {
-    display: block;
+	display: block;
 }
 
-div.gallery div.content section.row article.box:hover img {
-    background-color: #000;
-    opacity: 0.3;
+div.gallery div.content section.row article.box a:hover img {
+	background-color: #000;
+	opacity: 0.3;
+	box-shadow: -1px 1px 10px 1px #ccc;
 }
 
-div.gallery div.content section.row article.box:hover span {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 290px;
-    height: 210px;
-    background-image: url('./images/hover_image_gallery.png');
-    background-repeat: no-repeat;
-    background-position: center;
+div.gallery div.content section.row article.box a:hover span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 290px;
+	height: 210px;
+	background-image: url('./images/hover_image_gallery.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 100;
 }
-
-div.gallery div.content section.row article.box:hover img {
-    box-shadow: -1px 1px 10px 1px #ccc;
-}
-
 
 div.gallery div.content article.box p {
-    display: block;
-    padding-top: 5px;
+	display: block;
+	padding-top: 5px;
 }
 
-div.gallery div.content article.box input {
-    width: 100px;
-    height: 30px;
-    margin-top: 15px;
-    text-align: center;
-    color: #fff;
-    background-color: gray;
-    border: 1px solid rgb(44,44,44);
-    border-radius: 4px;
-    background: gradient(linear, left top, left bottom, from(#666), to(#333));
-    background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
-    background: -moz-gradient(linear, left top, left bottom, from(#666), to(#333));
-    background: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
-    background: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
+div.gallery div.content article.box a.readmore {
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 15px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	background-color: gray;
+	border: 1px solid rgb(44,44,44);
+	border-radius: 4px;
+	background: gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
+	background: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
 }
 
-div.gallery div.content article.box input:hover {
-    background: gradient(linear, left top, left bottom, from(#333), to(#666));
-    background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
-    background: -moz-gradient(linear, left top, left bottom, from(#333), to(#666));
-    background: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
-    background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
+div.gallery div.content article.box a.readmore:hover {
+	background: gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
+	background: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
 }
