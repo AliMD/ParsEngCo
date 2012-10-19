@@ -40,13 +40,13 @@ section.background div {
 div.menu_wrap {
 	position: fixed;
 	width: 240px;
-	z-index: 1000;
 	-webkit-transition: all 800ms ease-in-out;
 }
 
 .open,
 .close {
 	position: fixed;
+	z-index: 100;
 }
 
 .open .menu_wrap {
@@ -71,7 +71,6 @@ div.menu_wrap div.menu {
 	background-image: url('./images/menu_back.png'); 
 	background-repeat: repeat-y;
 	background-position: top left;
-	z-index: 1000;
 	min-height: 535px;
 }
 
@@ -152,7 +151,6 @@ div.menu li menu {
 	background-color: #000;
 	opacity: 0.9;
 	border: 1px solid #343434;
-	z-index: 1000;
 }
 
 div.menu li:hover > menu {
@@ -264,7 +262,6 @@ div.gallery div.content section.row div.box:hover span {
 	background-image: url('./images/hover_image_gallery.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	z-index: 100;
 }
 
 div.gallery div.content section.row div.box.clmn2:hover span {
@@ -277,7 +274,6 @@ div.gallery div.content section.row div.box.clmn2:hover span {
 	background-image: url('./images/hover_image_gallery.png');
 	background-repeat: no-repeat;
 	background-position: center;
-	z-index: 100;
 }
 
 div.gallery div.content section.row div.box:hover img {
@@ -558,7 +554,6 @@ div.gallery div.content section.row article.box:hover span {
     background-image: url('./images/hover_image_gallery.png');
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 100;
 }
 
 div.gallery div.content section.row article.box:hover img {
