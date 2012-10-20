@@ -781,6 +781,33 @@ div.blog div.content section.rightside div.recentpost ul li a {
 }
 
 div.blog div.content section.rightside div.recentpost ul li a:hover {
+<<<<<<< HEAD
+=======
+	color: #fff;
+	background-color: #121212;
+}
+
+div.blog div.content section.rightside div.recentcomment ul li {
+	font: normal 13px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	line-height: 18px;
+	color: #D2D2D2;
+	padding: 8px 0 8px 24px;
+	background: url('./images/widget-comments.png') no-repeat -3px center;
+	border-bottom: 1px solid #343434;
+}
+
+div.blog div.content section.rightside div.recentcomment ul li:first-child {
+	border-top: 1px solid #343434;
+}
+
+
+div.blog div.content section.rightside div.recentcomment ul li a {
+	color: #D2D2D2;
+	text-decoration: none;
+}
+
+div.blog div.content section.rightside div.recentcomment ul li a:hover {
+>>>>>>> origin/master
 	color: #fff;
 	background-color: #121212;
 }
