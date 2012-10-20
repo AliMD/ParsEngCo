@@ -635,7 +635,7 @@ div.blog header h2 span {
 	-webkit-transform: rotate(15deg);
 }
 
-div.blog div.content section.blogs article.news h3 a{
+div.blog div.content section.blogs article.post h3 a{
 	font-size: 18px;
 	font-weight: bold;
 	color: #fff;
@@ -643,14 +643,14 @@ div.blog div.content section.blogs article.news h3 a{
 	text-decoration: none;	
 }
 
-div.blog div.content section.blogs article.news div.header {
+div.blog div.content section.blogs article.post div.header {
 	border-top: 1px solid #343434;
 	border-bottom: 1px solid #343434;
 	padding: 7px 20px;
 	line-height: 14px;
 }
 
-div.blog div.content section.blogs article.news div.header span.date {
+div.blog div.content section.blogs article.post div.header span.date {
 	display: block;
 	font-size: 13px;
 	font-weight: normal;
@@ -659,12 +659,12 @@ div.blog div.content section.blogs article.news div.header span.date {
 	padding-left: 20px;
 }
 
-div.blog div.content section.blogs article.news div.header span.comments {
+div.blog div.content section.blogs article.post div.header span.comments {
 	display: block;
 	padding-left: 250px;
 }
 
-div.blog div.content section.blogs article.news div.header span.comments a {
+div.blog div.content section.blogs article.post div.header span.comments a {
 	display: block;
 	font-size: 13px;
 	font-weight: normal;
@@ -674,27 +674,130 @@ div.blog div.content section.blogs article.news div.header span.comments a {
 	background: url('./images/comment.png') no-repeat left ;
 }
 
-div.blog div.content section.blogs article.news div.header span.comments a:hover {
+div.blog div.content section.blogs article.post div.header span.comments a:hover {
 	color: #fff;
 }
  
-div.blog div.content section.blogs article.news a {
+div.blog div.content section.blogs article.post a img {
 	max-width: 390px;
+	opacity: 0.8;
 }
 
-div.blog div.content section.blogs article.news p {
+
+div.blog div.content section.blogs article.post a img:hover {
+	opacity: 1;
+}
+
+div.blog div.content section.blogs article.post p {
 	padding-top: 10px;
 	color: #CCC;
 	font: normal 12px Verdana, Arial, sans-serif;
 	line-height: 20px;
 }
 
-div.blog div.content section.blogs article.news p a {
+div.blog div.content section.blogs article.post p a {
 	text-decoration: none;
 	color: #ddd;
 	padding-left: 2px;
 }
 
-div.blog div.content section.blogs article.news p a:hover {
+div.blog div.content section.blogs article.post p a:hover {
+	color: #fff;
+}
+
+div.blog div.content section.rightside div.searchbar input.inputtext {
+	width: 120px;
+	margin-left: 20px;
+	color: #eee;
+	background-color: #1b1b1b;
+	border: 1px solid #333; 
+	border-radius: 3px;
+}
+
+div.blog div.content section.rightside div.searchbar input.inputtext:focus {
+	background-color: #444;
+	color: #fff;
+}
+
+div.blog div.content section.rightside div.searchbar input.btn {
+	color: #eee;
+	border:  1px solid #333;
+	border-radius: 3px;
+	padding:2px 5px;
+	background-color: gray;
+	background: gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#666', endColorstr='#333')";
+	background: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
+}
+
+div.blog div.content section.rightside div.searchbar input.btn:hover {
+	background-color: #ccc;
+	background: gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#666')";
+	background: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
+}
+
+div.blog div.content section.rightside div.recentpost h3,
+div.blog div.content section.rightside div.recentcomment h3 {
+	font: bold 17px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	color: #fff;
+	text-transform: capitalize;
+	padding-bottom: 25px;
+	line-height: 20px;
+}
+
+div.blog div.content section.rightside div.recentpost ul li {
+	border-bottom: 1px solid #343434;
+}
+
+/*div.blog div.content section.rightside div.recentpost ul li:hover {
+	border-style: dashed;
+}*/
+
+div.blog div.content section.rightside div.recentpost ul li:first-child {
+	border-top: 1px solid #343434;
+}
+
+div.blog div.content section.rightside div.recentpost ul li a {
+	display: block;
+	font: normal 13px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	line-height: 18px;
+	text-decoration: none;
+	color: #D2D2D2;
+	background: url('./images/posts.png') no-repeat -3px center;
+	padding:5px 0 5px 22px;
+}
+
+div.blog div.content section.rightside div.recentpost ul li a:hover {
+	color: #fff;
+	background-color: #121212;
+}
+
+div.blog div.content section.rightside div.recentcomment ul li {
+	font: normal 13px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	line-height: 18px;
+	color: #D2D2D2;
+	padding: 8px 0 8px 24px;
+	background: url('./images/widget-comments.png') no-repeat -3px center;
+	border-bottom: 1px solid #343434;
+}
+
+div.blog div.content section.rightside div.recentcomment ul li:first-child {
+	border-top: 1px solid #343434;
+}
+
+
+div.blog div.content section.rightside div.recentcomment ul li a {
+	color: #D2D2D2;
+	text-decoration: none;
+}
+
+div.blog div.content section.rightside div.recentcomment ul li a:hover {
 	color: #fff;
 }
