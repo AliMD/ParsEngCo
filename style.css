@@ -241,7 +241,6 @@ div.blog {
 
 div.gallery header.head h2 {
 	font-size: 30px;
-	font-weight: normal;
 	text-transform: uppercase;
 }
 
@@ -373,7 +372,6 @@ footer.footers div.copyright {
 /*-----Contact Us Page-----*/
 div.contact-us header.head h2 {
 	font-size: 30px;
-	font-style: bold;
 	text-transform: uppercase;
 }
 
@@ -622,9 +620,9 @@ div.gallery div.content article.box a.readmore:hover {
 }
 
 /*--------- Blog page ------------*/
-div.blog header h2 {
-	font: normal 25px Verdana, Arial, sans-serif;
-	text-transform: uppercase;	
+div.blog header.head h2 {
+	font-size: 30px;
+	text-transform: uppercase;
 }
 
 div.blog header h2 span {
@@ -781,8 +779,6 @@ div.blog div.content section.rightside div.recentpost ul li a {
 }
 
 div.blog div.content section.rightside div.recentpost ul li a:hover {
-<<<<<<< HEAD
-=======
 	color: #fff;
 	background-color: #121212;
 }
@@ -807,7 +803,6 @@ div.blog div.content section.rightside div.recentcomment ul li a {
 }
 
 div.blog div.content section.rightside div.recentcomment ul li a:hover {
->>>>>>> origin/master
 	color: #fff;
 	background-color: #121212;
 }
