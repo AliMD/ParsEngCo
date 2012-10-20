@@ -230,8 +230,10 @@ div.menu_wrap div.hide img {
 
 /*----- Gallery col2 & col3 Page -----*/
 div.gallery,
-div.contact-us {
+div.contact-us,
+div.blog {
 	width: 700px;
+	background-color: #000;  /* using in IE */
 	background-color: rgba(0,0,0,0.9);
 	color: #fff;
 	border: 1px solid #343434;
