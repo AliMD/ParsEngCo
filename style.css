@@ -620,3 +620,81 @@ div.gallery div.content article.box a.readmore:hover {
 	background: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
 	background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
 }
+
+/*--------- Blog page ------------*/
+div.blog header h2 {
+	font: normal 25px Verdana, Arial, sans-serif;
+	text-transform: uppercase;	
+}
+
+div.blog header h2 span {
+	display:block;
+	position: absolute;
+	top: 32px;
+	left: 335px;
+	-webkit-transform: rotate(15deg);
+}
+
+div.blog div.content section.blogs article.news h3 a{
+	font-size: 18px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: capitalize;
+	text-decoration: none;	
+}
+
+div.blog div.content section.blogs article.news div.header {
+	border-top: 1px solid #343434;
+	border-bottom: 1px solid #343434;
+	padding: 7px 20px;
+	line-height: 14px;
+}
+
+div.blog div.content section.blogs article.news div.header span.date {
+	display: block;
+	font-size: 13px;
+	font-weight: normal;
+	color: #9e9e9e;
+	background: url('./images/calendar.png') no-repeat left ;
+	padding-left: 20px;
+}
+
+div.blog div.content section.blogs article.news div.header span.comments {
+	display: block;
+	padding-left: 250px;
+}
+
+div.blog div.content section.blogs article.news div.header span.comments a {
+	display: block;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #9e9e9e;
+	padding-left: 20px;
+	background: url('./images/comment.png') no-repeat left ;
+}
+
+div.blog div.content section.blogs article.news div.header span.comments a:hover {
+	color: #fff;
+}
+ 
+div.blog div.content section.blogs article.news a {
+	max-width: 390px;
+}
+
+div.blog div.content section.blogs article.news p {
+	padding-top: 10px;
+	color: #CCC;
+	font: normal 12px Verdana, Arial, sans-serif;
+	line-height: 20px;
+}
+
+div.blog div.content section.blogs article.news p a {
+	text-decoration: none;
+	color: #ddd;
+	padding-left: 2px;
+}
+
+div.blog div.content section.blogs article.news p a:hover {
+	color: #fff;
+}
