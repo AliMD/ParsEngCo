@@ -977,6 +977,12 @@ div.galleria div.content .step8 section.slideshow > menu > li.pic8 {
 	background-color: #121212;
 }
 
+div.galleria div.content section.text p {
+	color: #ccc;
+	font: normal 12px Verdana, Arial, sans-serif;
+	line-height: 20px;
+}
+
 /*---------- sample page ----------*/
 div.sample div.content p {
 	padding-top: 20px;
