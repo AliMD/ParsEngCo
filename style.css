@@ -169,7 +169,7 @@ div.menu li menu {
 	display: none;
 	padding: 0px 7px;
 	background-color: #000;
-	opacity: 0.9;
+	opacity: 0.95;
 	border: 1px solid #343434;
 }
 
@@ -249,22 +249,12 @@ div.gallery div.content section.row div.box {
 	width: 196px;
 	min-height: 145px;	
 	position: relative;
-	transition: opacity 800ms;
-	-webkit-transition: opacity 800ms;
-	-moz-transition: opacity 800ms;
-	-ms-transition: opacity 800ms;
-	-o-transition: opacity 800ms;
 }
 
 div.gallery div.content section.row div.box.clmn2 {
 	width: 295px;
 	min-height: 215px;	
 	position: relative;
-	transition: opacity 800ms;
-	-webkit-transition: opacity 800ms;
-	-moz-transition: opacity 800ms;
-	-ms-transition: opacity 800ms;
-	-o-transition: opacity 800ms;
 }
 
 div.gallery div.content section.row div.box a {
@@ -275,12 +265,17 @@ div.gallery div.content section.row div.box img {
 	display: block;
 }
 
-div.gallery div.content section.row div.box:hover {
+div.gallery div.content section.row div.box a:hover img {
 	background-color: #000;
 	opacity: 0.3;
+	transition: opacity 800ms;
+	-webkit-transition: opacity 800ms;
+	-moz-transition: opacity 800ms;
+	-ms-transition: opacity 800ms;
+	-o-transition: opacity 800ms;
 }
 
-div.gallery div.content section.row div.box:hover span {
+div.gallery div.content section.row div.box a:hover span {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -292,7 +287,7 @@ div.gallery div.content section.row div.box:hover span {
 	background-position: center;
 }
 
-div.gallery div.content section.row div.box.clmn2:hover span {
+div.gallery div.content section.row div.box.clmn2 a:hover span {
 	display: block;
 	position: absolute;
 	top: 0;
@@ -304,7 +299,7 @@ div.gallery div.content section.row div.box.clmn2:hover span {
 	background-position: center;
 }
 
-div.gallery div.content section.row div.box:hover img {
+div.gallery div.content section.row div.box a:hover img {
 	box-shadow: -1px 1px 10px 1px #ccc;
 }
 
@@ -547,11 +542,6 @@ div.gallery div.content section.row article.box {
 	width: 290px;
 	min-height: 210px;    
 	position: relative;
-	transition: opacity 800ms;
-	-webkit-transition: opacity 800ms;
-	-moz-transition: opacity 800ms;
-	-ms-transition: opacity 800ms;
-	-o-transition: opacity 800ms;
 }
 
 div.gallery div.content section.row article.box h3 {
@@ -574,6 +564,11 @@ div.gallery div.content section.row article.box a:hover img {
 	background-color: #000;
 	opacity: 0.3;
 	box-shadow: -1px 1px 10px 1px #ccc;
+	transition: opacity 800ms;
+	-webkit-transition: opacity 800ms;
+	-moz-transition: opacity 800ms;
+	-ms-transition: opacity 800ms;
+	-o-transition: opacity 800ms;
 }
 
 div.gallery div.content section.row article.box a:hover span {
@@ -582,7 +577,7 @@ div.gallery div.content section.row article.box a:hover span {
 	top: 0;
 	left: 0;
 	width: 290px;
-	height: 210px;
+	height: 260px;
 	background-image: url('./images/hover_image_gallery.png');
 	background-repeat: no-repeat;
 	background-position: center;
@@ -868,3 +863,21 @@ div.galleria div.content section.slideshow ul.train li {
 	background-position: center center;
 	background-size: cover;
 }
+
+/*---------- sample page ----------*/
+div.sample div.content p {
+	padding-top: 20px;
+	color: #CCC;
+	font: normal 12px Verdana, Arial, sans-serif;
+	line-height: 20px;
+}
+
+div.sample div.content h1 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 50px;
+	color: #fff;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
