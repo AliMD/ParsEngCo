@@ -859,11 +859,12 @@ div.galleria div.content section.slideshow ul.train li {
 	top: 0;
 	left: 0;
 	z-index: 1;
+	background-color: #121212;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 	opacity:0;
-	-webkit-transform: scale(0.95);
+	-webkit-transform: scale(0.98);
 	-webkit-transition: all 800ms ease-out;
 }
 
@@ -872,14 +873,14 @@ div.galleria div.content section.slideshow menu {
 	top: 100%;
 	left: 0;
 	z-index: 1;
-	margin-top: 10px;
+	padding-top: 10px;
 }
 
 div.galleria div.content section.slideshow menu li {
 	float: left;
 	cursor: pointer;
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 60px;
 	margin-right: 5px;
 	opacity: 0.8;
 	border: 1px solid #343434;
@@ -887,6 +888,77 @@ div.galleria div.content section.slideshow menu li {
 
 div.galleria div.content section.slideshow menu li:hover {
 	opacity: 1;
+	background-color: #121212;
+}
+
+div.galleria div.content .step1 section.slideshow > ul.train > li.pic1 {
+	-webkit-transform: scale(1);
+	opacity: 1;
+}
+
+div.galleria div.content .step1 section.slideshow > menu > li.pic1 {
+	opacity: 1;
+	background-color: #121212;
+}
+
+div.galleria div.content .step2 section.slideshow > ul.train > li.pic2 {
+	-webkit-transform: scale(1);
+	opacity: 1;
+}
+
+div.galleria div.content .step2 section.slideshow > menu > li.pic2 {
+	opacity: 1;
+	background-color: #121212;
+}
+
+div.galleria div.content .step3 section.slideshow > ul.train > li.pic3 {
+	-webkit-transform: scale(1);
+	opacity: 1;
+}
+
+div.galleria div.content .step3 section.slideshow > menu > li.pic3 {
+	opacity: 1;
+	background-color: #121212;
+}
+
+div.galleria div.content .step4 section.slideshow > ul.train > li.pic4 {
+	-webkit-transform: scale(1);
+	opacity: 1;
+}
+
+div.galleria div.content .step4 section.slideshow > menu > li.pic4 {
+	opacity: 1;
+	background-color: #121212;
+}
+
+div.galleria div.content .step5 section.slideshow > ul.train > li.pic5 {
+	-webkit-transform: scale(1);
+	opacity: 1;
+}
+
+div.galleria div.content .step5 section.slideshow > menu > li.pic5 {
+	opacity: 1;
+	background-color: #121212;
+}
+
+div.galleria div.content .step6 section.slideshow > ul.train > li.pic6 {
+	-webkit-transform: scale(1);
+	opacity: 1;
+}
+
+div.galleria div.content .step6 section.slideshow > menu > li.pic6 {
+	opacity: 1;
+	background-color: #121212;
+}
+
+div.galleria div.content .step7 section.slideshow > ul.train > li.pic7 {
+	-webkit-transform: scale(1);
+	opacity: 1;
+}
+
+div.galleria div.content .step7 section.slideshow > menu > li.pic7 {
+	opacity: 1;
+	background-color: #121212;
 }
 
 /*---------- sample page ----------*/
