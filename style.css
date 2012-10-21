@@ -282,7 +282,7 @@ div.gallery div.content section.row div.box a:hover span {
 	left: 0;
 	width: 196px;
 	height: 145px;
-	background-image: url('./images/hover_image_gallery.png');
+	background-image: url('./images/hover3_image_gallery.png');
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -294,7 +294,7 @@ div.gallery div.content section.row div.box.clmn2 a:hover span {
 	left: 0;
 	width: 295px;
 	height: 215px;
-	background-image: url('./images/hover_image_gallery.png');
+	background-image: url('./images/hover2_image_gallery.png');
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -544,6 +544,13 @@ div.gallery div.content section.row article.box {
 	position: relative;
 }
 
+div.gallery div.content section.row article.box.col2 {
+	width: 196px;
+	min-height: 145px;    
+	position: relative;
+	background-color yellow;
+}
+
 div.gallery div.content section.row article.box h3 {
 	display: block;
 	font-size: 18px;
@@ -578,7 +585,20 @@ div.gallery div.content section.row article.box a:hover span {
 	left: 0;
 	width: 290px;
 	height: 260px;
-	background-image: url('./images/hover_image_gallery.png');
+	background-image: url('./images/hover2_image_gallery.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 100;
+}
+
+div.gallery div.content section.row article.box.col2 a:hover span {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 196px;
+	height: 200px;
+	background-image: url('./images/hover3_image_gallery.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	z-index: 100;
