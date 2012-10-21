@@ -847,3 +847,21 @@ div.galleria header h2 {
 	font-size: 30px;
 	text-transform: uppercase;
 }
+
+/*---------- sample page ----------*/
+div.sample div.content p {
+	padding-top: 20px;
+	color: #CCC;
+	font: normal 12px Verdana, Arial, sans-serif;
+	line-height: 20px;
+}
+
+div.sample div.content h1 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 50px;
+	color: #fff;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
