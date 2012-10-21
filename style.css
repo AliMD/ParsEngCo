@@ -852,3 +852,19 @@ div.galleria header h2 {
 	font-size: 30px;
 	text-transform: uppercase;
 }
+
+div.galleria div.content section.slideshow {
+	width: 600px;
+}
+
+div.galleria div.content section.slideshow ul.train li {
+	width: 600px;
+	height: 390px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
