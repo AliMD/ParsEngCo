@@ -873,17 +873,23 @@ div.galleria div.content section.slideshow menu {
 	top: 100%;
 	left: 0;
 	z-index: 1;
-	padding-top: 10px;
+	padding-top: 25px;
 }
 
 div.galleria div.content section.slideshow menu li {
 	float: left;
 	cursor: pointer;
 	width: 60px;
-	height: 60px;
+	height: 39px;
 	margin-right: 5px;
-	opacity: 0.8;
+	opacity: 0.4;
 	border: 1px solid #343434;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+div.galleria div.content section.slideshow menu li:first-child {
+	margin-left: 20px;
 }
 
 div.galleria div.content section.slideshow menu li:hover {
@@ -957,6 +963,16 @@ div.galleria div.content .step7 section.slideshow > ul.train > li.pic7 {
 }
 
 div.galleria div.content .step7 section.slideshow > menu > li.pic7 {
+	opacity: 1;
+	background-color: #121212;
+}
+
+div.galleria div.content .step8 section.slideshow > ul.train > li.pic8 {
+	-webkit-transform: scale(1);
+	opacity: 1;
+}
+
+div.galleria div.content .step8 section.slideshow > menu > li.pic8 {
 	opacity: 1;
 	background-color: #121212;
 }
