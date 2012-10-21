@@ -862,6 +862,31 @@ div.galleria div.content section.slideshow ul.train li {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	opacity:0;
+	-webkit-transform: scale(0.95);
+	-webkit-transition: all 800ms ease-out;
+}
+
+div.galleria div.content section.slideshow menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+	margin-top: 10px;
+}
+
+div.galleria div.content section.slideshow menu li {
+	float: left;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+	opacity: 0.8;
+	border: 1px solid #343434;
+}
+
+div.galleria div.content section.slideshow menu li:hover {
+	opacity: 1;
 }
 
 /*---------- sample page ----------*/
