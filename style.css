@@ -229,9 +229,10 @@ div.menu_wrap div.hide img {
 }
 
 /*----- Gallery col2 & col3 Page -----*/
-div.gallery,
+div.gallery,   /* background form in diferent page */
 div.contact-us,
-div.blog {
+div.blog,
+div.galleria {
 	width: 700px;
 	background-color: #000;  /* using in IE */
 	background-color: rgba(0,0,0,0.9);
@@ -839,4 +840,10 @@ div.blog div.content section.rightside div.archive ul li a:hover,
 div.blog div.content section.rightside div.category ul li a:hover {
 	color: #fff;
 	background-color: #121212;
+}
+
+/*--------- galleria page ------------*/
+div.galleria header h2 {
+	font-size: 30px;
+	text-transform: uppercase;
 }
