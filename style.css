@@ -128,10 +128,6 @@ div.menu nav > menu > li:first-child {
 	border-top: 1px solid #343434;
 }
 
-div.menu nav > menu > li:first-child a {
-	color: #fff;
-}
-
 div.menu nav > menu > li > a {
 	display: block;
 	padding: 16px 10px 10px;
