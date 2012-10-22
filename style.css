@@ -734,6 +734,39 @@ div.blog div.content section.rightside div.searchbar input.inputtext:focus {
 	color: #fff;
 }
 
+/*----- Password Protected page -----*/
+div.blog div.content section.pass div.passbar input.inputpass {
+	width: 150px;
+	color: #eee;
+	background-color: #1b1b1b;
+	border: 1px solid #333; 
+	border-radius: 3px;
+}
+
+div.blog div.content section.pass div.passbar input.inputpass:focus {
+	background-color: #444;
+	color: #fff;
+}
+
+div.blog div.content section.pass h3 {
+	margin-bottom: 30px;
+	color: #ccc;
+	font: bold 12px Verdana, Arial, sans-serif;
+}
+
+div.blog div.content section.pass h4 {
+	font: bold 14px Verdana, Arial, sans-serif;
+	margin-bottom: 10px;
+	text-transform: capitalize;
+}
+
+div.blog div.content section.pass p {
+	margin-bottom: 30px;
+	color: #ccc;
+	font: normal 12px Verdana, Arial, sans-serif;
+}
+/*----- end pass protected page -----*/
+
 div.blog div.content section.rightside div.searchbar input.btn {
 	color: #eee;
 	border:  1px solid #333;
