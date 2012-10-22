@@ -232,7 +232,8 @@ div.menu_wrap div.hide img {
 div.gallery,   /* background form in diferent page */
 div.contact-us,
 div.blog,
-div.galleria {
+div.galleria,
+div.sliderview {
 	width: 700px;
 	background-color: #000;  /* using in IE */
 	background-color: rgba(0,0,0,0.9);
@@ -895,7 +896,7 @@ div.blog div.content section.rightside div.category ul li a:hover {
 	background-color: #121212;
 }
 
-/*--------- galleria page ------------*/
+/*--------- galleria page  ------------*/
 div.galleria header h2 {
 	font-size: 30px;
 	text-transform: uppercase;
@@ -1035,6 +1036,60 @@ div.galleria div.content section.text p {
 	font: normal 12px Verdana, Arial, sans-serif;
 	line-height: 20px;
 }
+
+/*---------- sliderview page -----------*/
+div.sliderview header h2 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+div.sliderview div.content section.slideshow {
+	width: 604px;
+	min-height: 420px;
+}
+
+div.sliderview div.content section.slideshow ul.train {
+	left:0;
+	top: 0;
+	-webkit-transition: left 800ms ease-out;
+}
+
+div.sliderview div.content section.slideshow ul.train li {
+	width: 600px;
+	height: 390px;
+	float: left;
+	margin:0 2px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+div.sliderview div.content section.slideshow menu {
+	position: absolute;
+	top: 93%;
+	left: 0;
+	z-index: 1;
+	padding-top: 5px;
+}
+
+div.sliderview div.content section.slideshow menu li {
+	float: left;
+	width: 20px;
+	cursor: pointer;
+	background-color: #262626;
+	font: bold 10px Verdana, Arial;
+	color: #fff;
+	text-align: center;
+	line-height: 20px;
+	margin-right: 1px;
+	border: 1px solid #343434;
+}
+
+div.sliderview div.content section.slideshow menu li:hover {
+	background-color: #fff;
+	color: #262626;
+}
+
 
 /*---------- sample page ----------*/
 div.sample div.content p {
