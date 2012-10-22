@@ -12,45 +12,45 @@ div.container {
 /*---------- Background Slider ----------*/
 div.noise {
 	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -1;
-	background-position: left top;
-	background-repeat: repeat;
-	/*background-image: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjRFQTAyRkM5MEI4MTExRTJBRDhBQjhEMjE2RTY4NkM5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjRFQTAyRkNBMEI4MTExRTJBRDhBQjhEMjE2RTY4NkM5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NEVBMDJGQzcwQjgxMTFFMkFEOEFCOEQyMTZFNjg2QzkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEVBMDJGQzgwQjgxMTFFMkFEOEFCOEQyMTZFNjg2QzkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5AHK43AAAAGUlEQVR42mJmYGBw+P///wNmEAHkMAAEGABJyggBddvkywAAAABJRU5ErkJggg==');*/
-	/*background-image: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI3Nzk1OUFEMEI4MTExRTJBOTU3ODg5RDdBQTI2N0ZEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI3Nzk1OUFFMEI4MTExRTJBOTU3ODg5RDdBQTI2N0ZEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Qjc3OTU5QUIwQjgxMTFFMkE5NTc4ODlEN0FBMjY3RkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Qjc3OTU5QUMwQjgxMTFFMkE5NTc4ODlEN0FBMjY3RkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5aJzp6AAAAGklEQVR42mL6//8/AwgDgQOcAaUhDBAGCDAAdJwSseFBkxUAAAAASUVORK5CYII='); */
-	background-image: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD9JREFUeNpiZGJi4mXAA5gZGRnZ2djYJIWFhVV+//7N+Pfv3y/IfCaQKgEBAXFcNFjBhw8fXuKiGQeBGwACDADX/jYJqLIeywAAAABJRU5ErkJggg==');
+	top 	: 0;
+	left 	: 0;
+	right 	: 0;
+	bottom 	: 0;
+	z-index	: -1;
+	background-position	: left top;
+	background-repeat	: repeat;
+	/*background-image: : url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjRFQTAyRkM5MEI4MTExRTJBRDhBQjhEMjE2RTY4NkM5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjRFQTAyRkNBMEI4MTExRTJBRDhBQjhEMjE2RTY4NkM5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NEVBMDJGQzcwQjgxMTFFMkFEOEFCOEQyMTZFNjg2QzkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEVBMDJGQzgwQjgxMTFFMkFEOEFCOEQyMTZFNjg2QzkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5AHK43AAAAGUlEQVR42mJmYGBw+P///wNmEAHkMAAEGABJyggBddvkywAAAABJRU5ErkJggg==');*/
+	/*background-image: : url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI3Nzk1OUFEMEI4MTExRTJBOTU3ODg5RDdBQTI2N0ZEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI3Nzk1OUFFMEI4MTExRTJBOTU3ODg5RDdBQTI2N0ZEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Qjc3OTU5QUIwQjgxMTFFMkE5NTc4ODlEN0FBMjY3RkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Qjc3OTU5QUMwQjgxMTFFMkE5NTc4ODlEN0FBMjY3RkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5aJzp6AAAAGklEQVR42mL6//8/AwgDgQOcAaUhDBAGCDAAdJwSseFBkxUAAAAASUVORK5CYII='); */
+	background-image	: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD9JREFUeNpiZGJi4mXAA5gZGRnZ2djYJIWFhVV+//7N+Pfv3y/IfCaQKgEBAXFcNFjBhw8fXuKiGQeBGwACDADX/jYJqLIeywAAAABJRU5ErkJggg==');
 }
 
 section.background div {
 	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: -2;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	top 	: 0;
+	left 	: 0;
+	right 	: 0;
+	bottom 	: 0;
+	z-index : -2;
+	background-position	: center center;
+	background-repeat	: no-repeat;
+	background-size		: cover;
 }
 
 /*---------- Menu Nav ----------*/
 div.menu_wrap {
 	position: fixed;
-	width: 240px;
-	transition: all 800ms ease-in-out;
-	-webkit-transition: all 800ms ease-in-out;
-	-moz-transition: all 800ms ease-in-out;
-	-ms-transition: all 800ms ease-in-out;
-	-o-transition: all 800ms ease-in-out;
+	width 	: 240px;
+	transition 			: all 800ms ease-in-out;
+	-webkit-transition	: all 800ms ease-in-out;
+	-moz-transition		: all 800ms ease-in-out;
+	-ms-transition		: all 800ms ease-in-out;
+	-o-transition		: all 800ms ease-in-out;
 }
 
 .open,
 .close {
 	position: fixed;
-	z-index: 100;
+	z-index	: 100;
 }
 
 .open .menu_wrap {
@@ -62,65 +62,65 @@ div.menu_wrap {
 }
 
 .close .menu_wrap div.hide a img {
-	transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-	transition: all 800ms ease-in-out;
-	-webkit-transition: all 800ms ease-in-out;
-	-moz-transition: all 800ms ease-in-out;
-	-ms-transition: all 800ms ease-in-out;
-	-o-transition: all 800ms ease-in-out;
+	transform 			: rotate(180deg);
+	-webkit-transform	: rotate(180deg);
+	-moz-transform		: rotate(180deg);
+	-ms-transform		: rotate(180deg);
+	-o-transform		: rotate(180deg);
+	transition 			: all 800ms ease-in-out;
+	-webkit-transition	: all 800ms ease-in-out;
+	-moz-transition		: all 800ms ease-in-out;
+	-ms-transition		: all 800ms ease-in-out;
+	-o-transition		: all 800ms ease-in-out;
 }
 
 .open .menu_wrap div.hide a img {
-	transform: rotate(0deg);
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transition: all 800ms ease-in-out;
-	-webkit-transition: all 800ms ease-in-out;
-	-moz-transition: all 800ms ease-in-out;
-	-ms-transition: all 800ms ease-in-out;
-	-o-transition: all 800ms ease-in-out;
+	transform 			: rotate(0deg);
+	-webkit-transform	: rotate(0deg);
+	-moz-transform		: rotate(0deg);
+	-ms-transform		: rotate(0deg);
+	-o-transform		: rotate(0deg);
+	transition 			: all 800ms ease-in-out;
+	-webkit-transition	: all 800ms ease-in-out;
+	-moz-transition		: all 800ms ease-in-out;
+	-ms-transition		: all 800ms ease-in-out;
+	-o-transition		: all 800ms ease-in-out;
 }
 
 div.menu_wrap div.menu {
-	background-image: url('./images/menu_back.png'); 
-	background-repeat: repeat-y;
-	background-position: top left;
-	min-height: 535px;
+	background-image	: url('./images/menu_back.png'); 
+	background-repeat	: repeat-y;
+	background-position	: top left;
+	min-height			: 535px;
 }
 
 div.menu div.logo h1 a {
-	display: block;
-	width: 230px;
-	height: 215px;
-	background-image: url('./images/swas.png');
-	background-repeat: no-repeat;
-	background-position: center 65px;
-	text-decoration: none;
+	display	: block;
+	width 	: 230px;
+	height 	: 215px;
+	background-image	: url('./images/swas.png');
+	background-repeat	: no-repeat;
+	background-position	: center 65px;
+	text-decoration		: none;
 	margin-left: 5px;
 }
 
 div.menu div.logo h1 a span {
-	display: block;
-	padding-top: 20px;
-	color: white;
-	text-transform: uppercase;
-	text-align: center;
-	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
-	font-size: 30px;
-	text-shadow: 1px 1px 1px #fff;
+	display		: block;
+	padding-top	: 20px;
+	color 		: white;
+	text-transform	: uppercase;
+	text-align		: center;
+	font-family		: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
+	font-size		: 30px;
+	text-shadow		: 1px 1px 1px #fff;
 }
 
 div.menu nav > menu > li {
-	position: relative;
-	line-height: 0;
-	font-weight: normal;
-	margin: 0 30px 0;
+	position 	: relative;
+	line-height	: 0;
+	font-weight	: normal;
+	margin 		: 0 30px 0;
 	border-bottom: 1px solid #343434;
 }	 
 
@@ -131,10 +131,10 @@ div.menu nav > menu > li:first-child {
 div.menu nav > menu > li > a {
 	display: block;
 	padding: 16px 10px 10px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
-	font-size: 17px;
+	text-decoration	: none;
+	text-transform	: uppercase;
+	font-family		: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
+	font-size		: 17px;
 	color: #ccc;
 }
 
@@ -143,17 +143,17 @@ div.menu nav menu > li:hover > a {
 }
 
 div.menu nav > menu > li:hover {
-	background-image: url("./images/menu_hover_arrow.png");
-	background-repeat: no-repeat;
-	background-position: right center;
+	background-image	: url("./images/menu_hover_arrow.png");
+	background-repeat	: no-repeat;
+	background-position	: right center;
 }
 
 div.menu nav menu li span {
-	display: block;
-	font: italic 10px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
-	text-transform: lowercase;
-	margin-top: 11px;
-	margin-left: 2px;
+	display	: block;
+	font 	: italic 10px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	text-transform	: lowercase;
+	margin-top		: 11px;
+	margin-left		: 2px;
 	color: #555;
 }
 
@@ -161,12 +161,12 @@ div.menu li menu {
 	position: absolute;
 	/*left: 220px;*/
 	left: 100%;
-	top: 0;
+	top : 0;
 	display: none;
 	padding: 0px 7px;
 	background-color: #000;
-	opacity: 0.95;
-	border: 1px solid #343434;
+	opacity			: 0.95;
+	border 			: 1px solid #343434;
 }
 
 div.menu li:hover > menu {
@@ -174,21 +174,21 @@ div.menu li:hover > menu {
 }
 
 div.menu li li {
-	line-height: 30px;
-	position: relative;
+	line-height	: 30px;
+	position 	: relative;
 }
 
 div.menu li li > a {
-	display: block;
-	min-width: 120px;
-	white-space: nowrap;
-	text-decoration: none;
-	text-transform: capitalize;
-	font-family: 'Helvetica Neue', Arial, sans-serif;
-	font-size: 12px;
-	color: #A3A3A3;
-	padding: 5px 5px 10px;
-	border-top: 1px solid #343434;
+	display		: block;
+	min-width	: 120px;
+	white-space	: nowrap;
+	text-decoration	: none;
+	text-transform	: capitalize;
+	font-family	: 'Helvetica Neue', Arial, sans-serif;
+	font-size	: 12px;
+	color 		: #A3A3A3;
+	padding 	: 5px 5px 10px;
+	border-top	: 1px solid #343434;
 }
 
 div.menu li li:first-child > a {
@@ -196,15 +196,15 @@ div.menu li li:first-child > a {
 }
 
 div.menu li li:hover {
-	background-image: url("./images/submenu_hover_arrow.png");
-	background-repeat: no-repeat;
-	background-position: right center;
+	background-image	: url("./images/submenu_hover_arrow.png");
+	background-repeat	: no-repeat;
+	background-position	: right center;
 }
 
 div.menu li menu li a img {
-	float: right;
+	float		: right;
 	margin-right: 5px;
-	opacity: 0;
+	opacity		: 0;
 }
 
 div.menu li menu li:hover > a img {
@@ -212,12 +212,12 @@ div.menu li menu li:hover > a img {
 }
 
 div.menu_wrap div.hide {
-	width: 240px;
-	height: 115px;
-	padding: 5px;
-	background-image: url('./images/hide_menu_back.png');
-	background-repeat: no-repeat;
-	background-position: left top;
+	width 	: 240px;
+	height 	: 115px;
+	padding : 5px;
+	background-image	: url('./images/hide_menu_back.png');
+	background-repeat	: no-repeat;
+	background-position	: left top;
 }
 
 div.menu_wrap div.hide img {
@@ -233,19 +233,19 @@ div.sliderview {
 	width: 700px;
 	background-color: #000;  /* using in IE */
 	background-color: rgba(0,0,0,0.9);
-	color: #fff;
+	color : #fff;
 	border: 1px solid #343434;
 }
 
 div.gallery header.head h2 {
-	font-size: 30px;
-	text-transform: uppercase;
+	font-size		: 30px;
+	text-transform	: uppercase;
 }
 
 div.gallery div.content section.row div.box {
-	width: 196px;
-	min-height: 145px;	
-	position: relative;
+	width 		: 196px;
+	min-height	: 145px;	
+	position 	: relative;
 }
 
 /*---------- Gallery: 2 Columns ----------*/
