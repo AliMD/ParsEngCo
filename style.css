@@ -1,4 +1,4 @@
-/* Omid GH & Yashar AMD */
+/*----- Omid GH & Yashar AMD -----*/
 
 div.container {
 	-webkit-transition: all 700ms;
@@ -9,7 +9,7 @@ div.container {
 	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 }
 
-/*-----Background Slider -----*/
+/*---------- Background Slider ----------*/
 div.noise {
 	position: fixed;
 	top: 0;
@@ -36,7 +36,7 @@ section.background div {
 	background-size: cover;
 }
 
-/*-----Menu Nav -----*/
+/*---------- Menu Nav ----------*/
 div.menu_wrap {
 	position: fixed;
 	width: 240px;
@@ -228,7 +228,7 @@ div.menu_wrap div.hide img {
 	margin-left: 90px;
 }
 
-/*----- Gallery col2 & col3 Page -----*/
+/*---------- Gallery col2 & col3 Page ----------*/
 div.gallery,   /* background form in diferent page */
 div.contact-us,
 div.blog,
@@ -252,11 +252,13 @@ div.gallery div.content section.row div.box {
 	position: relative;
 }
 
+/*---------- Gallery: 2 Columns ----------*/
 div.gallery div.content section.row div.box.clmn2 {
 	width: 295px;
 	min-height: 215px;	
 	position: relative;
 }
+/*---------- end gallery: 2 Col ----------*/
 
 div.gallery div.content section.row div.box a {
 	display: block;
@@ -288,6 +290,7 @@ div.gallery div.content section.row div.box a:hover span {
 	background-position: center;
 }
 
+/*---------- Gallery: 2 Columns ----------*/
 div.gallery div.content section.row div.box.clmn2 a:hover span {
 	display: block;
 	position: absolute;
@@ -299,6 +302,7 @@ div.gallery div.content section.row div.box.clmn2 a:hover span {
 	background-repeat: no-repeat;
 	background-position: center;
 }
+/*---------- end gallery: 2 Col ----------*/
 
 div.gallery div.content section.row div.box a:hover img {
 	box-shadow: -1px 1px 10px 1px #ccc;
@@ -366,7 +370,7 @@ footer.footers div.copyright {
 	line-height: 35px;
 }
 
-/*-----Contact Us Page-----*/
+/*---------- Contact Us Page ----------*/
 div.contact-us header.head h2 {
 	font-size: 30px;
 	text-transform: uppercase;
@@ -453,7 +457,7 @@ div.contact-us div.content section.info iframe:hover {
 	opacity: 1;
 }
 
-/*----- Social Networks -----*/
+/*---------- Social Networks ----------*/
 div.social ul li {
 	float: left;
 	padding-left: 8px;
@@ -538,19 +542,20 @@ div.social ul li a.rss:hover {
 	background: url('./images/social-icons.png') -286px -45px;
 }
 
-/*--------- Portfolio Model page ------------*/
+/*---------- Portfolio col2 & col3 page ----------*/
 div.gallery div.content section.row article.box {
 	width: 290px;
 	min-height: 210px;    
 	position: relative;
 }
 
+/*---------- Portfolio: 3 Columns ----------*/
 div.gallery div.content section.row article.box.col2 {
 	width: 196px;
 	min-height: 145px;    
 	position: relative;
-	background-color yellow;
 }
+/*---------- end portfolio: 3 col ----------*/
 
 div.gallery div.content section.row article.box h3 {
 	display: block;
@@ -592,6 +597,7 @@ div.gallery div.content section.row article.box a:hover span {
 	z-index: 100;
 }
 
+/*---------- Portfolio: 3 Columns ----------*/
 div.gallery div.content section.row article.box.col2 a:hover span {
 	display: block;
 	position: absolute;
@@ -604,6 +610,7 @@ div.gallery div.content section.row article.box.col2 a:hover span {
 	background-position: center;
 	z-index: 100;
 }
+/*---------- end portfolio: 3 col ----------*/
 
 div.gallery div.content article.box p {
 	display: block;
@@ -636,7 +643,7 @@ div.gallery div.content article.box a.readmore:hover {
 	background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
 }
 
-/*--------- Blog page ------------*/
+/*---------- Blog page ----------*/
 div.blog header.head h2 {
 	font-size: 30px;
 	text-transform: uppercase;
@@ -734,7 +741,7 @@ div.blog div.content section.rightside div.searchbar input.inputtext:focus {
 	color: #fff;
 }
 
-/*----- Password Protected page -----*/
+/*---------- Password Protected page ----------*/
 div.blog div.content section.pass div.passbar input.inputpass {
 	width: 150px;
 	color: #eee;
@@ -765,7 +772,7 @@ div.blog div.content section.pass p {
 	color: #ccc;
 	font: normal 12px Verdana, Arial, sans-serif;
 }
-/*----- end pass protected page -----*/
+/*---------- end pass protected page ----------*/
 
 div.blog div.content section.rightside div.searchbar input.btn {
 	color: #eee;
@@ -896,7 +903,7 @@ div.blog div.content section.rightside div.category ul li a:hover {
 	background-color: #121212;
 }
 
-/*--------- galleria page  ------------*/
+/*---------- Galleria Page ----------*/
 div.galleria header h2 {
 	font-size: 30px;
 	text-transform: uppercase;
@@ -1037,7 +1044,7 @@ div.galleria div.content section.text p {
 	line-height: 20px;
 }
 
-/*---------- sliderview page -----------*/
+/*---------- Sliderview Page ----------*/
 div.sliderview header h2 {
 	font-size: 30px;
 	text-transform: uppercase;
@@ -1090,8 +1097,7 @@ div.sliderview div.content section.slideshow menu li:hover {
 	color: #262626;
 }
 
-
-/*---------- sample page ----------*/
+/*---------- Sample Page ----------*/
 div.sample div.content p {
 	padding-top: 20px;
 	color: #CCC;
@@ -1107,4 +1113,5 @@ div.sample div.content h1 {
 	text-transform: capitalize;
 	text-decoration: none;
 }
+/*---------- *** ----------*/
 
