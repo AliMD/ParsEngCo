@@ -233,8 +233,10 @@
 				</section>
 				<section class="w6 mh5 mla rightside">
 					<div class="mh2 pb3 searchbar">
-						<input type="search" name="txt_search" class="inputtext" placeholder='Search...' />
-						<input type="submit" name="btn_search" class="btn" value='Search' />
+						<form metod='get' action='http://google.com/search' >
+							<input type="search" name="q" class="inputtext" placeholder='Search...' />
+							<input type="submit" name="btn_search" class="btn" value='Search' />
+						</form>
 					</div>
 					<div class="pl1 pb5 recentpost">
 						<h3>recent posts</h3>
