@@ -1,26 +1,26 @@
 <div class="content_wrap contact-us">
 	<header class="mh3 mt3 mr1 pb5 head">
-		<h2>contact us</h2>
+		<h2>تماس با ما</h2>
 	</header>
 	<div class="pl1 pr1 pb5 content cover">
 		<section class="w9 mh10 pr1 left form">
 			<form action="">
-				<abbr title="Name">
-					<input type="text" name="Name" placeholder='Name' />
+				<abbr title="نام">
+					<input type="text" name="Name" placeholder='نام' />
 				</abbr>
-				<abbr title="Email">
-					<input type="email" name="usremail" placeholder='E-mail' />
+				<abbr title="آدرس پست الکنرونیکی">
+					<input type="email" name="usremail" placeholder='آدرس پست الکنرونیکی' />
 				</abbr>
-				<abbr title="Message">
-					<textarea name="Message" id="Message" cols="30" rows="10" placeholder='Message'></textarea>
+				<abbr title="متن پیام">
+					<textarea name="Message" id="Message" cols="30" rows="10" placeholder='متن پیام'></textarea>
 				</abbr>
-				<abbr title="Submit">
-					<input class="font btn_submit " id='btn_submit' type="submit" value="Send Message" />
+				<abbr title="ارسال">
+					<input class="font btn_submit " id='btn_submit' type="submit" value="ارسال" />
 				</abbr>
 			</form>
 		</section>
 		<section class="w7 mh10 mla info">
-			<h3 class='pb2 font'>get in touch with us!</h3>
+			<h3 class='pb2 font'>راههای تماس با ما!</h3>
 			<ul class='pb2'>
 				<li style="background:url('./images/icons/phone_Android.png') no-repeat right 9px ">98-555-666-7777</li>
 				<li style="background:url('./images/icons/fax.png') no-repeat right 9px ">98-555-666-7777</li>
