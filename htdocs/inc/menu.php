@@ -12,32 +12,32 @@
 			<menu>
 				<li>
 					<a href="./">
-						home
-						<span>back to home page</span>
+						خانه
+						<span>بازگشت به خانه</span>
 					</a>
 				</li>
 				<li>
 					<a href="./about-us">
-						about us
-						<span>what we do</span>
+						درباره ما
+						<span>چه می کنیم</span>
 					</a>
 				</li>
 				<li>
 					<a href="./products">
-						products
-						<span>show casing our work</span>
+						محصولات
+						<span>نمایش کارهای ما</span>
 					</a>
 				</li>
 				<li>
 					<a href="./projects">
-						projects
-						<span>latest projects</span>
+						پروژه ها
+						<span>آخرین پروژه ها</span>
 					</a>
 				</li>
 				<li>
 					<a href="./contact-us">
-						contact us
-						<span>get in touch</span>
+						تماس با ما
+						<span>راههای تماس</span>
 					</a>
 				</li>
 			</menu>	
