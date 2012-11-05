@@ -29,20 +29,7 @@
 			</p>
 		</div>
 		<footer class="pr1 pl1 mh8 cover footers">
-			<section class="mh3 mt1 pb2 cover">
-				<div class="w5 left copyright">
-					<span>© 2012 1Devs Team</span>
-				</div>
-				<div class="w10 mla social">
-					<ul class="pl1">
-						<li><abbr title="Facebook"><a class='fb' href="http://www.facebook.com" target="_blank"></a></abbr></li>
-						<li><abbr title="Twitter"><a class='tw' href="https://twitter.com" target="_blank"></a></abbr></li>
-						<li><abbr title="LinkedIn"><a class='in' href="http://www.linkedin.com" target="_blank"></a></abbr></li>
-						<li><abbr title="Picasa"><a class='picasa' href="http://picasa.google.com" target="_blank"></a></abbr></li>
-						<li><abbr title="Google Plus"><a class='google' href="https://plus.google.com" target="_blank"></a></abbr></li>
-					</ul>
-				</div>
-			</section>
+			<?php include 'inc/copy-right.php'; ?>
 		</footer>
 	</div>
 </div>
