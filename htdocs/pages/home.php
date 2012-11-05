@@ -1,7 +1,6 @@
 <?php include './inc/header.php'; ?>
 <?php include './inc/menu.php'; ?>
 
-
 <section class="slideshow">
 	<div class="noise"></div>
 	<section class="background">
