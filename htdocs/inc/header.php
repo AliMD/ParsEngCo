@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="fa-IR" dir="rtl">
 <head>
 	<meta charset="UTF-8" />
 	<title>Pars Engineering Co. | <?php echo $title ?></title>

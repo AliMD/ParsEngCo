@@ -1,4 +1,4 @@
-<div class="mh10 mla font gallery">
+<div class="content_wrap gallery">
 	<header class="mh3 mt3 ml1 head">
 		<h2>portfolios: 2 columns</h2>
 	</header>

@@ -1,4 +1,4 @@
-<div class="mh10 mla font gallery sample">
+<div class="content_wrap about">
 	<header class="mh3 mt3 ml1 head">
 		<h2>typography</h2>
 	</header>

@@ -1,4 +1,4 @@
-<div class="mh10 mla font contact-us">
+<div class="content_wrap contact-us">
 	<header class="mh3 mt3 ml1 pb5 head">
 		<h2>contact us</h2>
 	</header>
