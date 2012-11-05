@@ -502,40 +502,13 @@ div.social ul li a.picasa:hover {
 	background: url('./images/social-icons.png') -126px -45px;
 }
 
-div.social ul li a.github {
+div.social ul li a.google {
 	background 			: url('./images/social-icons.png') -166px -6px;
 	background-repeat	: no-repeat;
 }
 
-div.social ul li a.github:hover {
+div.social ul li a.google:hover {
 	background: url('./images/social-icons.png') -166px -45px;
-}
-
-div.social ul li a.skype {
-	background 			: url('./images/social-icons.png') -206px -6px;
-	background-repeat	: no-repeat;
-}
-
-div.social ul li a.skype:hover {
-	background: url('./images/social-icons.png') -206px -45px;
-}
-
-div.social ul li a.yt {
-	background 			: url('./images/social-icons.png') -246px -6px;
-	background-repeat	: no-repeat;
-}
-
-div.social ul li a.yt:hover {
-	background: url('./images/social-icons.png') -246px -45px;
-}
-
-div.social ul li a.rss {
-	background 			: url('./images/social-icons.png') -286px -6px;
-	background-repeat	: no-repeat;
-}
-
-div.social ul li a.rss:hover {
-	background: url('./images/social-icons.png') -286px -45px;
 }
 
 /*---------- Portfolio col2 & col3 page ----------*/

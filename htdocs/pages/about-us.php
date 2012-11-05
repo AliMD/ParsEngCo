@@ -65,7 +65,7 @@
 						<li><abbr title="Twitter"><a class='tw' href="https://twitter.com" target="_blank"></a></abbr></li>
 						<li><abbr title="LinkedIn"><a class='in' href="http://www.linkedin.com" target="_blank"></a></abbr></li>
 						<li><abbr title="Picasa"><a class='picasa' href="http://picasa.google.com" target="_blank"></a></abbr></li>
-						<li><abbr title="Github"><a class='github' href="https://github.com" target="_blank"></a></abbr></li>
+						<li><abbr title="Google Plus"><a class='google' href="https://plus.google.com" target="_blank"></a></abbr></li>
 					</ul>
 				</div>
 			</section>
