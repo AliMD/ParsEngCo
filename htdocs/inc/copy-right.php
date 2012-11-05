@@ -12,7 +12,7 @@
 				<div class="w5 left text">
 					<span>© 2012 1Devs Team</span>
 				</div>
-				<div class="w10 mla social">
+				<div class="w7 mla social">
 					<ul class="pl1">
 						<li><abbr title="Facebook"><a class='fb' href="http://www.facebook.com" target="_blank"></a></abbr></li>
 						<li><abbr title="Twitter"><a class='tw' href="https://twitter.com" target="_blank"></a></abbr></li>
