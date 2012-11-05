@@ -1,44 +1,45 @@
-## Swastika-Rugs Website
-=======================
-The website for the **[Swastika-Rugs](http://swastikarugs.pro)** company
+## ParsEngCo website
+The website for the **Pars Engineering** company
+
 
 ### Contributing
 
-* Check our project's website and report any bugs or ideas in [issues](https://github.com/1schools-projects/Swastika-Rugs/issues)
-* Clone our project and check the source codes from [here](https://github.com/1schools-projects/Swastika-Rugs)
+* Check our projec's website and report any bugs or ideas in [issues](https://github.com/AliMD/ParsEngCo/issues)
+
+* Clone this project and check source code
 ```
-      https://github.com/1schools-projects/Swastika-Rugs
+    git clone https://github.com/AliMD/ParsEngCo.git
 ```
 
-* Fork this for yourself and do some developing and pull request to us, if you want !
+* Fork it for your self and do some develope and pull request it to us ;)
 
-### Building Technologies
 
+### Buliding Technologies
 * [HTML5](http://ali.md/wiki/html5)
 * [CSS3](http://ali.md/css3ref)
-* [html5shiv](http://ali.md/html5shiv)
 * [1Styles](http://ali.md/1styles)
 * [JavaScript](http://ali.md/wiki/javascript)
-* [jQuery] (http://ali.md/jq.js)
-* [Zepto] (http://ali.md/zepto)
-* [LightBox] (http://ali.md/lightbox)
+* [Zepto.js](http://ali.md/zepto.js)
+* [jQuery.js](http://ali.md/jquery.js)
+* [1scripts.js](http://ali.md/1scripts.js)
+* [html5shiv](http://ali.md/html5shiv)
+* [PHP](http://ali.md/php/)
+* [MySQL](http://ali.md/wiki/mysql)
+
 
 ### The Team
+* [Mohammad Sedaghat](https://github.com/sedaghat) Project Manager
+* [Ali Mihandoost](https://github.com/AliMD) Technical Manager / Developer
+* [Ali aGHasizadeh](https://github.com/AliGH) Developer / Programmer
+* [Omid Gharib](https://github.com/omidgharib) Developer /Programmer
+* [Yashar Ahmadi](https://github.com/YasharAMD) Developer / Programmer
 
-* [Ali Mihandoost](https://github.com/alimd) Teacher / Technical Manager
-* [Omid Gharib](https://github.com/omidgharib) Project Manager / Developer /Programmer
-* [Yashar Ahmadi](https://github.com/YasharAMD) Developer / Programmer / Data Gather
-* [Arash Sadeghizade](https://github.com/arastoo)  Data Gather
+### All rights reserved ###
+Please note that parseng.co is a curated site and that we reserve the right to refuse any listing for any reason.
 
-### Our Desire Design :
- [KingSize](http://www.kingsizetheme.com)
+The [ParsEng.co](http://parseng.co) code and website is released under a [MIT License](http://opensource.org/licenses/MIT).
 
-### All rights reserved
-
-Copyright (c) 2012, The [swastikarugs.pro](http://swastikarugs.pro) code and website is released under a [MIT License](http://opensource.org/licenses/MIT).
-
-      ( October 2012 )
 
 ### A 1devs website
-
 Produced by 1Devs Web Department
+
