@@ -61,6 +61,7 @@
 
 	$('.menu_wrap').click(function(){
 		$(this).toggleClass('close');
+		return false;
 	});
 
 })(window.Zepto || window.jQuery);

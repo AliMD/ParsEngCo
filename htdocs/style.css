@@ -55,12 +55,7 @@ div.menu_wrap {
 	top: -530px;
 }
 
-.close .menu_wrap div.hide a img {
-	transform 			: rotate(180deg);
-	-webkit-transform	: rotate(180deg);
-	-moz-transform		: rotate(180deg);
-	-ms-transform		: rotate(180deg);
-	-o-transform		: rotate(180deg);
+.menu_wrap div.hide a img {
 	transition 			: all 800ms ease-in-out;
 	-webkit-transition	: all 800ms ease-in-out;
 	-moz-transition		: all 800ms ease-in-out;
@@ -68,17 +63,12 @@ div.menu_wrap {
 	-o-transition		: all 800ms ease-in-out;
 }
 
-.open .menu_wrap div.hide a img {
-	transform 			: rotate(0deg);
-	-webkit-transform	: rotate(0deg);
-	-moz-transform		: rotate(0deg);
-	-ms-transform		: rotate(0deg);
-	-o-transform		: rotate(0deg);
-	transition 			: all 800ms ease-in-out;
-	-webkit-transition	: all 800ms ease-in-out;
-	-moz-transition		: all 800ms ease-in-out;
-	-ms-transition		: all 800ms ease-in-out;
-	-o-transition		: all 800ms ease-in-out;
+.menu_wrap.close div.hide a img {
+	transform 			: rotate(180deg);
+	-webkit-transform	: rotate(180deg);
+	-moz-transform		: rotate(180deg);
+	-ms-transform		: rotate(180deg);
+	-o-transform		: rotate(180deg);
 }
 
 div.menu_wrap div.menu {
