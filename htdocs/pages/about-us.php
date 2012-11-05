@@ -29,35 +29,9 @@
 			</p>
 		</div>
 		<footer class="pr1 pl1 mh8 cover footers">
-			<section class="mt1 pb5 fmenu ">
-				<section class="w5 mh10 mt1 left learn_more">
-					<h3>learn more</h3>
-					<ul>
-						<li><a href="#">blog</a></li>
-						<li><a href="#">contact us</a></li>
-						<li><a href="#">portfolio</a></li>
-					</ul>
-				</section>
-				<section class="w5 mh10 mt1 left get_in_touch">
-					<h3>get in touch</h3>
-					<ul>
-						<li><a href="#">contat us today</a></li>
-						<li><a href="#">denoizzed</a></li>
-						<li><a href="#">our web media</a></li>
-					</ul>
-				</section>
-				<section class="w5 mh9 mt1 mla need_to_know">
-					<h3>need to know</h3>
-					<p>
-						© 2012, Swastika Rugs.<br />
-						Include tagline if you want to.<br />
-						This footer is Ready x 3.
-					</p>			
-				</section>
-			</section>
 			<section class="mh3 mt1 pb2 cover">
 				<div class="w5 left copyright">
-					<span>© 2012 Swastika Rugs Team</span>
+					<span>© 2012 1Devs Team</span>
 				</div>
 				<div class="w10 mla social">
 					<ul class="pl1">
