@@ -8,4 +8,4 @@
 	<script type="text/javascript" src="./scripts/html5shiv.js"></script>
 </head>
 <body>
-	<div class="w24 mlra container mh40">
+	<div class="container">
