@@ -37,4 +37,8 @@
 		delay : 2000
 	});
 
+	$('.menu_wrap').click(function(){
+		$(this).toggleClass('close');
+	});
+
 })(window.Zepto || window.jQuery);

@@ -47,17 +47,11 @@ div.menu_wrap {
 	-o-transition		: all 800ms ease-in-out;
 }
 
-.open,
-.close {
-	position: fixed;
-	z-index	: 100;
-}
-
-.open .menu_wrap {
+.menu_wrap {
 	top: 0;
 }
 
-.close .menu_wrap {
+.menu_wrap.close {
 	top: -530px;
 }
 

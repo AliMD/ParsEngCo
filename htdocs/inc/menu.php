@@ -1,52 +1,51 @@
-<div class="open" id="anim">
-	<div id="menu" class="left menu_wrap">
-		<div class="menu">
-			<div class="logo cover">
-				<h1>
-					<a href="home" >
-						<span>swastika</span>
-					</a>
-				</h1>	
-			</div>
-			<nav >
-				<menu>
-					<li>
-						<a href="home" style="color: #fff;">
-							home
-							<span>back to home page</span>
-						</a>
-					</li>
-					<li>
-						<a href="about-us">
-							about us
-							<span>what we do</span>
-						</a>
-					</li>
-					<li>
-						<a href="products">
-							products
-							<span>show casing our work</span>
-						</a>
-					</li>
-					<li>
-						<a href="projects">
-							projects
-							<span>latest projects</span>
-						</a>
-					</li>
-					<li>
-						<a href="contact-us">
-							contact us
-							<span>get in touch</span>
-						</a>
-					</li>
-				</menu>	
-			</nav>
+
+<div class="menu_wrap">
+	<div class="menu">
+		<div class="logo cover">
+			<h1>
+				<a href="home" >
+					<span>swastika</span>
+				</a>
+			</h1>	
 		</div>
-		<div class="hide">
-			<a id='hideupdn' href="#">
-				<img src="./images/menu_hide_arrow_top.png" alt="hide" />
-			</a>
-		</div>	
+		<nav >
+			<menu>
+				<li>
+					<a href="home" style="color: #fff;">
+						home
+						<span>back to home page</span>
+					</a>
+				</li>
+				<li>
+					<a href="about-us">
+						about us
+						<span>what we do</span>
+					</a>
+				</li>
+				<li>
+					<a href="products">
+						products
+						<span>show casing our work</span>
+					</a>
+				</li>
+				<li>
+					<a href="projects">
+						projects
+						<span>latest projects</span>
+					</a>
+				</li>
+				<li>
+					<a href="contact-us">
+						contact us
+						<span>get in touch</span>
+					</a>
+				</li>
+			</menu>	
+		</nav>
 	</div>
+	<div class="hide">
+		<a id='hideupdn' href="#">
+			<img src="./images/menu_hide_arrow_top.png" alt="hide" />
+		</a>
+	</div>	
 </div>
