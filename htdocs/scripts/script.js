@@ -49,7 +49,7 @@
 		}
 	});
 
-	$('.backimg > div').fadeLoop({
+	$('.background > div').fadeLoop({
 		delay : 200,
 		freez : 3000,
 		duration : 1300,
