@@ -11,7 +11,7 @@
 				delay : 10,
 				startIndex : 0,
 				fadeFirstImage : true,
-				zIndex : -3,
+				zIndex : -2,
 				zIndexAct : -2
 			},options);
 
@@ -22,19 +22,20 @@
 				indx    =options.startIndex,
 				plen    =this.length,
 				fadeIn  ={opacity:1},
-				fadeOut ={opacity:0};
+				fadeOut ={opacity:0},
+				zIndexChange = options.zIndex != options.zIndexAct
 
 			var nextPic = function(){
 				pics.eq(indx).animate(fadeOut,options.duration,ease,function(){
-					 $(this).css({'z-index':options.zIndex});
+					zIndexChange && $(this).css({'z-index':options.zIndex});
 
 				});
 				indx=indx<plen-1?indx+1:0;
 				setTimeout(function(){
-					pics.eq(indx).css({'z-index':options.zIndexAct}).animate(fadeIn,options.duration,ease,function(){
+					pics.eq(indx).css(zIndexChange?{'z-index':options.zIndexAct}:{}).animate(fadeIn,options.duration,ease,function(){
 						setTimeout(nextPic,options.freez);
 					});
-				},options.delay+10);
+				},options.delay+1);
 			};
 
 			pics.css(fadeOut).css({'z-index':options.zIndex});
@@ -50,13 +51,10 @@
 	});
 
 	$('.background > div').fadeLoop({
-		delay : 200,
+		delay : 0,
 		freez : 3000,
 		duration : 1300,
-		zIndex : -3,
-		zIndexAct : -2,
-		startIndex : 0,
-		fadeFirstImage : true
+		startIndex : 0
 	});
 
 	$('.menu_wrap').click(function(){
