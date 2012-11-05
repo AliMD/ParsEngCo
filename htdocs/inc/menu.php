@@ -44,7 +44,7 @@
 		</nav>
 	</div>
 	<div class="hide">
-		<a id='hideupdn' href="#">
+		<a id='hidebtn' href="#">
 			<img src="./images/menu_hide_arrow_top.png" alt="hide" />
 		</a>
 	</div>	

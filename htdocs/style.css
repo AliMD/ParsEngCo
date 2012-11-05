@@ -50,7 +50,7 @@ div.menu_wrap {
 	top: -530px;
 }
 
-.menu_wrap div.hide a img {
+#hidebtn img {
 	transition 			: all 800ms ease-in-out;
 	-webkit-transition	: all 800ms ease-in-out;
 	-moz-transition		: all 800ms ease-in-out;
@@ -58,7 +58,7 @@ div.menu_wrap {
 	-o-transition		: all 800ms ease-in-out;
 }
 
-.menu_wrap.close div.hide a img {
+.menu_wrap.close #hidebtn img {
 	transform 			: rotate(180deg);
 	-webkit-transform	: rotate(180deg);
 	-moz-transform		: rotate(180deg);
@@ -199,8 +199,15 @@ div.menu_wrap div.hide {
 	background-position	: left top;
 }
 
-div.menu_wrap div.hide img {
-	margin-left: 90px;
+#hidebtn{
+	display: block;
+	width: 48px;
+	height: 48px;
+	margin: 12px auto 0;
+}
+
+#hidebtn img{
+	display: block;
 }
 
 /*---------- content_wrap col2 & col3 Page ----------*/
