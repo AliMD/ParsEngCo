@@ -593,6 +593,7 @@ div.content_wrap div.content article.box a.readmore {
 
 div.content_wrap{
 	margin-right: auto;
+	text-align: right;
 }
 
 div.content_wrap div.content article.box a.readmore:hover {
