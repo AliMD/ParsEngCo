@@ -47,7 +47,7 @@ div.menu_wrap {
 }
 
 .menu_wrap.close {
-	top: -530px;
+	top: -470px;
 }
 
 #hidebtn img {
@@ -70,7 +70,7 @@ div.menu_wrap div.menu {
 	background-image	: url('./images/menu_back.png'); 
 	background-repeat	: repeat-y;
 	background-position	: top left;
-	min-height			: 535px;
+	min-height			: 480px;
 }
 
 div.menu div.logo h1 a {
