@@ -13,7 +13,6 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel leo ut orci pellentesque facilisis.
 					<br />
-					<a class="font readmore" href="#"> Read More </a>
 				</p>
 			</article>
 			<article class="w7 mh9 box mla">
@@ -25,7 +24,6 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel leo ut orci pellentesque facilisis.
 					<br />
-					<a class="font readmore" href="#"> Read More </a>
 				</p>
 			</article>
 		</section>
@@ -39,7 +37,6 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel leo ut orci pellentesque facilisis.
 					<br />
-					<a class="font readmore" href="#"> Read More </a>
 				</p>
 			</article>
 			<article class="w7 mh9 box mla">
@@ -51,7 +48,6 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel leo ut orci pellentesque facilisis.
 					<br />
-					<a class="font readmore" href="#"> Read More </a>
 				</p>
 			</article>
 		</section>
@@ -65,7 +61,6 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel leo ut orci pellentesque facilisis.
 					<br />
-					<a class="font readmore" href="#"> Read More </a>
 				</p>
 			</article>
 			<article class="w7 mh9 box mla">
@@ -77,7 +72,6 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel leo ut orci pellentesque facilisis.
 					<br />
-					<a class="font readmore" href="#"> Read More </a>
 				</p>
 			</article>
 		</section>
@@ -91,7 +85,6 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel leo ut orci pellentesque facilisis.
 					<br />
-					<a class="font readmore" href="#"> Read More </a>
 				</p>
 			</article>
 			<article class="w7 mh9 box mla">
@@ -103,7 +96,6 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel leo ut orci pellentesque facilisis.
 					<br />
-					<a class="font readmore" href="#"> Read More </a>
 				</p>
 			</article>
 		</section>
