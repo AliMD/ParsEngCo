@@ -1,0 +1,19 @@
+﻿#OSX
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+#Windows
+Thumbs.db
+Desktop.ini
+*.psd
+$RECYCLE.BIN/
+
+#SublimeText
+*.sublime-project
+*.sublime-workspace
+
+#Managers Files
+Designs/
+*.xmind
