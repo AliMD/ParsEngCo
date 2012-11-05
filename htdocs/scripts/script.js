@@ -57,8 +57,8 @@
 		startIndex : 0
 	});
 
-	$('.menu_wrap').click(function(){
-		$(this).toggleClass('close');
+	$('#hidebtn').click(function(){
+		$('.menu_wrap').toggleClass('close');
 		return false;
 	});
 
