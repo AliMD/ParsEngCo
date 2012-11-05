@@ -8,8 +8,8 @@
 				<abbr title="نام">
 					<input type="text" name="Name" placeholder='نام' />
 				</abbr>
-				<abbr title="آدرس پست الکنرونیکی">
-					<input type="email" name="usremail" placeholder='آدرس پست الکنرونیکی' />
+				<abbr title="آدرس پست الکترونیکی">
+					<input type="email" name="usremail" placeholder='آدرس پست الکترونیکی' />
 				</abbr>
 				<abbr title="متن پیام">
 					<textarea name="Message" id="Message" cols="30" rows="10" placeholder='متن پیام'></textarea>
