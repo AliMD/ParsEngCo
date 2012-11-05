@@ -3,7 +3,7 @@
 	<div class="menu">
 		<div class="logo cover">
 			<h1>
-				<a href="home" >
+				<a href="./" >
 					<span>swastika</span>
 				</a>
 			</h1>	
@@ -11,31 +11,31 @@
 		<nav >
 			<menu>
 				<li>
-					<a href="home" style="color: #fff;">
+					<a href="./">
 						home
 						<span>back to home page</span>
 					</a>
 				</li>
 				<li>
-					<a href="about-us">
+					<a href="./about-us">
 						about us
 						<span>what we do</span>
 					</a>
 				</li>
 				<li>
-					<a href="products">
+					<a href="./products">
 						products
 						<span>show casing our work</span>
 					</a>
 				</li>
 				<li>
-					<a href="projects">
+					<a href="./projects">
 						projects
 						<span>latest projects</span>
 					</a>
 				</li>
 				<li>
-					<a href="contact-us">
+					<a href="./contact-us">
 						contact us
 						<span>get in touch</span>
 					</a>
