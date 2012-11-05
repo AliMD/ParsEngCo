@@ -5,7 +5,6 @@
 	<title>Pars Engineering Co. | <?php echo $title ?></title>
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="./scripts/html5shiv.js"></script>
 </head>
 <body>
