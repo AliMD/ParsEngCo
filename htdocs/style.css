@@ -137,11 +137,10 @@ div.menu nav > menu > li:first-child {
 
 div.menu nav > menu > li > a {
 	display: block;
-	font-family: Titr;
 	padding: 16px 10px 10px;
 	color	: #ccc;
 	text-decoration	: none;
-	font-size		: 17px;
+	font-size		: 22px;
 }
 
 div.menu nav menu > li:hover > a {
@@ -155,22 +154,22 @@ div.menu nav > menu > li:hover {
 }
 
 div.menu nav menu li span {
-	display	: block;
-	font	: italic 10px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
-	color	: #555;
-	text-transform	: lowercase;
-	margin-top		: 11px;
-	margin-left		: 2px;
+	display     : block;
+	font-size   : 12px;
+	font-style  : italic;
+	color       : #555;
+	margin-top  : 19px;
+	margin-right: 2px;
 }
 
 div.menu li menu {
-	position	: absolute;
-	left		: 100%;
-	top			: 0;
-	display		: none;
-	padding		: 0px 7px;
-	opacity		: 0.95;
-	border		: 1px solid #343434;
+	position        : absolute;
+	left            : 100%;
+	top             : 0;
+	display         : none;
+	padding         : 0px 7px;
+	opacity         : 0.95;
+	border          : 1px solid #343434;
 	background-color: #000;
 }
 
