@@ -98,7 +98,6 @@ div.menu_wrap div.menu {
 	background-image	: url('./images/menu_back.png'); 
 	background-repeat	: repeat-y;
 	background-position	: top left;
-	min-height			: 480px;
 }
 
 div.menu div.logo h1 a {
@@ -109,7 +108,7 @@ div.menu div.logo h1 a {
 	background-repeat	: no-repeat;
 	background-position	: center 65px;
 	text-decoration		: none;
-	margin-left: 5px;
+	margin-left			: 5px;
 }
 
 div.menu div.logo h1 a span {
@@ -124,29 +123,29 @@ div.menu div.logo h1 a span {
 }
 
 div.menu nav > menu > li {
-	position 	: relative;
-	line-height	: 0;
-	text-align	: right; 
-	font-weight	: normal;
-	margin 		: 0 30px 0;
-	border-bottom: 1px solid #343434;
+	position		: relative;
+	line-height		: 0;
+	text-align		: right; 
+	font-weight		: normal;
+	margin			: 0 30px 0;
+	border-bottom	: 1px solid #343434;
 }	 
 
 div.menu nav > menu > li:first-child {
-	border-top: 1px solid #343434;
+	border-top : 1px solid #343434;
 }
 
 div.menu nav > menu > li > a {
 	display: block;
 	font-family: Titr;
 	padding: 16px 10px 10px;
+	color	: #ccc;
 	text-decoration	: none;
 	font-size		: 17px;
-	color: #ccc;
 }
 
 div.menu nav menu > li:hover > a {
-	color: #fff;
+	color	: #fff;
 }
 
 div.menu nav > menu > li:hover {
@@ -157,27 +156,26 @@ div.menu nav > menu > li:hover {
 
 div.menu nav menu li span {
 	display	: block;
-	font 	: italic 10px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	font	: italic 10px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	color	: #555;
 	text-transform	: lowercase;
 	margin-top		: 11px;
 	margin-left		: 2px;
-	color: #555;
 }
 
 div.menu li menu {
-	position: absolute;
-	/*left: 220px;*/
-	left: 100%;
-	top : 0;
-	display: none;
-	padding: 0px 7px;
+	position	: absolute;
+	left		: 100%;
+	top			: 0;
+	display		: none;
+	padding		: 0px 7px;
+	opacity		: 0.95;
+	border		: 1px solid #343434;
 	background-color: #000;
-	opacity			: 0.95;
-	border 			: 1px solid #343434;
 }
 
 div.menu li:hover > menu {
-	display: block;
+	display : block;
 }
 
 div.menu li li {
@@ -189,17 +187,17 @@ div.menu li li > a {
 	display		: block;
 	min-width	: 120px;
 	white-space	: nowrap;
-	text-decoration	: none;
-	text-transform	: capitalize;
 	font-family	: 'Helvetica Neue', Arial, sans-serif;
 	font-size	: 12px;
 	color 		: #A3A3A3;
 	padding 	: 5px 5px 10px;
 	border-top	: 1px solid #343434;
+	text-decoration	: none;
+	text-transform	: capitalize;
 }
 
 div.menu li li:first-child > a {
-	border-top: 0;
+	border-top : 0;
 }
 
 div.menu li li:hover {
@@ -209,9 +207,9 @@ div.menu li li:hover {
 }
 
 div.menu li menu li a img {
-	float		: right;
-	margin-right: 5px;
-	opacity		: 0;
+	float			: right;
+	margin-right	: 5px;
+	opacity			: 0;
 }
 
 div.menu li menu li:hover > a img {
@@ -228,14 +226,14 @@ div.menu_wrap div.hide {
 }
 
 #hidebtn{
-	display: block;
-	width: 48px;
-	height: 48px;
-	margin: 12px auto 0;
+	display	: block;
+	width	: 48px;
+	height	: 48px;
+	margin	: 12px auto 0;
 }
 
 #hidebtn img{
-	display: block;
+	display : block;
 }
 
 /*---------- content_wrap col2 & col3 Page ----------*/
@@ -244,11 +242,11 @@ div.contact-us,
 div.blog,
 div.galleria,
 div.sliderview {
-	width: 700px;
-	background-color: #000;  /* using in IE */
-	background-color: rgba(0,0,0,0.9);
-	color : #fff;
-	border: 1px solid #343434;
+	width	: 700px;
+	color	: #fff;
+	border	: 1px solid #343434;
+	background-color	: #000;  /* using in IE */
+	background-color	: rgba(0,0,0,0.9);
 }
 
 div.content_wrap header.head h2 {
@@ -271,17 +269,17 @@ div.content_wrap div.content section.row div.box.clmn2 {
 /*---------- end content_wrap: 2 Col ----------*/
 
 div.content_wrap div.content section.row div.box a {
-	display: block;
+	display : block;
 }
 
 div.content_wrap div.content section.row div.box img {
-	display: block;
+	display : block;
 }
 
 div.content_wrap div.content section.row div.box a:hover img {
-	background-color: #000;
-	opacity			: 0.3;
-	transition 			: opacity 800ms;
+	opacity : 0.3;
+	background-color	: #000;
+	transition			: opacity 800ms;
 	-webkit-transition	: opacity 800ms;
 	-moz-transition		: opacity 800ms;
 	-ms-transition		: opacity 800ms;
@@ -289,12 +287,12 @@ div.content_wrap div.content section.row div.box a:hover img {
 }
 
 div.content_wrap div.content section.row div.box a:hover span {
-	display	: block;
-	position: absolute;
-	top 	: 0;
-	left 	: 0;
-	width 	: 196px;
-	height 	: 145px;
+	display		: block;
+	position	: absolute;
+	top			: 0;
+	left		: 0;
+	width		: 196px;
+	height		: 145px;
 	background-image	: url('./images/hover3_image_gallery.png');
 	background-repeat	: no-repeat;
 	background-position	: center;
@@ -302,12 +300,12 @@ div.content_wrap div.content section.row div.box a:hover span {
 
 /*---------- content_wrap: 2 Columns ----------*/
 div.content_wrap div.content section.row div.box.clmn2 a:hover span {
-	display	: block;
-	position: absolute;
-	top 	: 0;
-	left 	: 0;
-	width 	: 295px;
-	height 	: 215px;
+	display		: block;
+	position	: absolute;
+	top			: 0;
+	left		: 0;
+	width		: 295px;
+	height		: 215px;
 	background-image	: url('./images/hover2_image_gallery.png');
 	background-repeat	: no-repeat;
 	background-position	: center;
@@ -315,7 +313,7 @@ div.content_wrap div.content section.row div.box.clmn2 a:hover span {
 /*---------- end content_wrap: 2 Col ----------*/
 
 div.content_wrap div.content section.row div.box a:hover img {
-	box-shadow: -1px 1px 10px 1px #ccc;
+	box-shadow : -1px 1px 10px 1px #ccc;
 }
 
 div.content_wrap div.content section.text p {
@@ -335,7 +333,7 @@ footer.footers section.fmenu {
 
 footer.footers section.fmenu section.learn_more,
 footer.footers section.fmenu section.get_in_touch {
-	margin-right: 20px;
+	margin-right : 20px;
 }
 
 footer.footers section.fmenu section.learn_more h3,
@@ -351,33 +349,33 @@ footer.footers section.fmenu section.need_to_know h3 {
 
 footer.footers section.fmenu section.learn_more ul li,
 footer.footers section.fmenu section.get_in_touch ul li {
-	border-bottom: 1px solid #343434;
+	border-bottom : 1px solid #343434;
 }
 
 footer.footers section.fmenu section.learn_more ul li:first-child,
 footer.footers section.fmenu section.get_in_touch ul li:first-child {
-	border-top: 1px solid #343434;
+	border-top : 1px solid #343434;
 }
 
 footer.footers section.fmenu section.learn_more ul li a,
 footer.footers section.fmenu section.get_in_touch ul li a {
 	display	: block;
 	font 	: normal 13px Verdana, Arial, sans-serif;
-	text-decoration	: none;
-	text-transform	: capitalize;
 	padding : 5px 10px 5px;
 	color 	: #ccc;
+	text-decoration	: none;
+	text-transform	: capitalize;
 }
 
 footer.footers section.fmenu section.learn_more ul li a:hover,
 footer.footers section.fmenu section.get_in_touch ul li a:hover {
-	color 			: #fff;
-	background-color: #121212;
+	color : #fff;
+	background-color : #121212;
 }
 
 footer.footers section.fmenu section.need_to_know p {
-	color: #ccc;
-	font : normal 12px Verdana, Arial, sans-serif;
+	color	: #ccc;
+	font	: normal 12px Verdana, Arial, sans-serif;
 }
 
 footer.footers div.text {
@@ -392,59 +390,59 @@ div.contact-us header.head h2 {
 }
 
 div.contact-us div.content section.form input {
-	width : 200px;
-	height: 30px;
-	color : #eee;
-	margin: 6px 0;
-	border: 1px solid #333;
-	border-radius	: 5px;
-	background-color: #1b1b1b;
-	font 			: 12px 'Helvetica Neue', Verdana, Helvetica, sans-serif;
+	width	: 200px;
+	height	: 30px;
+	color	: #eee;
+	margin	: 6px 0;
+	border	: 1px solid #333;
+	font	: 12px 'Helvetica Neue', Verdana, Helvetica, sans-serif;
+	border-radius		: 5px;
+	background-color	: #1b1b1b;
 }
 
 div.contact-us div.content section.form textarea {
-	width : 320px;
-	height: 150px;
-	margin: 6px 0;
-	color : #eee;
-	border: 1px solid #333;
-	border-radius	: 5px;
-	background-color: #1b1b1b;
-	font 			: 12px 'Helvetica Neue', Verdana, Helvetica, sans-serif;
+	width	: 320px;
+	height	: 150px;
+	margin	: 6px 0;
+	color	: #eee;
+	border	: 1px solid #333;
+	font	: 12px 'Helvetica Neue', Verdana, Helvetica, sans-serif;
+	border-radius		: 5px;
+	background-color	: #1b1b1b;
 }
 
 div.contact-us div.content section.form input:focus,
 div.contact-us div.content section.form textarea:focus {
-	background-color: #555;
+	background-color	: #555;
 }
 
 div.contact-us div.content section.form input.btn_submit {
-	width 			: 150px;
-	height 			: 30px;
-	margin-top		: 10px;
-	color 			: #fff;
-	background-color: gray;
-	background 	: gradient(linear, left top, left bottom, from(#666), to(#333));
-	background 	: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background 	: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
-	background 	: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background 	: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
-	border 		: none;
+	width		: 150px;
+	height		: 30px;
+	margin-top	: 10px;
+	color		: #fff;
+	border		: none;
+	background	: gradient(linear, left top, left bottom, from(#666), to(#333));
+	background	: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background	: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
+	background	: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background	: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background-color	: gray;
 }
 
 div.contact-us div.content section.form input.btn_submit:hover {
-	background: gradient(linear, left top, left bottom, from(#333), to(#666));
-	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
-	background: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background	: gradient(linear, left top, left bottom, from(#333), to(#666));
+	background	: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background	: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
+	background	: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background	: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
 }
 
 div.contact-us div.content section.info h3 {
-	display: block;
-	text-transform: capitalize;
-	font-size: 20px;
-	font-weight: normal;
+	display			: block;
+	font-size		: 20px;
+	text-transform	: capitalize;
+	font-weight		: normal;
 }
 
 div.contact-us div.content section.info ul {
@@ -453,14 +451,14 @@ div.contact-us div.content section.info ul {
 }
 
 div.contact-us div.content section.info ul li {
-	padding 		: 6px 25px;
-	font 			: normal 12px Verdana, Arial, sans-serif;
+	padding			: 6px 25px;
+	font			: normal 12px Verdana, Arial, sans-serif;
 	line-height		: 20px;
 	border-bottom	: 1px solid #2b2b2b;
 }
 
 div.contact-us div.content section.info ul li:first-child {
-	border-top: 1px solid #2b2b2b;
+	border-top	: 1px solid #2b2b2b;
 }
 
 div.contact-us div.content section.info iframe {
@@ -469,20 +467,20 @@ div.contact-us div.content section.info iframe {
 }
 
 div.contact-us div.content section.info iframe:hover {
-	opacity: 1;
+	opacity	: 1;
 }
 
 /*---------- Social Networks ----------*/
 div.social ul li {
-	float		: left;
-	padding-left: 8px;
+	float			: left;
+	padding-left	: 8px;
 }
 
 div.social ul li a {
 	display	: block;
-	width 	: 32px;
-	height 	: 32px;
-	border-radius: 6px;
+	width	: 32px;
+	height	: 32px;
+	border-radius	: 6px;
 }
 
 div.social ul li a.fb {
@@ -491,7 +489,7 @@ div.social ul li a.fb {
 }
 
 div.social ul li a.fb:hover {
-	background: url('./images/social-icons.png') -6px -45px;
+	background	: url('./images/social-icons.png') -6px -45px;
 }
 
 div.social ul li a.tw {
@@ -509,7 +507,7 @@ div.social ul li a.in {
 }
 
 div.social ul li a.in:hover {
-	background: url('./images/social-icons.png') -86px -45px;
+	background	: url('./images/social-icons.png') -86px -45px;
 }
 
 div.social ul li a.picasa {
@@ -518,7 +516,7 @@ div.social ul li a.picasa {
 }
 
 div.social ul li a.picasa:hover {
-	background: url('./images/social-icons.png') -126px -45px;
+	background	: url('./images/social-icons.png') -126px -45px;
 }
 
 div.social ul li a.google {
@@ -527,7 +525,7 @@ div.social ul li a.google {
 }
 
 div.social ul li a.google:hover {
-	background: url('./images/social-icons.png') -166px -45px;
+	background	: url('./images/social-icons.png') -166px -45px;
 }
 
 /*---------- Portfolio col2 & col3 page ----------*/
@@ -546,26 +544,26 @@ div.content_wrap div.content section.row article.box.col2 {
 /*---------- end portfolio: 3 col ----------*/
 
 div.content_wrap div.content section.row article.box h3 {
-	display 	: block;
+	display		: block;
 	font-size	: 18px;
 	font-weight	: bold;
-	text-transform: uppercase;
-	padding-bottom: 10px;
+	text-transform	: uppercase;
+	padding-bottom	: 10px;
 }
 
 div.content_wrap div.content section.row article.box a {
-	display: block;
+	display	: block;
 }
 
 div.content_wrap div.content section.row article.box img {
-	display: block;
+	display	: block;
 }
 
 div.content_wrap div.content section.row article.box a:hover img {
-	background-color: #000;
 	opacity		: 0.3;
 	box-shadow	: -1px 1px 10px 1px #ccc;
-	transition 	: opacity 800ms;
+	background-color	: #000;
+	transition			: opacity 800ms;
 	-webkit-transition	: opacity 800ms;
 	-moz-transition		: opacity 800ms;
 	-ms-transition		: opacity 800ms;
@@ -573,30 +571,30 @@ div.content_wrap div.content section.row article.box a:hover img {
 }
 
 div.content_wrap div.content section.row article.box a:hover span {
-	display	: block;
-	position: absolute;
-	top 	: 0;
-	left 	: 0;
-	width 	: 290px;
-	height 	: 260px;
+	display		: block;
+	position	: absolute;
+	top			: 0;
+	left		: 0;
+	width		: 290px;
+	height		: 260px;
+	z-index		: 100;
 	background-image	: url('./images/hover2_image_gallery.png');
 	background-repeat	: no-repeat;
-	background-position: center;
-	z-index: 100;
+	background-position	: center;
 }
 
 /*---------- Portfolio: 3 Columns ----------*/
 div.content_wrap div.content section.row article.box.col2 a:hover span {
-	display	: block;
-	position: absolute;
-	top 	: 0;
-	left 	: 0;
-	width 	: 196px;
-	height 	: 200px;
+	display		: block;
+	position	: absolute;
+	top			: 0;
+	left		: 0;
+	width		: 196px;
+	height		: 200px;
+	z-index		: 100;
 	background-image 	: url('./images/hover3_image_gallery.png');
 	background-repeat 	: no-repeat;
 	background-position : center;
-	z-index: 100;
 }
 /*---------- end portfolio: 3 col ----------*/
 
@@ -606,34 +604,34 @@ div.content_wrap div.content article.box p {
 }
 
 div.content_wrap div.content article.box a.readmore {
-	width 		: 100px;
-	height 		: 30px;
+	width		: 100px;
+	height		: 30px;
 	line-height	: 30px;
 	margin-top	: 15px;
 	text-align	: center;
-	color 		: #fff;
-	border 		: 1px solid rgb(44,44,44);
-	border-radius	: 4px;
-	text-decoration	: none;
-	background-color: gray;
-	background: gradient(linear, left top, left bottom, from(#666), to(#333));
-	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
-	background: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
+	color		: #fff;
+	border		: 1px solid rgb(44,44,44);
+	border-radius		: 4px;
+	text-decoration		: none;
+	background			: gradient(linear, left top, left bottom, from(#666), to(#333));
+	background			: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background			: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
+	background			: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background			: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background-color	: gray;
 }
 
 div.content_wrap{
-	margin-right: auto;
-	text-align: right;
+	margin-right	: auto;
+	text-align		: right;
 }
 
 div.content_wrap div.content article.box a.readmore:hover {
-	background: gradient(linear, left top, left bottom, from(#333), to(#666));
-	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
-	background: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background	: gradient(linear, left top, left bottom, from(#333), to(#666));
+	background	: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background	: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
+	background	: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background	: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
 }
 
 /*---------- Blog page ----------*/
@@ -643,17 +641,17 @@ div.blog header.head h2 {
 }
 
 div.blog header h2 span {
-	display	:block;
-	position: absolute;
-	top 	: 32px;
-	left 	: 335px;
-	-webkit-transform: rotate(15deg);
+	display		:block;
+	position	: absolute;
+	top			: 32px;
+	left		: 335px;
+	-webkit-transform	: rotate(15deg);
 }
 
 div.blog div.content section.blogs article.post h3 a{
 	font-size	: 18px;
 	font-weight	: bold;
-	color 		: #fff;
+	color		: #fff;
 	text-transform	: capitalize;
 	text-decoration	: none;	
 }
@@ -661,36 +659,36 @@ div.blog div.content section.blogs article.post h3 a{
 div.blog div.content section.blogs article.post div.header {
 	border-top		: 1px solid #343434;
 	border-bottom	: 1px solid #343434;
-	padding 	: 7px 20px;
-	line-height	: 14px;
+	padding			: 7px 20px;
+	line-height		: 14px;
 }
 
 div.blog div.content section.blogs article.post div.header span.date {
-	display		: block;
-	font-size	: 13px;
-	font-weight	: normal;
-	color 		: #9e9e9e;
-	background 	: url('./images/calendar.png') no-repeat left ;
-	padding-left: 20px;
+	display			: block;
+	font-size		: 13px;
+	font-weight		: normal;
+	color			: #9e9e9e;
+	background		: url('./images/calendar.png') no-repeat left ;
+	padding-left	: 20px;
 }
 
 div.blog div.content section.blogs article.post div.header span.comments {
-	display		: block;
-	padding-left: 250px;
+	display			: block;
+	padding-left	: 250px;
 }
 
 div.blog div.content section.blogs article.post div.header span.comments a {
-	display		: block;
-	font-size	: 13px;
-	font-weight	: normal;
-	color 		: #9e9e9e;
+	display			: block;
+	font-size		: 13px;
+	font-weight		: normal;
+	color			: #9e9e9e;
 	text-decoration	: none;
 	padding-left	: 20px;
-	background 		: url('./images/comment.png') no-repeat left ;
+	background		: url('./images/comment.png') no-repeat left ;
 }
 
 div.blog div.content section.blogs article.post div.header span.comments a:hover {
-	color: #fff;
+	color	: #fff;
 }
  
 div.blog div.content section.blogs article.post a img {
@@ -700,104 +698,104 @@ div.blog div.content section.blogs article.post a img {
 
 
 div.blog div.content section.blogs article.post a img:hover {
-	opacity: 1;
+	opacity	: 1;
 }
 
 div.blog div.content section.blogs article.post p {
-	color 	: #CCC;
-	font 	: normal 12px Verdana, Arial, sans-serif;
-	line-height: 20px;
-	padding-top: 10px;
+	color		: #CCC;
+	font		: normal 12px Verdana, Arial, sans-serif;
+	line-height	: 20px;
+	padding-top	: 10px;
 }
 
 
 div.blog div.content section.blogs article.post p a {
+	color			: #ddd;
 	text-decoration	: none;
 	padding-left	: 2px;
-	color: #ddd;
 }
 
 div.blog div.content section.blogs article.post p a:hover {
-	color: #fff;
+	color	: #fff;
 }
 
 div.blog div.content section.rightside div.searchbar input.inputtext {
-	width : 120px;
-	color : #eee;
-	border: 1px solid #333; 
-	margin-left		: 20px;
-	background-color: #1b1b1b;
-	border-radius	: 3px;
+	width	: 120px;
+	color	: #eee;
+	border	: 1px solid #333; 
+	margin-left			: 20px;
+	background-color	: #1b1b1b;
+	border-radius		: 3px;
 }
 
 div.blog div.content section.rightside div.searchbar input.inputtext:focus {
-	background-color: #444;
-	color: #fff;
+	color				: #fff;
+	background-color	: #444;
 }
 
 /*---------- Password Protected page ----------*/
 div.blog div.content section.pass div.passbar input.inputpass {
-	width : 150px;
-	color : #eee;
-	border: 1px solid #333; 
-	background-color: #1b1b1b;
-	border-radius	: 3px;
+	width	: 150px;
+	color	: #eee;
+	border	: 1px solid #333; 
+	background-color	: #1b1b1b;
+	border-radius		: 3px;
 }
 
 div.blog div.content section.pass div.passbar input.inputpass:focus {
-	background-color: #444;
-	color: #fff;
+	color				: #fff;
+	background-color	: #444;
 }
 
 div.blog div.content section.pass h3 {
-	margin-bottom: 30px;
-	color: #ccc;
-	font : bold 12px Verdana, Arial, sans-serif;
+	color			: #ccc;
+	font			: bold 12px Verdana, Arial, sans-serif;
+	margin-bottom	: 30px;
 }
 
 div.blog div.content section.pass h4 {
-	font: bold 14px Verdana, Arial, sans-serif;
+	font			: bold 14px Verdana, Arial, sans-serif;
 	margin-bottom	: 10px;
 	text-transform	: capitalize;
 }
 
 div.blog div.content section.pass p {
-	margin-bottom: 30px;
-	color: #ccc;
-	font : normal 12px Verdana, Arial, sans-serif;
+	color			: #ccc;
+	font			: normal 12px Verdana, Arial, sans-serif;
+	margin-bottom	: 30px;
 }
 /*---------- end pass protected page ----------*/
 
 div.blog div.content section.rightside div.searchbar input.btn {
-	color 	: #eee;
-	border 	:  1px solid #333;
-	padding :2px 5px;
-	border-radius	: 3px;
-	background-color: gray;
-	background: gradient(linear, left top, left bottom, from(#666), to(#333));
-	background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#666', endColorstr='#333')";
-	background: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
+	color	: #eee;
+	border	:  1px solid #333;
+	padding	:2px 5px;
+	border-radius		: 3px;
+	background-color	: gray;
+	background			: gradient(linear, left top, left bottom, from(#666), to(#333));
+	background			: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background			: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
+	background			: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background			: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
+	-ms-filter			: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#666', endColorstr='#333')";
 }
 
 div.blog div.content section.rightside div.searchbar input.btn:hover {
-	background-color: #ccc;
-	background: gradient(linear, left top, left bottom, from(#333), to(#666));
-	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#666')";
-	background: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background			: gradient(linear, left top, left bottom, from(#333), to(#666));
+	background			: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background			: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
+	background			: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background			: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
+	-ms-filter			: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#333', endColorstr='#666')";
+	background-color	: #ccc;
 }
 
 div.blog div.content section.rightside div.recentpost h3,
 div.blog div.content section.rightside div.recentcomment h3,
 div.blog div.content section.rightside div.archive h3,
 div.blog div.content section.rightside div.category h3 {
-	font : bold 17px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
-	color: #fff;
+	font	: bold 17px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	color	: #fff;
 	text-transform	: capitalize;
 	padding-bottom	: 25px;
 	line-height		: 20px;
@@ -806,115 +804,111 @@ div.blog div.content section.rightside div.category h3 {
 div.blog div.content section.rightside div.recentpost ul li,
 div.blog div.content section.rightside div.archive ul li,
 div.blog div.content section.rightside div.category ul li {
-	border-bottom: 1px solid #343434;
+	border-bottom	: 1px solid #343434;
 }
-
-/*div.blog div.content section.rightside div.recentpost ul li:hover {
-	border-style: dashed;
-}*/
 
 div.blog div.content section.rightside div.recentpost ul li:first-child,
 div.blog div.content section.rightside div.archive ul li:first-child,
 div.blog div.content section.rightside div.category ul li:first-child {
-	border-top: 1px solid #343434;
+	border-top	: 1px solid #343434;
 }
 
 div.blog div.content section.rightside div.recentpost ul li a {
 	display	: block;
-	font 	: normal 13px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
-	color 	: #D2D2D2;
-	padding : 5px 0 5px 22px;
+	font	: normal 13px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	color	: #D2D2D2;
+	padding	: 5px 0 5px 22px;
 	line-height		: 18px;
 	text-decoration	: none;
 	background 		: url('./images/posts.png') no-repeat -3px center;
 }
 
 div.blog div.content section.rightside div.recentpost ul li a:hover {
-	color: #fff;
-	background-color: #121212;
+	color				: #fff;
+	background-color	: #121212;
 }
 
 div.blog div.content section.rightside div.recentcomment ul li {
-	font 	: normal 13px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
-	color 	: #D2D2D2;
-	padding : 8px 0 8px 24px;
+	font	: normal 13px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	color	: #D2D2D2;
+	padding	: 8px 0 8px 24px;
 	line-height		: 18px;
-	background 		: url('./images/widget-comments.png') no-repeat -3px center;
+	background		: url('./images/widget-comments.png') no-repeat -3px center;
 	border-bottom	: 1px solid #343434;
 }
 
 div.blog div.content section.rightside div.recentcomment ul li:first-child {
-	border-top: 1px solid #343434;
+	border-top	: 1px solid #343434;
 }
 
 
 div.blog div.content section.rightside div.recentcomment ul li a {
-	color: #D2D2D2;
-	text-decoration: none;
+	color			: #D2D2D2;
+	text-decoration	: none;
 }
 
 div.blog div.content section.rightside div.recentcomment ul li a:hover {
-	color: #fff;
-	background-color: #121212;
+	color				: #fff;
+	background-color	: #121212;
 }
 
 div.blog div.content section.rightside div.recentcomment ul li {
-	font : normal 13px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
-	color: #D2D2D2;
-	padding 		: 8px 0 8px 24px;
-	line-height 	: 18px;
-	background 		: url('./images/widget-comments.png') no-repeat -3px center;
+	font	: normal 13px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	color	: #D2D2D2;
+	padding			: 8px 0 8px 24px;
+	line-height		: 18px;
+	background		: url('./images/widget-comments.png') no-repeat -3px center;
 	border-bottom	: 1px solid #343434;
 }
 
 div.blog div.content section.rightside div.recentcomment ul li:first-child {
-	border-top: 1px solid #343434;
+	border-top	: 1px solid #343434;
 }
 
 
 div.blog div.content section.rightside div.recentcomment ul li a {
-	color: #D2D2D2;
-	text-decoration: none;
+	color			: #D2D2D2;
+	text-decoration	: none;
 }
 
 div.blog div.content section.rightside div.recentcomment ul li a:hover {
-	color: #fff;
+	color	: #fff;
 }
 
 div.blog div.content section.rightside div.archive ul li a,
 div.blog div.content section.rightside div.category ul li a {
 	display		: block;
-	font 		: normal 13px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
+	font		: normal 13px 'PT Sans', 'Helvetica Neue', 'Verdana', sans-serif;
 	line-height	: 18px;
-	color 		: #D2D2D2;
-	padding 	:5px 0 5px 10px;
-	text-decoration: none;
+	color		: #D2D2D2;
+	padding		:5px 0 5px 10px;
+	text-decoration	: none;
 }
 
 div.blog div.content section.rightside div.archive ul li a:hover,
 div.blog div.content section.rightside div.category ul li a:hover {
-	color: #fff;
-	background-color: #121212;
+	color				: #fff;
+	background-color	: #121212;
 }
 
 /*---------- Galleria Page ----------*/
 div.galleria header h2 {
-	font-size: 30px;
-	text-transform: uppercase;
+	font-size		: 30px;
+	text-transform	: uppercase;
 }
 
 div.galleria div.content section.slideshow {
-	width: 600px;
+	width	: 600px;
 }
 
 div.galleria div.content section.slideshow ul.train li {
-	width 	: 600px;
-	height 	: 390px;
-	position: absolute;
-	top 	: 0;
-	left 	: 0;
-	z-index	: 1;
-	opacity	: 0;
+	width		: 600px;
+	height		: 390px;
+	position	: absolute;
+	top			: 0;
+	left		: 0;
+	z-index		: 1;
+	opacity		: 0;
 	background-color	: #121212;
 	background-repeat	: no-repeat;
 	background-position	: center center;
@@ -945,131 +939,131 @@ div.galleria div.content section.slideshow menu li {
 	width 	: 60px;
 	height 	: 39px;
 	border 	: 1px solid #343434;
-	margin-right: 5px;
-	opacity 	: 0.4;
+	margin-right	: 5px;
+	opacity			: 0.4;
 	background-repeat	: no-repeat;
 	background-position	: center center;
 }
 
 div.galleria div.content section.slideshow menu li:first-child {
-	margin-left: 20px;
+	margin-left	: 20px;
 }
 
 div.galleria div.content section.slideshow menu li:hover {
-	opacity: 1;
-	background-color: #121212;
+	opacity				: 1;
+	background-color	: #121212;
 }
 
 div.galleria div.content .step1 section.slideshow > ul.train > li.pic1 {
-	transform 			: scale(1);
+	opacity				: 1;
+	transform			: scale(1);
 	-webkit-transform	: scale(1);
 	-moz-transform		: scale(1);
 	-ms-transform		: scale(1);
 	-o-transform		: scale(1);
-	opacity: 1;
 }
 
 div.galleria div.content .step1 section.slideshow > menu > li.pic1 {
-	opacity: 1;
-	background-color: #121212;
+	opacity				: 1;
+	background-color	: #121212;
 }
 
 div.galleria div.content .step2 section.slideshow > ul.train > li.pic2 {
-	transform 			: scale(1);
+	opacity				: 1;
+	transform			: scale(1);
 	-webkit-transform	: scale(1);
 	-moz-transform		: scale(1);
 	-ms-transform		: scale(1);
 	-o-transform		: scale(1);
-	opacity: 1;
 }
 
 div.galleria div.content .step2 section.slideshow > menu > li.pic2 {
-	opacity: 1;
-	background-color: #121212;
+	opacity				: 1;
+	background-color	: #121212;
 }
 
 div.galleria div.content .step3 section.slideshow > ul.train > li.pic3 {
-	transform 			: scale(1);
+	opacity				: 1;
+	transform			: scale(1);
 	-webkit-transform	: scale(1);
 	-moz-transform		: scale(1);
 	-ms-transform		: scale(1);
 	-o-transform		: scale(1);
-	opacity: 1;
 }
 
 div.galleria div.content .step3 section.slideshow > menu > li.pic3 {
-	opacity: 1;
-	background-color: #121212;
+	opacity				: 1;
+	background-color	: #121212;
 }
 
 div.galleria div.content .step4 section.slideshow > ul.train > li.pic4 {
-	transform 			: scale(1);
+	opacity				: 1;
+	transform			: scale(1);
 	-webkit-transform	: scale(1);
 	-moz-transform		: scale(1);
 	-ms-transform		: scale(1);
 	-o-transform		: scale(1);
-	opacity: 1;
 }
 
 div.galleria div.content .step4 section.slideshow > menu > li.pic4 {
-	opacity: 1;
-	background-color: #121212;
+	opacity				: 1;
+	background-color	: #121212;
 }
 
 div.galleria div.content .step5 section.slideshow > ul.train > li.pic5 {
-	transform 			: scale(1);
+	opacity				: 1;
+	transform			: scale(1);
 	-webkit-transform	: scale(1);
 	-moz-transform		: scale(1);
 	-ms-transform		: scale(1);
 	-o-transform		: scale(1);
-	opacity: 1;
 }
 
 div.galleria div.content .step5 section.slideshow > menu > li.pic5 {
-	opacity: 1;
-	background-color: #121212;
+	opacity				: 1;
+	background-color	: #121212;
 }
 
 div.galleria div.content .step6 section.slideshow > ul.train > li.pic6 {
-	transform 			: scale(1);
+	transform			: scale(1);
 	-webkit-transform	: scale(1);
 	-moz-transform		: scale(1);
 	-ms-transform		: scale(1);
 	-o-transform		: scale(1);
-	opacity: 1;
+	opacity				: 1;
 }
 
 div.galleria div.content .step6 section.slideshow > menu > li.pic6 {
-	opacity: 1;
-	background-color: #121212;
+	opacity				: 1;
+	background-color	: #121212;
 }
 
 div.galleria div.content .step7 section.slideshow > ul.train > li.pic7 {
-	transform 			: scale(1);
+	transform			: scale(1);
 	-webkit-transform	: scale(1);
 	-moz-transform		: scale(1);
 	-ms-transform		: scale(1);
 	-o-transform		: scale(1);
-	opacity: 1;
+	opacity				: 1;
 }
 
 div.galleria div.content .step7 section.slideshow > menu > li.pic7 {
-	opacity: 1;
-	background-color: #121212;
+	opacity				: 1;
+	background-color	: #121212;
 }
 
 div.galleria div.content .step8 section.slideshow > ul.train > li.pic8 {
-	transform 			: scale(1);
+	transform			: scale(1);
 	-webkit-transform	: scale(1);
 	-moz-transform		: scale(1);
 	-ms-transform		: scale(1);
 	-o-transform		: scale(1);
-	opacity: 1;
+	opacity				: 1;
 }
 
 div.galleria div.content .step8 section.slideshow > menu > li.pic8 {
-	opacity: 1;
-	background-color: #121212;
+	opacity				: 1;
+	background-color	: #121212;
 }
 
 div.galleria div.content section.text p {
@@ -1080,19 +1074,18 @@ div.galleria div.content section.text p {
 
 /*---------- Sliderview Page ----------*/
 div.sliderview header h2 {
-	font-size: 30px;
 	font-family: Titr;
-	text-transform: uppercase;
+	font-size  : 30px;
 }
 
 div.sliderview div.content section.slideshow {
-	width: 604px;
-	min-height: 420px;
+	width		: 604px;
+	min-height	: 420px;
 }
 
 div.sliderview div.content section.slideshow ul.train {
-	left: 0;
-	top : 0;
+	left	: 0;
+	top		: 0;
 	transition 			: left 800ms ease-out;
 	-webkit-transition	: left 800ms ease-out;
 	-moz-transition		: left 800ms ease-out;
@@ -1101,21 +1094,21 @@ div.sliderview div.content section.slideshow ul.train {
 }
 
 div.sliderview div.content section.slideshow ul.train li {
-	width : 600px;
-	height: 390px;
-	float : left;
-	margin:0 2px;
+	width	: 600px;
+	height	: 390px;
+	float	: left;
+	margin	:0 2px;
 	background-repeat	: no-repeat;
 	background-size		: cover;
 	background-position	: center center;
 }
 
 div.sliderview div.content section.slideshow menu {
-	position: absolute;
-	top 	: 93%;
-	left 	: 0;
-	z-index	: 1;
-	padding-top: 5px;
+	position	: absolute;
+	top			: 93%;
+	left		: 0;
+	z-index		: 1;
+	padding-top	: 5px;
 }
 
 div.sliderview div.content section.slideshow menu li {
@@ -1125,15 +1118,15 @@ div.sliderview div.content section.slideshow menu li {
 	color 	: #fff;
 	cursor	: pointer;
 	border 	: 1px solid #343434;
-	background-color: #262626;
-	text-align		: center;
-	line-height		: 20px;
-	margin-right	: 1px;
+	background-color	: #262626;
+	text-align			: center;
+	line-height			: 20px;
+	margin-right		: 1px;
 }
 
 div.sliderview div.content section.slideshow menu li:hover {
-	background-color: #fff;
-	color: #262626;
+	background-color	: #fff;
+	color				: #262626;
 }
 
 /*---------- about Page ----------*/
@@ -1152,6 +1145,3 @@ div.about div.content h1 {
 	margin-top	: 50px;
 	color 		: #fff;
 }
-/*---------- Autumn 2012 ---------*/
-/*---------- *** ----------*/
-
