@@ -401,6 +401,22 @@ div.contact-us div.content section.form input {
 	border-radius		: 5px;
 	background-color	: #1b1b1b;
 	padding-right: 10px;
+	transition : border 500ms;
+	-webkit-transition : border 500ms;
+	-moz-transition : border 500ms;
+	-o-transition : border 500ms;
+	-ms-transition : border 500ms;
+}
+
+div.contact-us div.content section.form input.err {
+	border: 1px solid red;
+}
+
+input.err::-webkit-input-placeholder {
+	color:red;
+}
+input.err:-moz-placeholder {
+	color:red;
 }
 
 div.contact-us div.content section.form textarea {
@@ -413,6 +429,22 @@ div.contact-us div.content section.form textarea {
 	background-color	: #1b1b1b;
 	padding-right: 10px;
 	padding-top: 5px;
+	transition : border 500ms;
+	-webkit-transition : border 500ms;
+	-moz-transition : border 500ms;
+	-o-transition : border 500ms;
+	-ms-transition : border 500ms;
+}
+
+div.contact-us div.content section.form textarea.err {
+	border: 1px solid red;
+}
+
+textarea.err::-webkit-input-placeholder {
+	color:red;
+}
+textarea.err:-moz-placeholder {
+	color:red;
 }
 
 div.contact-us div.content section.form input.btn_submit {
