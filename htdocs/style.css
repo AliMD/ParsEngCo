@@ -1,3 +1,31 @@
+/*---------- Fonts ----------*/
+
+@font-face {
+	font-family: 'Nazanin';
+	src: url('fonts/BNazanin.eot');
+	src: url('fonts/BNazanin.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/BNazanin.woff') format('woff'),
+	     url('fonts/BNazanin.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	-webkit-font-smoothing : antialiased;
+}
+
+@font-face {
+	font-family: 'Titr';
+	src: url('fonts/BTitrBold.eot');
+	src: url('fonts/BTitrBold.eot?#iefix') format('embedded-opentype'),
+	     url('fonts/BTitrBold.woff') format('woff'),
+	     url('fonts/BTitrBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	-webkit-font-smoothing : antialiased;
+}
+
+:lang(fa-IR) {
+	font-family: 'Nazanin';
+}
+
 div.container {
 	-webkit-transition: all 700ms;
 	position: relative;
@@ -110,10 +138,9 @@ div.menu nav > menu > li:first-child {
 
 div.menu nav > menu > li > a {
 	display: block;
+	font-family: Titr;
 	padding: 16px 10px 10px;
 	text-decoration	: none;
-	text-transform	: uppercase;
-	font-family		: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 	font-size		: 17px;
 	color: #ccc;
 }
@@ -297,7 +324,7 @@ div.content_wrap div.content section.text p {
 }
 
 footer.footers{
-	border-top: 1px solid #646464;
+	border-top : 1px solid #646464;
 	padding-top: 10px;
 }
 
@@ -1054,6 +1081,7 @@ div.galleria div.content section.text p {
 /*---------- Sliderview Page ----------*/
 div.sliderview header h2 {
 	font-size: 30px;
+	font-family: Titr;
 	text-transform: uppercase;
 }
 
@@ -1110,19 +1138,19 @@ div.sliderview div.content section.slideshow menu li:hover {
 
 /*---------- about Page ----------*/
 div.about div.content p {
-	padding-top	: 20px;
+	padding-top	: 25px;
 	color 		: #CCC;
-	font 		: normal 12px Verdana, Arial, sans-serif;
-	line-height	: 20px;
+	font-size: 19px;
+	line-height: 27px;
+	text-align: justify;
 }
 
 div.about div.content h1 {
-	font-size	: 25px;
+	font-family: Titr;
+	font-size: 27px;
 	font-weight	: bold;
 	margin-top	: 50px;
 	color 		: #fff;
-	text-transform	: capitalize;
-	text-decoration	: none;
 }
 /*---------- Autumn 2012 ---------*/
 /*---------- *** ----------*/
