@@ -4,20 +4,21 @@
 	</header>
 	<div class="pl1 pr1 pb5 content cover">
 		<section class="w9 right form">
-			<form action="">
+			<form id="contact-form" action="sendmail.php" method="post" target='ifrm'>
 				<abbr title="نام">
-					<input type="text" name="Name" placeholder='نام' />
+					<input type="text" name="name" id="name" placeholder='نام' />
 				</abbr>
 				<abbr title="آدرس پست الکترونیکی">
-					<input type="email" name="usremail" placeholder='آدرس پست الکترونیکی' />
+					<input type="text" name="mail" id="mail" placeholder='آدرس پست الکترونیکی' />
 				</abbr>
 				<abbr title="متن پیام">
-					<textarea name="Message" id="Message" cols="30" rows="10" placeholder='متن پیام'></textarea>
+					<textarea name="txt" id="txt" cols="30" rows="10" placeholder='متن پیام'></textarea>
 				</abbr>
 				<abbr title="ارسال">
-					<input class="font btn_submit " id='btn_submit' type="submit" value="ارسال" />
+					<input class="font btn_submit" name="submit" id='btn_submit' type="submit" value="ارسال" />
 				</abbr>
 			</form>
+			<iframe id='ifrm' name='ifrm' src="" frameborder="0" scrolling="no"></iframe>
 		</section>
 		<section class="w7 mh10 mr10 info">
 			<h3 class='pb2 font'>راههای تماس با ما!</h3>
