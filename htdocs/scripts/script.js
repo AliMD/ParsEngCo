@@ -102,7 +102,7 @@ $('#contact-form').submit(function(){
 
 	if(!err){
 		$('#ifrm').animate({
-			height:'75px'
+			height:'70px'
 		},500);
 	}
 

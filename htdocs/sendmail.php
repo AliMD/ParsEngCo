@@ -5,15 +5,17 @@
 	<title>Sending mail ...</title>
 	<style type="text/css">
 		body {
-			background-color: #F4F4F4;
+			background-color: transparent;
 		}
 
 		.ok {
 			color:#23B3AB;
+			text-align: center;
 		}
 
 		.err {
 			color:#BD5B3D;
+			text-align: center;
 		}
 	</style>
 </head>
@@ -34,12 +36,12 @@
 					$text,
 					"From:$name <$email" )
 			){
-				echo '<h2 class="ok">Mail sent</h2>';
+				echo '<h2 class="ok">ایمیل شما ارسال شد</h2>';
 			}else{
-				echo '<h2 class="err">Error in sending mail.</h2>';
+				echo '<h2 class="err">خطا در ارسال ایمیل</h2>';
 			}
 		}else{
-			echo '<h2 class="err">Access Restricted !</h2>';
+			echo '<h2 class="err">لطفا دوباره تلاش کنید</h2>';
 		}
 	?>
 </body>
