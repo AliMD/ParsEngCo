@@ -1,9 +1,9 @@
 <div class="content_wrap gallery">
-	<header class="mh3 mt3 mr1 head">
-		<h2>پروژه ها</h2>
+	<header class="mh3 mr1 head">
+		<h1>پروژه ها</h1>
 	</header>
 	<div class="pl1 pr1 pb4 content">
-		<section class="mh5 mt5 row cover">
+		<section class="mh5 mt4 row cover">
 			<article class="w7 mh9 box left">
 				<h3> پروژه 1</h3>
 				<a href="./images/galleries/original/rug1.jpg" title="Item 1 title ..." data-desc="	Item 1 description " rel="lightbox[group1]">
@@ -16,7 +16,7 @@
 				</p>
 			</article>
 			<article class="w7 mh9 box mla">
-				<h3> پروزه 2</h3>
+				<h3> پروژه 2</h3>
 				<a href="./images/galleries/original/rug2.jpg" title="Item 1 title ..." data-desc="	Item 1 description " rel="lightbox[group1]">
 					<img src="./images/galleries/thumbs2/rug2.jpg" alt="rug2" width="290" height="210" />
 					<span></span>
@@ -27,7 +27,7 @@
 				</p>
 			</article>
 		</section>
-		<section class="mh5 mt5 row cover">
+		<section class="mh5 mt4 row cover">
 			<article class="w7 mh9 box left">
 				<h3> پروژه 3</h3>
 				<a href="./images/galleries/original/rug3.jpg" title="Item 1 title ..." data-desc="	Item 1 description " rel="lightbox[group1]">
@@ -51,7 +51,7 @@
 				</p>
 			</article>
 		</section>
-		<section class="mh5 mt5 row cover">
+		<section class="mh5 mt4 row cover">
 			<article class="w7 mh9 box left">
 				<h3> پروژه 5</h3>
 				<a href="./images/galleries/original/rug5.jpg" title="Item 1 title ..." data-desc="	Item 1 description " rel="lightbox[group1]">
