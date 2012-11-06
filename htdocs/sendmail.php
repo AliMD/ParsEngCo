@@ -5,7 +5,7 @@
 	<title>Sending mail ...</title>
 	<style type="text/css">
 		body {
-			background-color: #F4F4F4;
+			background-color: transparent;
 		}
 
 		.ok {
