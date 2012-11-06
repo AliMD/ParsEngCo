@@ -19,7 +19,7 @@
 					"<div class='box left'>
 					<a href='$dir/$file_name.$file_type'>
 					<img src='$dir/thumbs/$file_name.$file_type' alt='$file_name' width='196' height='145' />
-					<span></span>
+					<span>$file_name</span>
 					</a>
 					</div>";				
 			}

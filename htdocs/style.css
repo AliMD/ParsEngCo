@@ -247,29 +247,30 @@ div.content_wrap header.head h2 {
 	text-transform	: uppercase;
 }
 
-div.content_wrap div.content section.row div.box {
+div.content_wrap div.content div.box {
 	width 		: 196px;
-	min-height	: 145px;	
 	position 	: relative;
+	margin-right: 9px;	
+	margin-top: 12px;
 }
 
 /*---------- content_wrap: 2 Columns ----------*/
-div.content_wrap div.content section.row div.box.clmn2 {
+div.content_wrap div.content div.box.clmn2 {
 	width 		: 295px;
 	min-height	: 215px;	
 	position 	: relative;
 }
 /*---------- end content_wrap: 2 Col ----------*/
 
-div.content_wrap div.content section.row div.box a {
+div.content_wrap div.content div.box a {
 	display : block;
 }
 
-div.content_wrap div.content section.row div.box img {
+div.content_wrap div.content div.box img {
 	display : block;
 }
 
-div.content_wrap div.content section.row div.box a:hover img {
+div.content_wrap div.content div.box a:hover img {
 	opacity : 0.3;
 	background-color	: #000;
 	transition			: opacity 800ms;
@@ -279,20 +280,25 @@ div.content_wrap div.content section.row div.box a:hover img {
 	-o-transition		: opacity 800ms;
 }
 
-div.content_wrap div.content section.row div.box a:hover span {
-	display		: block;
-	position	: absolute;
-	top			: 0;
-	left		: 0;
-	width		: 196px;
-	height		: 145px;
-	background-image	: url('./images/hover3_image_gallery.png');
-	background-repeat	: no-repeat;
-	background-position	: center;
+div.content_wrap div.content div.box a span {
+	display: none;
+}
+
+div.content_wrap div.content div.box a:hover span {
+	display    : block;
+	position   : absolute;
+	top        : 0;
+	left       : 0;
+	width      : 196px;
+	height     : 145px;
+	color      : #ccc;
+	font-size  : 50px;
+	line-height: 145px;
+	text-align : center;
 }
 
 /*---------- content_wrap: 2 Columns ----------*/
-div.content_wrap div.content section.row div.box.clmn2 a:hover span {
+div.content_wrap div.content div.box.clmn2 a:hover span {
 	display		: block;
 	position	: absolute;
 	top			: 0;
@@ -305,7 +311,7 @@ div.content_wrap div.content section.row div.box.clmn2 a:hover span {
 }
 /*---------- end content_wrap: 2 Col ----------*/
 
-div.content_wrap div.content section.row div.box a:hover img {
+div.content_wrap div.content div.box a:hover img {
 	box-shadow : -1px 1px 10px 1px #ccc;
 }
 
@@ -1174,9 +1180,4 @@ div.content_wrap h1 {
 	font-weight	: bold;
 	margin-top	: 50px;
 	color 		: #fff;
-}
-
-div.content div.box{
-	margin-right: 9px;	
-	margin-top: 12px;
 }
