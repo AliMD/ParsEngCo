@@ -324,58 +324,6 @@ footer.footers{
 	padding-top: 10px;
 }
 
-footer.footers section.fmenu {
-	border-top		: 1px solid #646464;
-	border-bottom	: 1px solid #646464;
-}
-
-footer.footers section.fmenu section.learn_more,
-footer.footers section.fmenu section.get_in_touch {
-	margin-right : 20px;
-}
-
-footer.footers section.fmenu section.learn_more h3,
-footer.footers section.fmenu section.get_in_touch h3,
-footer.footers section.fmenu section.need_to_know h3 {
-	display		: block;
-	font-size	: 16px;
-	font-weight	: bold;
-	text-transform	: uppercase;
-	padding-bottom	: 10px;
-	text-shadow		: 0 0 1px #ccc;
-}
-
-footer.footers section.fmenu section.learn_more ul li,
-footer.footers section.fmenu section.get_in_touch ul li {
-	border-bottom : 1px solid #343434;
-}
-
-footer.footers section.fmenu section.learn_more ul li:first-child,
-footer.footers section.fmenu section.get_in_touch ul li:first-child {
-	border-top : 1px solid #343434;
-}
-
-footer.footers section.fmenu section.learn_more ul li a,
-footer.footers section.fmenu section.get_in_touch ul li a {
-	display	: block;
-	font 	: normal 13px Verdana, Arial, sans-serif;
-	padding : 5px 10px 5px;
-	color 	: #ccc;
-	text-decoration	: none;
-	text-transform	: capitalize;
-}
-
-footer.footers section.fmenu section.learn_more ul li a:hover,
-footer.footers section.fmenu section.get_in_touch ul li a:hover {
-	color : #fff;
-	background-color : #121212;
-}
-
-footer.footers section.fmenu section.need_to_know p {
-	color	: #ccc;
-	font	: normal 12px Verdana, Arial, sans-serif;
-}
-
 footer.footers div.text {
 	direction: ltr;
 	line-height	: 35px;
