@@ -1,6 +1,6 @@
 <div class="content_wrap contact-us">
-	<header class="mh3 mt3 mr1 pb5 head">
-		<h2>تماس با ما</h2>
+	<header class="mh3 mr1 pb5 head">
+		<h1>تماس با ما</h1>
 	</header>
 	<div class="pl1 pr1 pb5 content cover">
 		<section class="w9 right form">
