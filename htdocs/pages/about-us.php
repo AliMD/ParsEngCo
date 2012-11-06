@@ -3,29 +3,9 @@
 		<h2>درباره ما</h2>
 	</header>
 	<div class="pl1 pr1 pb4 mt5 content">
-		<h1>1st example : about rug 1</h1>
+		<h1>شرکت مهندسی پارس</h1>
 		<p>
-			Dolor, porttitor placerat nascetur et est enim elementum, turpis integer? Sit dapibus nunc! A pellentesque porttitor tortor tristique montes, phasellus integer tortor? Et mus ac augue, scelerisque sit a nec et purus phasellus aliquam dignissim, magna nec? Turpis a? Amet turpis turpis augue ultrices lundium integer! Nec ultrices non auctor magna nunc duis sed amet, turpis lacus parturient lacus adipiscing turpis elementum, nunc proin sed placerat proin tempor.
-		</p>
-		<h1>2nd example : about rug 2</h1>
-		<p>
-			Dolor, porttitor placerat nascetur et est enim elementum, turpis integer? Sit dapibus nunc! A pellentesque porttitor tortor tristique montes, phasellus integer tortor? Et mus ac augue, scelerisque sit a nec et purus phasellus aliquam dignissim, magna nec? Turpis a? Amet turpis turpis augue ultrices lundium integer! Nec ultrices non auctor magna nunc duis sed amet, turpis lacus parturient lacus adipiscing turpis elementum, nunc proin sed placerat proin tempor.
-		</p>
-		<h1>3rd example : about rug 3</h1>
-		<p>
-			Dolor, porttitor placerat nascetur et est enim elementum, turpis integer? Sit dapibus nunc! A pellentesque porttitor tortor tristique montes, phasellus integer tortor? Et mus ac augue, scelerisque sit a nec et purus phasellus aliquam dignissim, magna nec? Turpis a? Amet turpis turpis augue ultrices lundium integer! Nec ultrices non auctor magna nunc duis sed amet, turpis lacus parturient lacus adipiscing turpis elementum, nunc proin sed placerat proin tempor.
-		</p>
-		<h1>4th example : about rug 4</h1>
-		<p>
-			Dolor, porttitor placerat nascetur et est enim elementum, turpis integer? Sit dapibus nunc! A pellentesque porttitor tortor tristique montes, phasellus integer tortor? Et mus ac augue, scelerisque sit a nec et purus phasellus aliquam dignissim, magna nec? Turpis a? Amet turpis turpis augue ultrices lundium integer! Nec ultrices non auctor magna nunc duis sed amet, turpis lacus parturient lacus adipiscing turpis elementum, nunc proin sed placerat proin tempor.
-		</p>
-		<h1>5th example : about rug 5</h1>
-		<p>
-			Dolor, porttitor placerat nascetur et est enim elementum, turpis integer? Sit dapibus nunc! A pellentesque porttitor tortor tristique montes, phasellus integer tortor? Et mus ac augue, scelerisque sit a nec et purus phasellus aliquam dignissim, magna nec? Turpis a? Amet turpis turpis augue ultrices lundium integer! Nec ultrices non auctor magna nunc duis sed amet, turpis lacus parturient lacus adipiscing turpis elementum, nunc proin sed placerat proin tempor.
-		</p>
-		<h1>6th example : about rug 6</h1>
-		<p>
-			Dolor, porttitor placerat nascetur et est enim elementum, turpis integer? Sit dapibus nunc! A pellentesque porttitor tortor tristique montes, phasellus integer tortor? Et mus ac augue, scelerisque sit a nec et purus phasellus aliquam dignissim, magna nec? Turpis a? Amet turpis turpis augue ultrices lundium integer! Nec ultrices non auctor magna nunc duis sed amet, turpis lacus parturient lacus adipiscing turpis elementum, nunc proin sed placerat proin tempor.
+امروزه صنعت چوب در ایران با محدود شدن در طرح های PVC و هایگلس مدت هاست که تحولی جدید را می طلبد تا نیاز بازار را در طرح و رنگ برآورده سازد. شرکت مهندسی پارس تولید کننده و ارائه دهنده پنل با روکش های طبیعی فن آوری شده ALPI ایتالیا وDANZER آلمان با هدف ایجاد تحولی عظیم در صنعت چوب ایران فعالیت خود را آغاز نموده است. محصولی که در این مجموعه ارائه می گردد روکش های فرآوری شده از چوب طبیعی درختان کامرونی و ایتالیایی می باشد که با استفاده از فن آوری کاملا پیشرفته در کشورهای ایتالیا و آلمان تولید و به ایران وارد میشود. تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات برداشته و محیطی جذاب و گیرا متناسب با هر سلیقه را برای تمامی مشتریان ایجاد نماید. این روکش ها می تواند به صورت پنل MDF ، روکش درب های چوبی و کف پوش مورد استفاده قرار گیرد.
 		</p>
 	</div>
 	<footer class="pr1 pl1 mh8 cover footers">
