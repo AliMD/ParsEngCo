@@ -22,7 +22,6 @@
 }
 
 div.container {
-	-webkit-transition: all 700ms;
 	position: relative;
 }
 
@@ -57,11 +56,11 @@ section.background div {
 div.menu_wrap {
 	position: fixed;
 	width 	: 240px;
-	transition 			: all 800ms ease-in-out;
-	-webkit-transition	: all 800ms ease-in-out;
-	-moz-transition		: all 800ms ease-in-out;
-	-ms-transition		: all 800ms ease-in-out;
-	-o-transition		: all 800ms ease-in-out;
+	transition 			: top 800ms ease-in-out;
+	-webkit-transition	: top 800ms ease-in-out;
+	-moz-transition		: top 800ms ease-in-out;
+	-ms-transition		: top 800ms ease-in-out;
+	-o-transition		: top 800ms ease-in-out;
 }
 
 .menu_wrap {
@@ -74,8 +73,8 @@ div.menu_wrap {
 
 #hidebtn img {
 	transition 			: all 800ms ease-in-out;
-	-webkit-transition	: all 800ms ease-in-out;
-	-moz-transition		: all 800ms ease-in-out;
+	-webkit-transition	: -webkit-transform 800ms ease-in-out;
+	-moz-transition		: -moz-transform 800ms ease-in-out;
 	-ms-transition		: all 800ms ease-in-out;
 	-o-transition		: all 800ms ease-in-out;
 }
