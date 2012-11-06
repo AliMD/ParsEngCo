@@ -442,14 +442,17 @@ div.contact-us div.content section.info h3 {
 
 div.contact-us div.content section.info ul {
 	color 		: #ccc;
-	margin-left	: 60px;
 }
 
 div.contact-us div.content section.info ul li {
 	padding			: 6px 25px;
-	font			: normal 12px Verdana, Arial, sans-serif;
 	line-height		: 20px;
 	border-bottom	: 1px solid #2b2b2b;
+}
+
+div.contact-us div.content section.info ul li:lang(en-US) {
+	font : normal 12px Verdana, Arial, sans-serif;
+
 }
 
 div.contact-us div.content section.info ul li:first-child {
