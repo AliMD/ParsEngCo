@@ -581,10 +581,10 @@ div.content_wrap div.content section.row article.box.col2 {
 
 div.content_wrap div.content section.row article.box h3 {
 	display		: block;
-	font-size	: 18px;
+	font-size	: 21px;
 	font-weight	: bold;
 	text-transform	: uppercase;
-	padding-bottom	: 10px;
+	padding-bottom	: 18px;
 }
 
 div.content_wrap div.content section.row article.box a {
@@ -636,7 +636,10 @@ div.content_wrap div.content section.row article.box.col2 a:hover span {
 
 div.content_wrap div.content article.box p {
 	display		: block;
-	padding-top	: 5px;
+	line-height: 19px;
+	padding-top	: 8px;
+	font-size: 16px;
+	text-align: justify;
 }
 
 div.content_wrap div.content article.box a.readmore {
