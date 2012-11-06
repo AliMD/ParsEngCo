@@ -1175,3 +1175,8 @@ div.content_wrap h1 {
 	margin-top	: 50px;
 	color 		: #fff;
 }
+
+div.content div.box{
+	margin-right: 9px;	
+	margin-top: 12px;
+}
