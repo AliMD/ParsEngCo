@@ -296,6 +296,11 @@ div.content_wrap div.content section.text p {
 	line-height	: 18px;
 }
 
+footer.footers{
+	border-top: 1px solid #646464;
+	padding-top: 10px;
+}
+
 footer.footers section.fmenu {
 	border-top		: 1px solid #646464;
 	border-bottom	: 1px solid #646464;
