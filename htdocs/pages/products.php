@@ -103,13 +103,6 @@
 				</a>
 			</div>
 		</section>
-		<section class="mt3 text">
-			<p>
-				This is just an example of some text. 
-				Text on gallery pages can be inserted either Above or Below depending on your selection. 
-				Galleries can also be created either as a Page or Shortcode with a variety of additional options available to customize as desired.	
-			</p>
-		</section>
 	</div>
 	<footer class="pr1 pl1 mh8 cover footers">
 	<?php include 'inc/copy-right.php'; ?>
