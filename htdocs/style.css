@@ -398,9 +398,9 @@ div.contact-us div.content section.form input {
 	color	: #eee;
 	margin	: 6px 0;
 	border	: 1px solid #333;
-	font	: 12px 'Helvetica Neue', Verdana, Helvetica, sans-serif;
 	border-radius		: 5px;
 	background-color	: #1b1b1b;
+	padding-right: 10px;
 }
 
 div.contact-us div.content section.form textarea {
@@ -409,36 +409,28 @@ div.contact-us div.content section.form textarea {
 	margin	: 6px 0;
 	color	: #eee;
 	border	: 1px solid #333;
-	font	: 12px 'Helvetica Neue', Verdana, Helvetica, sans-serif;
 	border-radius		: 5px;
 	background-color	: #1b1b1b;
-}
-
-div.contact-us div.content section.form input:focus,
-div.contact-us div.content section.form textarea:focus {
-	background-color	: #555;
+	padding-right: 10px;
+	padding-top: 5px;
 }
 
 div.contact-us div.content section.form input.btn_submit {
-	width		: 150px;
-	height		: 30px;
-	margin-top	: 10px;
-	color		: #fff;
-	border		: none;
-	background	: gradient(linear, left top, left bottom, from(#666), to(#333));
-	background	: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background	: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
-	background	: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background	: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background-color	: gray;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #2C2C2C;
+	background: #111111;
+	text-align: center;
+	padding: 0px 10px;
+	width: 80px;
+	display: block;
+	color: white;
+	text-decoration: none;
 }
 
 div.contact-us div.content section.form input.btn_submit:hover {
-	background	: gradient(linear, left top, left bottom, from(#333), to(#666));
-	background	: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background	: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
-	background	: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background	: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background-color: #222222
 }
 
 div.contact-us div.content section.info h3 {
@@ -465,7 +457,7 @@ div.contact-us div.content section.info ul li:first-child {
 }
 
 div.contact-us div.content section.info iframe {
-	opacity			: 0.5;
+	opacity			: 0.8;
 	border-radius	: 3px;
 }
 
