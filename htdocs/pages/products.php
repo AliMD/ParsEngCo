@@ -23,8 +23,10 @@
 					</a>
 					</div>";				
 			}
-			
+
 		?>
+		<div class="clear"></div>
+	</div>
 	<footer class="pr1 pl1 mh8 cover footers">
 	<?php include 'inc/copy-right.php'; ?>
 	</footer>

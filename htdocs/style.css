@@ -1181,3 +1181,7 @@ div.content_wrap h1 {
 	margin-top	: 50px;
 	color 		: #fff;
 }
+
+.clear{
+	clear: both;
+}
