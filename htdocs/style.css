@@ -263,6 +263,7 @@ div.content_wrap div.content div.box.clmn2 {
 
 div.content_wrap div.content div.box a {
 	display : block;
+	text-decoration	: none;
 }
 
 div.content_wrap div.content div.box img {
