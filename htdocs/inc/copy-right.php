@@ -9,8 +9,8 @@
 </section>
 
 <section class="copyright mh3 mt1 pb2 cover">
-				<div class="w5 left text">
-					<span>© 2012 1Devs Team</span>
+				<div class="w8 left text" lang="en-US">
+					<span>A <a href="http://1dws.com">1Devs</a> Website. Copyright © 2012 Pars Engineering Co.</span>
 				</div>
 				<div class="w7 mla social">
 					<ul class="pl1">

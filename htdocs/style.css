@@ -11,25 +11,19 @@
 	-webkit-font-smoothing : antialiased;
 }
 
-@font-face {
-	font-family: 'Titr';
-	src: url('fonts/BTitrBold.eot');
-	src: url('fonts/BTitrBold.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/BTitrBold.woff') format('woff'),
-	     url('fonts/BTitrBold.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-	-webkit-font-smoothing : antialiased;
-}
-
 :lang(fa-IR) {
 	font-family: 'Nazanin';
+	direction: rtl;
+}
+
+:lang(en-US) {
+	direction: ltr;
+	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 }
 
 div.container {
 	-webkit-transition: all 700ms;
 	position: relative;
-	font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 }
 
 /*---------- Background Slider ----------*/
@@ -378,8 +372,18 @@ footer.footers section.fmenu section.need_to_know p {
 }
 
 footer.footers div.text {
-	font 		: normal 12px Verdana, Arial, sans-serif;
+	direction: ltr;
 	line-height	: 35px;
+	font-size: 10px;
+}
+
+footer.footers div.text a {
+	text-decoration: none;
+	color	: #ccc;
+}
+
+footer.footers div.text a:hover {
+	text-decoration: underline;
 }
 
 /*---------- Contact Us Page ----------*/
@@ -1137,9 +1141,8 @@ div.about div.content p {
 	text-align: justify;
 }
 
-div.about div.content h1 {
-	font-family: Titr;
-	font-size: 27px;
+div.content_wrap h1 {
+	font-size: 32px;
 	font-weight	: bold;
 	margin-top	: 50px;
 	color 		: #fff;
