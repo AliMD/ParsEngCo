@@ -31,7 +31,5 @@
 			<iframe width="210" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=36.324202,59.491592&amp;num=1&amp;t=h&amp;vpsrc=0&amp;ie=UTF8&amp;z=14&amp;iwloc=near&amp;ll=36.324303,59.491466&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?q=36.324202,59.491592&amp;num=1&amp;t=h&amp;vpsrc=0&amp;ie=UTF8&amp;z=14&amp;iwloc=near&amp;ll=36.324303,59.491466&amp;source=embed" style="color:#0000FF;text-align:left"></a></small>
 		</section>
 	</div>
-	<footer class="pr1 pl1 mh8 cover footers">
-		<?php include 'inc/copy-right.php'; ?>
-	</footer>
+	<?php include 'inc/copy-right.php'; ?>
 </div>
