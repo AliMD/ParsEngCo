@@ -326,18 +326,19 @@ div.content_wrap div.content section.text p {
 
 footer.footers{
 	border-top : 1px solid #646464;
-	padding-top: 10px;
+	padding-top: 15px;
 }
 
 footer.footers div.text {
 	direction: ltr;
-	line-height	: 35px;
 	font-size: 10px;
+	margin-top: 22px;
+	color:#D6CBCB
 }
 
 footer.footers div.text a {
 	text-decoration: none;
-	color	: #ccc;
+	color	: #EEE;
 }
 
 footer.footers div.text a:hover {
