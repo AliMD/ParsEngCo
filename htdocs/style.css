@@ -619,7 +619,7 @@ div.content_wrap a.aboutPic img{
 	margin-bottom: 20px;
 }
 
-div.content_wrap a span{
+div.content_wrap a.aboutPic span{
 	display		: block;
 	position	: absolute;
 	top			: 0;
