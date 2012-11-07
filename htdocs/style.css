@@ -306,18 +306,19 @@ div.content_wrap div.content div.box a:hover span {
 
 footer.footers{
 	border-top : 1px solid #646464;
-	padding-top: 10px;
+	padding-top: 15px;
 }
 
 footer.footers div.text {
 	direction: ltr;
-	line-height	: 35px;
 	font-size: 10px;
+	margin-top: 22px;
+	color:#D6CBCB
 }
 
 footer.footers div.text a {
 	text-decoration: none;
-	color	: #ccc;
+	color	: #EEE;
 }
 
 footer.footers div.text a:hover {
@@ -599,6 +600,15 @@ div.content_wrap div.content article.box a.readmore:hover {
 }
 
 /*---------- about Page ----------*/
+
+
+div.content_wrap img.aboutPic{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
 
 div.about div.content p {
 	color		: #CCC;
