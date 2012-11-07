@@ -601,13 +601,47 @@ div.content_wrap div.content article.box a.readmore:hover {
 
 /*---------- about Page ----------*/
 
+div.content_wrap a.aboutPic{
+	display: block;
+	position: relative;
+	width: inherit;
+}
 
-div.content_wrap img.aboutPic{
+
+div.content_wrap a.aboutPic img{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
 	margin-bottom: 20px;
+}
+
+div.content_wrap a span{
+	display		: block;
+	position	: absolute;
+	top			: 0;
+	left		: 0;
+	width		: inherit;
+	height		: 300px;
+	z-index		: 2;
+	opacity		: 0;
+	background-image	: url('images/hover_image_big.png');
+	background-color	: black;
+	background-repeat	: no-repeat;
+	background-position	: center;
+	transition			: all 800ms ease-out;
+	-webkit-transition	: all 800ms ease-out;
+	-moz-transition		: all 800ms ease-out;
+	-ms-transition		: all 800ms ease-out;
+	-o-transition		: all 800ms ease-out;
+}
+div.content_wrap a:hover span{
+	opacity	: 0.7;
+	transition-duration			: 500ms;
+	-webkit-transition-duration	: 500ms;
+	-moz-transition-duration	: 500ms;
+	-ms-transition-duration		: 500ms;
+	-o-transition-duration		: 500ms;
 }
 
 div.about div.content p {
