@@ -4,8 +4,8 @@
 	font-family: 'Nazanin';
 	src: url('fonts/BNazanin.eot');
 	src: url('fonts/BNazanin.eot?#iefix') format('embedded-opentype'),
-	     url('fonts/BNazanin.woff') format('woff'),
-	     url('fonts/BNazanin.ttf') format('truetype');
+		 url('fonts/BNazanin.woff') format('woff'),
+		 url('fonts/BNazanin.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 	-webkit-font-smoothing : antialiased;
@@ -584,60 +584,56 @@ div.content_wrap div.content section.row article.box.col2 a:hover span {
 /*---------- end portfolio: 3 col ----------*/
 
 div.content_wrap div.content article.box p {
-	display		: block;
+	display    : block;
 	line-height: 19px;
-	padding-top	: 8px;
-	font-size: 16px;
-	text-align: justify;
+	padding-top: 8px;
+	font-size  : 16px;
+	text-align : justify;
 }
 
 div.content_wrap div.content article.box a.readmore {
-	width		: 100px;
-	height		: 30px;
-	line-height	: 30px;
-	margin-top	: 15px;
-	text-align	: center;
-	color		: #fff;
-	border		: 1px solid rgb(44,44,44);
-	border-radius		: 4px;
-	text-decoration		: none;
-	background			: gradient(linear, left top, left bottom, from(#666), to(#333));
-	background			: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background			: -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
-	background			: -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background			: -o-gradient(linear, left top, left bottom, from(#666), to(#333));
-	background-color	: gray;
+	width      : 100px;
+	height     : 30px;
+	line-height: 30px;
+	margin-top : 15px;
+	text-align : center;
+	color      : #fff;
+	border     : 1px solid rgb(44,44,44);
+	border-radius   : 4px;
+	text-decoration : none;
+	background      : gradient(linear, left top, left bottom, from(#666), to(#333));
+	background      : -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background      : -moz-linear-gradient(rgb(102, 102, 102), rgb(51, 51, 51)) repeat scroll 0% 0% transparent;
+	background      : -ms-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background      : -o-gradient(linear, left top, left bottom, from(#666), to(#333));
+	background-color: gray;
 }
 
 div.content_wrap{
-	margin-right	: auto;
-	text-align		: right;
+	margin-right: auto;
+	text-align  : right;
 }
 
 div.content_wrap div.content article.box a.readmore:hover {
-	background	: gradient(linear, left top, left bottom, from(#333), to(#666));
-	background	: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background	: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
-	background	: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
-	background	: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -webkit-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -moz-linear-gradient(rgb(51, 51, 51), rgb(102, 102, 102)) repeat scroll 0% 0% transparent;
+	background: -ms-gradient(linear, left top, left bottom, from(#333), to(#666));
+	background: -o-gradient(linear, left top, left bottom, from(#333), to(#666));
 }
 
 /*---------- about Page ----------*/
 div.about div.content p {
-	padding-top	: 25px;
-	color 		: #CCC;
-	font-size: 19px;
+	padding-top: 25px;
+	color      : #CCC;
+	font-size  : 19px;
 	line-height: 27px;
-	text-align: justify;
+	text-align : justify;
 }
 
 div.content_wrap h1 {
-	font-size: 32px;
-	font-weight	: bold;
-	margin-top	: 50px;
-	color 		: #fff;
-}
-
-.clear{
-	clear: both;
+	font-size  : 32px;
+	font-weight: bold;
+	margin-top : 50px;
+	color      : #fff;
 }
