@@ -247,83 +247,62 @@ div.content_wrap header.head h2 {
 	text-transform	: uppercase;
 }
 
-div.content_wrap div.content div.box {
-	width			: 196px;
-	position		: relative;
-	margin-right	: 9px;	
-	margin-top		: 12px;
+div.content_wrap div.products {
+	padding-left	: 37px;
 }
 
-/*---------- content_wrap: 2 Columns ----------*/
-div.content_wrap div.content div.box.clmn2 {
-	width		: 295px;
-	min-height	: 215px;	
-	position	: relative;
+div.content_wrap div.products div.box {
+	margin	: 0 12px 12px 0
 }
+
 /*---------- end content_wrap: 2 Col ----------*/
 
-div.content_wrap div.content div.box a {
-	display : block;
+div.content_wrap div.products div.box a {
+	display			: block;
+	position		: relative;
 	text-decoration	: none;
 }
 
-div.content_wrap div.content div.box img {
-	display : block;
+div.content_wrap div.products div.box a img {
+	display	: block;
 }
 
-div.content_wrap div.content div.box a:hover img {
-	opacity : 0.3;
-	background-color	: #000;
-	transition			: opacity 800ms;
-	-webkit-transition	: opacity 800ms;
-	-moz-transition		: opacity 800ms;
-	-ms-transition		: opacity 800ms;
-	-o-transition		: opacity 800ms;
-}
+div.content_wrap div.products div.box a span {
+	overflow	: hidden;
+	display		: block;
+	position	: absolute;
 
-div.content_wrap div.content div.box a span {
-	display : none;
-	overflow: hidden;
+	top		: 0;
+	left	: 0;
+	right	: 0;
+	bottom	: 0;
+	color	: white;
+	color	: rgba(255,255,255,0.6);
+	opacity	: 0;
+	z-index	: 2;
+
+	line-height		: 150px;
+	font-size		: 120px;
+	text-align		: center;
+	letter-spacing	: -4px;
+
+	background-color	: black;
+	transition			: all 800ms ease-out;
+	-webkit-transition	: all 800ms ease-out;
+	-moz-transition		: all 800ms ease-out;
+	-ms-transition		: all 800ms ease-out;
+	-o-transition		: all 800ms ease-out;
 }
 
 div.content_wrap div.content div.box a:hover span {
-	display       : block;
-	position      : absolute;
-	top           : 0;
-	left          : 0;
-	width         : 196px;
-	height        : 145px;
-	color         : #ccc;
-	font-size     : 50px;
-	line-height   : 145px;
-	text-align    : center;
-	font-size     : 110px;
-	color         : #616161;
-	letter-spacing: -4px;
+	opacity	: 0.7;
+	transition-duration			: 500ms;
+	-webkit-transition-duration	: 500ms;
+	-moz-transition-duration	: 500ms;
+	-ms-transition-duration		: 500ms;
+	-o-transition-duration		: 500ms;
 }
 
-/*---------- content_wrap: 2 Columns ----------*/
-div.content_wrap div.content div.box.clmn2 a:hover span {
-	display		: block;
-	position	: absolute;
-	top			: 0;
-	left		: 0;
-	width		: 295px;
-	height		: 215px;
-	background-image	: url('./images/hover2_image_gallery.png');
-	background-repeat	: no-repeat;
-	background-position	: center;
-}
-/*---------- end content_wrap: 2 Col ----------*/
-
-div.content_wrap div.content div.box a:hover img {
-	box-shadow : -1px 1px 10px 1px #ccc;
-}
-
-div.content_wrap div.content section.text p {
-	font 		: normal 12px Verdana, Arial, sans-serif;
-	line-height	: 18px;
-}
 
 footer.footers{
 	border-top : 1px solid #646464;
@@ -522,15 +501,11 @@ div.social ul li a.google:hover {
 /*---------- Portfolio col2 & col3 page ----------*/
 div.content_wrap div.content section.row article.box {
 	width 		: 290px;
-	min-height	: 210px;    
-	position 	: relative;
 }
 
 /*---------- Portfolio: 3 Columns ----------*/
 div.content_wrap div.content section.row article.box.col2 {
 	width 		: 196px;
-	min-height	: 145px;    
-	position 	: relative;
 }
 /*---------- end portfolio: 3 col ----------*/
 
@@ -543,49 +518,43 @@ div.content_wrap div.content section.row article.box h3 {
 }
 
 div.content_wrap div.content section.row article.box a {
-	display	: block;
+	display		: block;
+	position	: relative;
+	width		: inherit;
 }
 
 div.content_wrap div.content section.row article.box img {
 	display	: block;
 }
 
-div.content_wrap div.content section.row article.box a:hover img {
-	opacity		: 0.3;
-	box-shadow	: -1px 1px 10px 1px #ccc;
-	background-color	: #000;
-	transition			: opacity 800ms;
-	-webkit-transition	: opacity 800ms;
-	-moz-transition		: opacity 800ms;
-	-ms-transition		: opacity 800ms;
-	-o-transition		: opacity 800ms;
-}
-
-div.content_wrap div.content section.row article.box a:hover span {
+div.content_wrap div.content section.row article.box a span {
 	display		: block;
 	position	: absolute;
 	top			: 0;
 	left		: 0;
-	width		: 290px;
-	height		: 260px;
-	z-index		: 100;
-	background-image	: url('./images/hover2_image_gallery.png');
+	width		: inherit;
+	height		: 210px;
+	z-index		: 2;
+	opacity		: 0;
+	background-image	: url('images/hover_image_big.png');
+	background-color	: black;
 	background-repeat	: no-repeat;
 	background-position	: center;
+	transition			: all 800ms ease-out;
+	-webkit-transition	: all 800ms ease-out;
+	-moz-transition		: all 800ms ease-out;
+	-ms-transition		: all 800ms ease-out;
+	-o-transition		: all 800ms ease-out;
 }
 
 /*---------- Portfolio: 3 Columns ----------*/
-div.content_wrap div.content section.row article.box.col2 a:hover span {
-	display		: block;
-	position	: absolute;
-	top			: 0;
-	left		: 0;
-	width		: 196px;
-	height		: 200px;
-	z-index		: 100;
-	background-image 	: url('./images/hover3_image_gallery.png');
-	background-repeat 	: no-repeat;
-	background-position : center;
+div.content_wrap div.content section.row article.box a:hover span {
+	opacity	: 0.7;
+	transition-duration			: 500ms;
+	-webkit-transition-duration	: 500ms;
+	-moz-transition-duration	: 500ms;
+	-ms-transition-duration		: 500ms;
+	-o-transition-duration		: 500ms;
 }
 
 /*---------- end portfolio: 3 col ----------*/

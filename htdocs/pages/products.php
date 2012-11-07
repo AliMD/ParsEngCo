@@ -2,7 +2,7 @@
 	<header class="mh3 mb2 mr1 head">
 		<h1>محصولات</h1>
 	</header>
-	<div class="pl1 pr1 pb4 content cover">
+	<div class="pb4 content cover products">
 		<?php
 
 			$dir = "./images/galleries/products";
@@ -18,7 +18,7 @@
 				echo
 					"<div class='box left'>
 					<a href='$dir/$file_name.$file_type'>
-					<img src='$dir/thumbs/$file_name.$file_type' alt='$file_name' width='196' height='145' />
+					<img src='$dir/thumbs/$file_name.$file_type' alt='$file_name' width='200' height='150' />
 					<span lang='en-US'>$file_name</span>
 					</a>
 					</div>";				
