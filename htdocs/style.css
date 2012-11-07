@@ -632,6 +632,15 @@ div.content_wrap div.content article.box a.readmore:hover {
 
 /*---------- about Page ----------*/
 
+
+div.content_wrap img.aboutPic{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
 div.about div.content p {
 	color		: #CCC;
 	padding-top	: 25px;
