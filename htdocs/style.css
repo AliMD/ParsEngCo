@@ -277,14 +277,17 @@ div.content_wrap div.products div.box a span {
 	right	: 0;
 	bottom	: 0;
 	color	: white;
-	color	: rgba(255,255,255,0.6);
+	color	: rgba(255,255,255,0.65);
 	opacity	: 0;
 	z-index	: 2;
 
 	line-height		: 150px;
-	font-size		: 120px;
-	text-align		: center;
-	letter-spacing	: -4px;
+	font-size		: 135px;
+	font-family		: 'Pacifico', cursive;
+	text-align		: left;
+	font-style: italic;
+	padding-left: 5px;
+	letter-spacing	: -5px;
 
 	background-color	: black;
 	transition			: all 800ms ease-out;
