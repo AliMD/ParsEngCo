@@ -281,20 +281,24 @@ div.content_wrap div.content div.box a:hover img {
 }
 
 div.content_wrap div.content div.box a span {
-	display: none;
+	display : none;
+	overflow: hidden;
 }
 
 div.content_wrap div.content div.box a:hover span {
-	display    : block;
-	position   : absolute;
-	top        : 0;
-	left       : 0;
-	width      : 196px;
-	height     : 145px;
-	color      : #ccc;
-	font-size  : 50px;
-	line-height: 145px;
-	text-align : center;
+	display       : block;
+	position      : absolute;
+	top           : 0;
+	left          : 0;
+	width         : 196px;
+	height        : 145px;
+	color         : #ccc;
+	font-size     : 50px;
+	line-height   : 145px;
+	text-align    : center;
+	font-size     : 110px;
+	color         : #616161;
+	letter-spacing: -4px;
 }
 
 /*---------- content_wrap: 2 Columns ----------*/
