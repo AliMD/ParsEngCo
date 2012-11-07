@@ -619,7 +619,7 @@ div.content_wrap a.aboutPic img{
 	margin-bottom: 20px;
 }
 
-div.content_wrap a span{
+div.content_wrap a.aboutPic span{
 	display		: block;
 	position	: absolute;
 	top			: 0;
@@ -638,7 +638,7 @@ div.content_wrap a span{
 	-ms-transition		: all 800ms ease-out;
 	-o-transition		: all 800ms ease-out;
 }
-div.content_wrap a:hover span{
+div.content_wrap a.aboutPic:hover span{
 	opacity	: 0.7;
 	transition-duration			: 500ms;
 	-webkit-transition-duration	: 500ms;
