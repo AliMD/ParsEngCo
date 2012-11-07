@@ -2,7 +2,7 @@
 	<header class="mh3 mb2 mr1 head">
 		<h1>محصولات</h1>
 	</header>
-	<div class="pl1 pr1 pb4 content">
+	<div class="pl1 pr1 pb4 content cover">
 		<?php
 
 			$dir = "./images/galleries/products";
@@ -25,7 +25,6 @@
 			}
 
 		?>
-		<div class="clear"></div>
 	</div>
 	<footer class="pr1 pl1 mh8 cover footers">
 	<?php include 'inc/copy-right.php'; ?>
