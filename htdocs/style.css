@@ -607,27 +607,24 @@ div.content_wrap div.content article.box a.readmore:hover {
 div.content_wrap a.aboutPic{
 	display: block;
 	position: relative;
-	width: inherit;
+	width: 620px;
+	margin:30px auto;
 }
 
 
 div.content_wrap a.aboutPic img{
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-	margin-bottom: 20px;
 }
 
 div.content_wrap a.aboutPic span{
-	display		: block;
-	position	: absolute;
-	top			: 0;
-	left		: 0;
-	width		: inherit;
-	height		: 300px;
-	z-index		: 2;
-	opacity		: 0;
+	display	: block;
+	position: absolute;
+	top		: 0;
+	left	: 0;
+	bottom	: 0;
+	right	: 0;
+	z-index	: 2;
+	opacity	: 0;
 	background-image	: url('images/hover_image_big.png');
 	background-color	: black;
 	background-repeat	: no-repeat;
@@ -649,7 +646,6 @@ div.content_wrap a.aboutPic:hover span{
 
 div.about div.content p {
 	color		: #CCC;
-	padding-top	: 25px;
 	font-size	: 19px;
 	line-height	: 27px;
 	text-align	: justify;
