@@ -27,12 +27,25 @@
 						محصولات
 						<span>نمایش کارهای ما</span>
 					</a>
+					<menu>
+						<ul>
+							<li><a href="#">پنل های AIP</a></li>
+							<li><a href="#">پنل های ALPI</a></li>
+							<li><a href="#">پنل های DANZER</a></li>
+						</ul>
+					</menu>
 				</li>
 				<li>
 					<a href="./projects">
 						پروژه ها
 						<span>آخرین پروژه ها</span>
 					</a>
+					<menu>
+						<ul>
+							<li><a href="#">کابینت</a></li>
+							<li><a href="#">دکوراسیون داخلی</a></li>
+						</ul>
+					</menu>
 				</li>
 				<li>
 					<a href="./contact-us">

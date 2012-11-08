@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="fa_IR">
+<html lang="fa-IR">
 <head>
 	<meta charset="UTF-8" />
 	<title>Sending mail ...</title>
