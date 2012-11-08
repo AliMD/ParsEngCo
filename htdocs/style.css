@@ -337,13 +337,12 @@ div.contact-us header.head h2 {
 
 div.contact-us div.content section.form input {
 	width	: 200px;
-	height	: 30px;
 	color	: #eee;
 	margin	: 6px 0;
 	border	: 1px solid #333;
 	border-radius		: 5px;
 	background-color	: #1b1b1b;
-	padding-right: 10px;
+	padding: 7px 10px;
 	transition : border 500ms;
 	-webkit-transition : border 500ms;
 	-moz-transition : border 500ms;
@@ -364,15 +363,14 @@ input.err:-moz-placeholder {
 }
 
 div.contact-us div.content section.form textarea {
-	width	: 320px;
-	height	: 150px;
+	width	: 340px;
+	height	: 200px;
 	margin	: 6px 0;
 	color	: #eee;
 	border	: 1px solid #333;
 	border-radius		: 5px;
 	background-color	: #1b1b1b;
-	padding-right: 10px;
-	padding-top: 5px;
+	padding:5px 10px;
 	transition : border 500ms;
 	-webkit-transition : border 500ms;
 	-moz-transition : border 500ms;
@@ -398,7 +396,6 @@ div.contact-us div.content section.form input.btn_submit {
 	border: 1px solid #2C2C2C;
 	background: #111111;
 	text-align: center;
-	padding: 0px 10px;
 	width: 80px;
 	display: block;
 	color: white;
@@ -421,15 +418,10 @@ div.contact-us div.content section.info ul {
 }
 
 div.contact-us div.content section.info ul li {
-	padding			: 6px 25px;
+	padding			: 7px 25px 7px 5px;
 	line-height		: 20px;
 	border-bottom	: 1px solid #2b2b2b;
-	margin-left: 10px;
-}
-
-div.contact-us div.content section.info ul li:lang(en-US) {
-	font : normal 12px Verdana, Arial, sans-serif;
-
+	font-size		: 17px;
 }
 
 div.contact-us div.content section.info ul li:first-child {
