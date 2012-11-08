@@ -57,11 +57,11 @@ div.menu_wrap {
 	position: fixed;
 	z-index	: 10;
 	width	: 240px;
-	transition			: top 800ms ease-in-out;
-	-webkit-transition	: top 800ms ease-in-out;
-	-moz-transition		: top 800ms ease-in-out;
-	-ms-transition		: top 800ms ease-in-out;
-	-o-transition		: top 800ms ease-in-out;
+	transition			: top 1500ms ease-in-out;
+	-webkit-transition	: top 1500ms ease-out;
+	-moz-transition		: top 1500ms ease-in-out;
+	-ms-transition		: top 1500ms ease-in-out;
+	-o-transition		: top 1500ms ease-in-out;
 }
 
 .menu_wrap {
@@ -178,10 +178,9 @@ div.menu li li > a {
 	color	: #A3A3A3;
 	display	: block;
 	padding	: 5px 5px 10px;
-	min-width	: 120px;
+	min-width	: 130px;
 	white-space	: nowrap;
-	font-family	: 'Helvetica Neue', Arial, sans-serif;
-	font-size	: 12px;
+	font-size	: 17px;
 	border-top	: 1px solid #343434;
 	text-decoration	: none;
 	text-transform	: capitalize;
