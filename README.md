@@ -28,11 +28,12 @@ The website for the **Pars Engineering** company
 
 
 ### The Team
-* [Mohammad Sedaghat](https://github.com/sedaghat) Project Manager
-* [Ali Mihandoost](https://github.com/AliMD) Technical Manager / Developer
-* [Ali aGHasizadeh](https://github.com/AliGH) Developer / Programmer
-* [Omid Gharib](https://github.com/omidgharib) Developer /Programmer
-* [Yashar Ahmadi](https://github.com/YasharAMD) Developer / Programmer
+* [Mohammad Sedaghat `sedaghat`](https://github.com/sedaghat) Project Manager
+* [Ali Mihandoost `AliMD`](https://github.com/AliMD) Technical Manager / Developer
+* [Ali aGHasizadeh `AliGH`](https://github.com/AliGH) Developer / Programmer
+* [Nick Shylo `Denoizzed`](https://github.com/Denoizzed) Graphic Designer
+* [Omid Gharib `omidgharib`](https://github.com/omidgharib) Developer /Programmer
+* [Yashar Ahmadi `YasharAMD`](https://github.com/YasharAMD) Developer / Programmer
 
 ### All rights reserved ###
 Please note that parseng.co is a curated site and that we reserve the right to refuse any listing for any reason.
