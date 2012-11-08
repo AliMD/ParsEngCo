@@ -28,4 +28,5 @@
 		?>
 	</div>
 	<?php include 'inc/copy-right.php'; ?>
+	<?php include 'inc/slideshow.php'; ?>
 </div>

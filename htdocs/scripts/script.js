@@ -52,9 +52,9 @@
 
 	$('.background > div').fadeLoop({
 		delay : 0,
-		freez : 3000,
-		duration : 1300,
-		startIndex : 0
+		freez : 6000,
+		duration : 3000,
+		fadeFirstImage : false
 	});
 
 	$('#hidebtn').click(function(){
