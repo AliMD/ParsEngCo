@@ -1,10 +1,19 @@
 <section class="slideshow">
 	<div class="noise"></div>
 	<section class="background">
-		<div style="background-image:url('./images/backgrounds/bg1.jpg');"></div>
-		<div style="background-image:url('./images/backgrounds/bg2.jpg');"></div>
-		<div style="background-image:url('./images/backgrounds/bg3.jpg');"></div>
-		<div style="background-image:url('./images/backgrounds/bg4.jpg');"></div>
-		<div style="background-image:url('./images/backgrounds/bg5.jpg');"></div>
+		<?php
+			$images_path = './images/homepage_slideshow';
+
+			$images = scandir($images_path);
+			$slidesLen = 0;
+			foreach($images as $img){
+				$img_arr = explode('.', $img);
+				$img_type = strtolower( end($img_arr) );
+				if ($img_type=='jpg') {
+					echo "<div style=\"background-image:url('$images_path/$img');\"></div>";
+					$slidesLen++;
+				}
+			}
+		?>
 	</section>
 </section>
