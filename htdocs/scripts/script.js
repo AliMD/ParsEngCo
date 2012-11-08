@@ -62,7 +62,8 @@
 		return false;
 	});
 
-	//Contact Form
+//Contact Form
+
 function validateText(str,len){
 	return str.length >= len;
 }
@@ -74,10 +75,18 @@ function validateEmail(str){
 }
 
 $('#contact-form').submit(function(){
-	var target, err = false;
+	var target=$('#name'), err = false;
 
 	target = $('#name');
 	if( validateText(target.val(),3) ){
+		target.removeClass('err').addClass('ok');
+	}else{
+		target.removeClass('ok').addClass('err');
+		err = true;
+	}
+
+	target = $('#subject');
+	if( validateText(target.val(),5) ){
 		target.removeClass('err').addClass('ok');
 	}else{
 		target.removeClass('ok').addClass('err');
@@ -92,7 +101,7 @@ $('#contact-form').submit(function(){
 		err = true;
 	}
 
-	target = $('#txt');
+	target = $('#msg');
 	if( validateText(target.val(),10) ){
 		target.removeClass('err').addClass('ok');
 	}else{
@@ -103,7 +112,7 @@ $('#contact-form').submit(function(){
 	if(!err){
 		$('#ifrm').animate({
 			height:'70px'
-		},500);
+		},700);
 	}
 
 	return !err;
