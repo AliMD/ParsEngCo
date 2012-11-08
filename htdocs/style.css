@@ -158,7 +158,7 @@ div.menu nav menu li span {
 
 div.menu li menu {
 	position	: absolute;
-	left		: 100%;
+	right		: 100%;
 	top			: 0;
 	display		: none;
 	padding		: 0px 7px;
@@ -196,7 +196,7 @@ div.menu li li:first-child > a {
 div.menu li li:hover {
 	background-image	: url("./images/submenu_hover_arrow.png");
 	background-repeat	: no-repeat;
-	background-position	: right center;
+	background-position	: left center;
 }
 
 div.menu li menu li a img {
@@ -501,6 +501,7 @@ div.social ul li a.google {
 div.social ul li a.google:hover {
 	background	: url('./images/social-icons.png') -166px -45px;
 }
+
 
 /*---------- Portfolio col2 & col3 page ----------*/
 div.content_wrap div.content section.row article.box {
