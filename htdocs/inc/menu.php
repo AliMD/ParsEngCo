@@ -35,9 +35,9 @@
 					</a>
 					<menu>
 						<ul>
-							<li><a href="appetizer.html">پنل های AIP</a></li>
-							<li><a href="maincourses.html">پنل های ALPI</a></li>
-							<li><a href="dessert.html">پنل های DANZER</a></li>
+							<li><a href="#">پنل های AIP</a></li>
+							<li><a href="#">پنل های ALPI</a></li>
+							<li><a href="#">پنل های DANZER</a></li>
 						</ul>
 					</menu>
 				</li>

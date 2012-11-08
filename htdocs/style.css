@@ -88,7 +88,7 @@ div.menu_wrap {
 }
 
 div.menu_wrap div.menu {
-	background-image	: url('./images/menu_back.png'); 
+	background-image	: url('images/menu_back.png'); 
 	background-repeat	: repeat-y;
 	background-position	: top left;
 	padding-bottom: 25px;
@@ -96,22 +96,19 @@ div.menu_wrap div.menu {
 
 div.menu div.logo h1 a {
 	display	: block;
-	width 	: 230px;
 	height 	: 215px;
-	background-image	: url('./images/swas.png');
+	background-image	: url('images/swas.png');
 	background-repeat	: no-repeat;
 	background-position	: center 65px;
 	text-decoration		: none;
-	margin-left			: 5px;
+	margin-top			: 7px;
 }
 
 div.menu div.logo h1 a span {
 	display		: block;
 	padding-top	: 20px;
 	color 		: white;
-	text-transform	: uppercase;
 	text-align		: center;
-	font-family		: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
 	font-size		: 30px;
 	text-shadow		: 1px 1px 1px #fff;
 }
@@ -142,7 +139,7 @@ div.menu nav menu > li:hover > a {
 }
 
 div.menu nav > menu > li:hover {
-	background-image	: url("./images/menu_hover_arrow.png");
+	background-image	: url("images/menu_hover_arrow.png");
 	background-repeat	: no-repeat;
 	background-position	: left center;
 }
@@ -194,7 +191,7 @@ div.menu li li:first-child > a {
 }
 
 div.menu li li:hover {
-	background-image	: url("./images/submenu_hover_arrow.png");
+	background-image	: url("images/submenu_hover_arrow.png");
 	background-repeat	: no-repeat;
 	background-position	: left center;
 }
@@ -213,7 +210,7 @@ div.menu_wrap div.hide {
 	width	: 240px;
 	height	: 115px;
 	padding	: 5px 0;
-	background-image	: url('./images/hide_menu_back.png');
+	background-image	: url('images/hide_menu_back.png');
 	background-repeat	: no-repeat;
 	background-position	: left top;
 }
@@ -458,48 +455,48 @@ div.social ul li a {
 }
 
 div.social ul li a.fb {
-	background 			: url('./images/social-icons.png') -6px -6px;
+	background 			: url('images/social-icons.png') -6px -6px;
 	background-repeat	: no-repeat;
 }
 
 div.social ul li a.fb:hover {
-	background	: url('./images/social-icons.png') -6px -45px;
+	background	: url('images/social-icons.png') -6px -45px;
 }
 
 div.social ul li a.tw {
-	background 			: url('./images/social-icons.png') -46px -6px;
+	background 			: url('images/social-icons.png') -46px -6px;
 	background-repeat	: no-repeat;
 }
 
 div.social ul li a.tw:hover {
-	background: url('./images/social-icons.png') -46px -45px;
+	background: url('images/social-icons.png') -46px -45px;
 }
 
 div.social ul li a.in {
-	background 			: url('./images/social-icons.png') -86px -6px;
+	background 			: url('images/social-icons.png') -86px -6px;
 	background-repeat	: no-repeat;
 }
 
 div.social ul li a.in:hover {
-	background	: url('./images/social-icons.png') -86px -45px;
+	background	: url('images/social-icons.png') -86px -45px;
 }
 
 div.social ul li a.picasa {
-	background 			: url('./images/social-icons.png') -126px -6px;
+	background 			: url('images/social-icons.png') -126px -6px;
 	background-repeat	: no-repeat;
 }
 
 div.social ul li a.picasa:hover {
-	background	: url('./images/social-icons.png') -126px -45px;
+	background	: url('images/social-icons.png') -126px -45px;
 }
 
 div.social ul li a.google {
-	background 			: url('./images/social-icons.png') -166px -6px;
+	background 			: url('images/social-icons.png') -166px -6px;
 	background-repeat	: no-repeat;
 }
 
 div.social ul li a.google:hover {
-	background	: url('./images/social-icons.png') -166px -45px;
+	background	: url('images/social-icons.png') -166px -45px;
 }
 
 
