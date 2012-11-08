@@ -437,6 +437,11 @@ div.contact-us div.content section.info iframe:hover {
 	opacity	: 1;
 }
 
+#ifrm{
+	height	: 0;
+	width	: 600px;
+}
+
 /*---------- Social Networks ----------*/
 div.social ul li {
 	float			: left;

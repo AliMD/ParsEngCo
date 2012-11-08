@@ -1,9 +1,26 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="fa_IR">
 <head>
 	<meta charset="UTF-8" />
 	<title>Sending mail ...</title>
 	<style type="text/css">
+
+		@font-face {
+			font-family: 'Nazanin';
+			src: url('fonts/BNazanin.eot');
+			src: url('fonts/BNazanin.eot?#iefix') format('embedded-opentype'),
+				 url('fonts/BNazanin.woff') format('woff'),
+				 url('fonts/BNazanin.ttf') format('truetype');
+			font-weight	: normal;
+			font-style	: normal;
+			-webkit-font-smoothing	: antialiased;
+		}
+
+		:lang(fa-IR) {
+			font-family	: 'Nazanin';
+			direction	: rtl;
+		}
+
 		body {
 			background-color: transparent;
 		}
