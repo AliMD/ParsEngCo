@@ -175,7 +175,7 @@ div.menu li li {
 }
 
 div.menu li li > a {
-	color	: #A3A3A3;
+	color	: #ccc;
 	display	: block;
 	padding	: 5px 5px 10px;
 	min-width	: 130px;
@@ -184,6 +184,10 @@ div.menu li li > a {
 	border-top	: 1px solid #343434;
 	text-decoration	: none;
 	text-transform	: capitalize;
+}
+
+div.menu li li > a:hover{
+	color: #fff;
 }
 
 div.menu li li:first-child > a {
