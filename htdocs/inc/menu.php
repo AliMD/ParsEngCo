@@ -1,10 +1,10 @@
 
 <div class="menu_wrap">
 	<div class="menu">
-		<div class="logo cover">
+		<div class="logo cover" lang="en-US">
 			<h1>
 				<a href="./" >
-					<span>swastika</span>
+					<span>Pars Engineering</span>
 				</a>
 			</h1>	
 		</div>
@@ -27,25 +27,12 @@
 						محصولات
 						<span>نمایش کارهای ما</span>
 					</a>
-					<menu>
-						<ul>
-							<li><a href="#">پنل های AIP</a></li>
-							<li><a href="#">پنل های ALPI</a></li>
-							<li><a href="#">پنل های DANZER</a></li>
-						</ul>
-					</menu>
 				</li>
 				<li>
 					<a href="./projects">
 						پروژه ها
 						<span>آخرین پروژه ها</span>
 					</a>
-					<menu>
-						<ul>
-							<li><a href="#">کابینت</a></li>
-							<li><a href="#">دکوراسیون داخلی</a></li>
-						</ul>
-					</menu>
 				</li>
 				<li>
 					<a href="./contact-us">
@@ -60,6 +47,5 @@
 		<a id='hidebtn' href="#">
 			<img src="./images/menu_hide_arrow_top.png" width="48" height="48" alt="Menu Array Btn" />
 		</a>
-		<div class="tooltip"></div>
 	</div>	
 </div>
