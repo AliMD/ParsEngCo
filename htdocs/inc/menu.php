@@ -33,6 +33,13 @@
 						پروژه ها
 						<span>آخرین پروژه ها</span>
 					</a>
+					<menu>
+						<ul>
+							<li><a href="appetizer.html">پنل های AIP</a></li>
+							<li><a href="maincourses.html">پنل های ALPI</a></li>
+							<li><a href="dessert.html">پنل های DANZER</a></li>
+						</ul>
+					</menu>
 				</li>
 				<li>
 					<a href="./contact-us">
