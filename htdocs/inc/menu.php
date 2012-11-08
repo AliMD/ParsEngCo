@@ -1,10 +1,10 @@
 
 <div class="menu_wrap">
 	<div class="menu">
-		<div class="logo cover">
+		<div class="logo cover" lang="en-US">
 			<h1>
 				<a href="./" >
-					<span>swastika</span>
+					<span>Pars Engineering</span>
 				</a>
 			</h1>	
 		</div>
