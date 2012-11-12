@@ -41,7 +41,7 @@ ErrorDocument 510 /err/?e=510
 # Various rewrite rules.
 RewriteEngine on
 
-RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^([a-z0-9_-]+)$ index.php?page=$1 [L,NC,QSA]
 
