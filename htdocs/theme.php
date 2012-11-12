@@ -1,6 +1,7 @@
 <?php
 
 function inc($filename,$folder='inc'){
+	global $title;
 	@include "$folder/$filename.php";
 }
 
