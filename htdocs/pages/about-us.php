@@ -3,7 +3,7 @@
 		<h1>شرکت مهندسی پارس</h1>
 	</header>
 	
-	<a class="aboutPic" href="./images/about.jpg">
+	<a class="aboutPic darkbox" href="./images/about.jpg">
 		<img  src="./images/about-thumb.jpg" width="620" height="300" />
 		<span></span>
 	</a>
