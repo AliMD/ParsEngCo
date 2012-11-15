@@ -61,11 +61,11 @@ div.menu_wrap {
 	position: fixed;
 	z-index	: 10;
 	width	: 240px;
-	transition			: top 1500ms ease-in-out;
-	-webkit-transition	: top 1500ms ease-out;
-	-moz-transition		: top 1500ms ease-in-out;
-	-ms-transition		: top 1500ms ease-in-out;
-	-o-transition		: top 1500ms ease-in-out;
+	transition			: top 1s ease-out;
+	-webkit-transition	: top 1s ease-out;
+	-moz-transition		: top 1s ease-out;
+	-ms-transition		: top 1s ease-out;
+	-o-transition		: top 1s ease-out;
 }
 
 .menu_wrap {
@@ -118,12 +118,15 @@ div.menu div.logo h1 a span {
 	text-shadow		: 1px 1px 1px #fff;
 }
 
+
+div.menu nav > menu{
+	padding: 0 30px;
+	line-height: 1.1;
+}
+
 div.menu nav > menu > li {
 	position		: relative;
-	line-height		: 0;
-	text-align		: right; 
-	font-weight		: normal;
-	margin			: 0 30px 0;
+	text-align		: right;
 	border-bottom	: 1px solid #343434;
 }	 
 
@@ -133,7 +136,7 @@ div.menu nav > menu > li:first-child {
 
 div.menu nav > menu > li > a {
 	display	: block;
-	padding	: 18px 10px 12px;
+	padding	: 6px 7px 5px;
 	color	: #ccc;
 	font-size		: 22px;
 	text-decoration	: none;
@@ -154,7 +157,6 @@ div.menu nav menu li span {
 	font-size		: 12px;
 	font-style		: italic;
 	color			: #555;
-	margin-top		: 19px;
 	margin-right	: 2px;
 }
 
@@ -174,15 +176,13 @@ div.menu li:hover > menu {
 }
 
 div.menu li li {
-	line-height	: 30px;
 	position	: relative;
 }
 
 div.menu li li > a {
 	color	: #ccc;
 	display	: block;
-	padding	: 5px 5px 10px;
-	min-width	: 130px;
+	padding	: 12px 5px 7px 20px;
 	white-space	: nowrap;
 	font-size	: 17px;
 	border-top	: 1px solid #343434;
@@ -190,7 +190,7 @@ div.menu li li > a {
 	text-transform	: capitalize;
 }
 
-div.menu li li > a:hover{
+div.menu li li:hover > a{
 	color: #fff;
 }
 
@@ -201,7 +201,7 @@ div.menu li li:first-child > a {
 div.menu li li:hover {
 	background-image	: url("images/submenu_hover_arrow.png");
 	background-repeat	: no-repeat;
-	background-position	: left center;
+	background-position	: -5px 4px;
 }
 
 div.menu li menu li a img {
