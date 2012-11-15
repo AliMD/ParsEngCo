@@ -19,7 +19,7 @@ ob_start();
 
 if(md5($_GET['p'])!='0397979ec002e5c7cfc70111701999e9') death('Access denied');
 
-$github_zip = 'https://nodeload.github.com/AliMD/zigorat/zipball/newmaster';
+$github_zip = 'https://nodeload.github.com/AliMD/ParsEngCo/zip/master';
 $locat_zip = './last_update_temp.zip';
 $extract_dir = './last_update_temp';
 $htdoc_dir = "htdocs";
