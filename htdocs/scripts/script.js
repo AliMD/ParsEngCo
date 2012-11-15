@@ -1,7 +1,8 @@
 // Zepto/jQuery fadeLoop plugin for fade slide show effects by ali.md
 
-(function($){
+(function($,undefined){
 	var	ease = !!window.Zepto ? 'ease-out' : 'swing';
+
 	$.extend($.fn,{
 		fadeLoop :function(options){
 
@@ -49,6 +50,15 @@
 			}
 		}
 	});
+})(window.Zepto || window.jQuery);
+
+
+
+
+
+// site js
+
+(function($,undefined){
 
 	$('.background > div').fadeLoop({
 		delay : 0,
@@ -64,59 +74,56 @@
 
 //Contact Form
 
-function validateText(str,len){
-	return str.length >= len;
-}
+	var	emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i,
+		validateText = function (str,len){
+			return str.length >= len;
+		},
+		validateEmail = function validateEmail(str){
+			return emailPattern.test(str);
+		}
 
-function validateEmail(str){
-	var emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i ;
+	$('#contact-form').submit(function(){
+		var target=$('#name'), err = false;
 
-	return emailPattern.test(str);
-}
+		target = $('#name');
+		if( validateText(target.val(),3) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
 
-$('#contact-form').submit(function(){
-	var target=$('#name'), err = false;
+		target = $('#subject');
+		if( validateText(target.val(),5) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
 
-	target = $('#name');
-	if( validateText(target.val(),3) ){
-		target.removeClass('err').addClass('ok');
-	}else{
-		target.removeClass('ok').addClass('err');
-		err = true;
-	}
+		target = $('#mail');
+		if( validateEmail(target.val()) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
 
-	target = $('#subject');
-	if( validateText(target.val(),5) ){
-		target.removeClass('err').addClass('ok');
-	}else{
-		target.removeClass('ok').addClass('err');
-		err = true;
-	}
+		target = $('#msg');
+		if( validateText(target.val(),10) ){
+			target.removeClass('err').addClass('ok');
+		}else{
+			target.removeClass('ok').addClass('err');
+			err = true;
+		}
 
-	target = $('#mail');
-	if( validateEmail(target.val()) ){
-		target.removeClass('err').addClass('ok');
-	}else{
-		target.removeClass('ok').addClass('err');
-		err = true;
-	}
+		if(!err){
+			$('#ifrm').animate({
+				height:'70px'
+			},700);
+		}
 
-	target = $('#msg');
-	if( validateText(target.val(),10) ){
-		target.removeClass('err').addClass('ok');
-	}else{
-		target.removeClass('ok').addClass('err');
-		err = true;
-	}
-
-	if(!err){
-		$('#ifrm').animate({
-			height:'70px'
-		},700);
-	}
-
-	return !err;
-});
-
+		return !err;
+	});
 
 })(window.Zepto || window.jQuery);
