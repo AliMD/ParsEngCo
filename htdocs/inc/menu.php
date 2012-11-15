@@ -29,9 +29,9 @@
 					</a>
 					<menu>
 						<ul>
-							<li><a href="#">پنل های ALPI</a></li>
-							<li><a href="#">پنل های DANZER</a></li>
-							<li><a href="#">پنل های High Glass</a></li>
+							<li><a href="./products">پنل های ALPI</a></li>
+							<li><a href="./products">پنل های DANZER</a></li>
+							<li><a href="./products">پنل های High Glass</a></li>
 						</ul>
 					</menu>
 				</li>
@@ -42,9 +42,9 @@
 					</a>
 					<menu>
 						<ul>
-							<li><a href="#">کابینت</a></li>
-							<li><a href="#">دکوراسیون داخلی</a></li>
-							<li><a href="#">درب های ساختمانی</a></li>
+							<li><a href="./projects">کابینت</a></li>
+							<li><a href="./projects">دکوراسیون داخلی</a></li>
+							<li><a href="./projects">درب های ساختمانی</a></li>
 						</ul>
 					</menu>
 				</li>
