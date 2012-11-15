@@ -19,10 +19,16 @@ body{
 	font-family	: 'Nazanin';
 	direction	: rtl;
 }
+body:lang(fa-IR){
+	text-align: right;
+}
 
 :lang(en-US) {
 	direction	: ltr;
 	font-family	: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif;
+}
+body:lang(en-US){
+	text-align: left;
 }
 
 div.container {

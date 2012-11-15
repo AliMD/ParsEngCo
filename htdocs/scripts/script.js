@@ -126,4 +126,8 @@
 		return !err;
 	});
 
+	// colorbox
+
+	$('.darkbox').colorbox({rel:'darkbox',opacity:0.7});
+
 })(window.Zepto || window.jQuery);

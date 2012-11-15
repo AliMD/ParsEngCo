@@ -18,13 +18,12 @@
 				$r = rand(100,999);
 				echo
 					"<div class='box left'>
-					<a href='$dir/$file_name.$file_type'>
-					<img src='$dir/thumbs/$file_name.$file_type' alt='$file_name' width='200' height='150' />
-					<span lang='en-US'>$r</span>
-					</a>
-					</div>";				
+						<a class='darkbox' href='$dir/$file_name.$file_type'>
+							<img src='$dir/thumbs/$file_name.$file_type' alt='$file_name' width='200' height='150' />
+							<span lang='en-US'>$r</span>
+						</a>
+					</div>";
 			}
-
 		?>
 	</div>
 	<?php include 'inc/copy-right.php'; ?>
