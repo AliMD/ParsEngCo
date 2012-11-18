@@ -695,8 +695,8 @@ div.content_wrap h1 {
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{border:5px solid #000; background:#fff;}
-        #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
-        #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
+        #cboxTitle{position:absolute; top:-20px; right:0; color:#ccc;}
+        #cboxCurrent{position:absolute; top:-20px; left:0px; color:#ccc;}
         #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
         #cboxPrevious{position:absolute; top:50%; left:4px; margin-top:-32px; background:url(images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
         #cboxPrevious:hover{background-position:bottom left;}
@@ -706,6 +706,6 @@ div.content_wrap h1 {
         #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
         #cboxClose{position:absolute; top:4px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
         #cboxClose:hover{background-position:bottom center;}
-        #cboxCurrent{font-family: 'Pacifico', cursive; font-size: 17px; word-spacing: 1px;}
+        #cboxCurrent{font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: 17px; word-spacing: 1px;}
 
 /* THE END ! */
