@@ -34,10 +34,9 @@ function db_close(){
 	if($db['con']) @mysql_close($db['con']);
 }
 
-function db_getrows($table, $sellect = '*', $where = true){
-	$res = db_query("SELECT $sellect FROM $table WHERE $where");
-	while($row=mysql_fetch_array($res,MYSQL_ASSOC)){
-		$rows[] = $row;
-	}
+function db_getrows($table, $sellect = '*', $where = true, $order = '', $limit=1000, $skip=0){
+	$order AND $order="ORDER BY $order";
+	$res = db_query("SELECT $sellect FROM $table WHERE $where $order LIMIT $skip, $limit");
+	while( $row = mysql_fetch_array($res,MYSQL_ASSOC) ) $rows[] = $row;
 	return $rows;
 }
