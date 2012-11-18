@@ -6,8 +6,11 @@ require_once('app/moduls.php');
 showunder();
 
 $template['page'] = get_page();
-if($page=='projects'){
-	//
+if($template['page']=='projects'){
+	$projects = db_getrows('portfolio','*',true,'sort',40);
+	$template['projects'] = gen_projects_list($projects);
 }
 
 inc("view",'app');
+
+finalise();
