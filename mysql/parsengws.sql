@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 17, 2012 at 02:47 PM
+-- Generation Time: Nov 18, 2012 at 12:52 PM
 -- Server version: 5.1.44
 -- PHP Version: 5.3.1
 
@@ -25,7 +25,7 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- Table structure for table `portfolio`
 --
 
-CREATE TABLE `portfolio` (
+CREATE TABLE IF NOT EXISTS `portfolio` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(64) NOT NULL,
   `category` int(10) unsigned NOT NULL,
@@ -33,14 +33,27 @@ CREATE TABLE `portfolio` (
   `excerpt` varchar(128) NOT NULL,
   `thumb` varchar(32) NOT NULL,
   `image` varchar(32) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `image` (`thumb`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `sort` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `portfolio`
 --
 
+INSERT INTO `portfolio` (`id`, `name`, `category`, `description`, `excerpt`, `thumb`, `image`, `sort`) VALUES
+(1, 'پروژه 1', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '1.jpg', '1.jpg', 0),
+(2, 'پروژه ۲', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '2.jpg', '2.jpg', 0),
+(3, 'پروژه ۳', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '3.jpg', '3.jpg', 0),
+(4, 'پروژه 1', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '1.jpg', '1.jpg', 0),
+(5, 'پروژه ۲', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '2.jpg', '2.jpg', 0),
+(6, 'پروژه ۳', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '3.jpg', '3.jpg', 0),
+(7, 'پروژه 1', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '1.jpg', '1.jpg', 0),
+(8, 'پروژه ۲', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '2.jpg', '2.jpg', 0),
+(9, 'پروژه ۳', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '3.jpg', '3.jpg', 0),
+(10, 'پروژه 1', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '1.jpg', '1.jpg', 0),
+(11, 'پروژه ۲', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '2.jpg', '2.jpg', 0),
+(12, 'پروژه ۳', 1, 'تنوع طرح و رنگ بسیار بالای این محصول می تواند محدودیت را از دید و ذهن طراحان دکوراسیون داخلی و ایده پردازان صنعت تزئینات بردارد.', 'متن خلاصه در مورد محصول', '3.jpg', '3.jpg', 0);
 
 -- --------------------------------------------------------
 
@@ -48,7 +61,7 @@ CREATE TABLE `portfolio` (
 -- Table structure for table `sadmin_fields`
 --
 
-CREATE TABLE `sadmin_fields` (
+CREATE TABLE IF NOT EXISTS `sadmin_fields` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(200) NOT NULL,
   `displayname` varchar(200) DEFAULT NULL,
@@ -68,7 +81,7 @@ CREATE TABLE `sadmin_fields` (
   `auto_save_timestamp_new` varchar(1) DEFAULT NULL,
   `auto_save_timestamp_update` varchar(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `sadmin_fields`
@@ -77,11 +90,12 @@ CREATE TABLE `sadmin_fields` (
 INSERT INTO `sadmin_fields` (`id`, `name`, `displayname`, `table_id`, `input_type`, `is_required`, `string_rep`, `default_state`, `value_when_not_checked`, `value_when_checked`, `select_options`, `place_to_store`, `allowed_extensions`, `datetime_save_format`, `foreignkey_table`, `display_on_change_list`, `auto_save_timestamp_new`, `auto_save_timestamp_update`) VALUES
 (1, 'id', '', 1, 'pk', 'y', '', '', '', '', '', '', '', '', 0, '', '', ''),
 (2, 'name', 'Name', 1, 'ti', 'y', 'y', '', '', '', '', '', '', '', 0, 'y', '', ''),
-(3, 'category', 'Category', 1, 'so', 'y', 'y', '', '', '', '1:Cabinets;2:Interior Design;3:Structural Doors', '', '', '', 0, 'y', '', ''),
-(4, 'description', 'Description', 1, 'we', '', '', '', '', '', '', '', '', '', 0, '', '', ''),
-(5, 'excerpt', 'Excerpt', 1, 'ta', '', '', '', '', '', '', '', '', '', 0, '', '', ''),
-(6, 'thumb', 'Thumbnail Image', 1, 'uf', 'y', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/ParsEngCo/htdocs/images/galleries/projects/thumbs', 'jpg|jpeg', '', 0, '', '', ''),
-(7, 'image', 'Full size Image', 1, 'uf', 'y', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/ParsEngCo/htdocs/images/galleries/projects', 'jpg|jpeg', '', 0, '', '', '');
+(3, 'category', 'Category', 1, 'so', 'y', '', '', '', '', '1:Cabinets;2:Interior Design;3:Structural Doors', '', '', '', 0, 'y', '', ''),
+(4, 'description', 'Description', 1, 'ta', '', '', '', '', '', '', '', '', '', 0, '', '', ''),
+(5, 'excerpt', 'Excerpt', 1, 'ti', '', '', '', '', '', '', '', '', '', 0, 'y', '', ''),
+(6, 'thumb', 'Thumbnail Image', 1, 'uf', 'y', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/ParsEngCo/htdocs/images/galleries/projects/thumbs/', 'jpg|jpeg', '', 0, '', '', ''),
+(7, 'image', 'Full size Image', 1, 'uf', 'y', '', '', '', '', '', '/Applications/XAMPP/xamppfiles/htdocs/ParsEngCo/htdocs/images/galleries/projects/', 'jpg|jpeg', '', 0, '', '', ''),
+(8, 'sort', 'Order', 1, 'ti', '', '', '', '', '', '', '', '', '', 0, 'y', '', '');
 
 -- --------------------------------------------------------
 
@@ -89,13 +103,13 @@ INSERT INTO `sadmin_fields` (`id`, `name`, `displayname`, `table_id`, `input_typ
 -- Table structure for table `sadmin_permissions`
 --
 
-CREATE TABLE `sadmin_permissions` (
+CREATE TABLE IF NOT EXISTS `sadmin_permissions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` text NOT NULL,
   `permkey` text NOT NULL,
   `editable` varchar(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=30 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=30 ;
 
 --
 -- Dumping data for table `sadmin_permissions`
@@ -138,13 +152,13 @@ INSERT INTO `sadmin_permissions` (`id`, `name`, `permkey`, `editable`) VALUES
 -- Table structure for table `sadmin_roles`
 --
 
-CREATE TABLE `sadmin_roles` (
+CREATE TABLE IF NOT EXISTS `sadmin_roles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `homepage` varchar(200) DEFAULT NULL,
   `editable` varchar(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `sadmin_roles`
@@ -159,12 +173,12 @@ INSERT INTO `sadmin_roles` (`id`, `name`, `homepage`, `editable`) VALUES
 -- Table structure for table `sadmin_roles_permissions`
 --
 
-CREATE TABLE `sadmin_roles_permissions` (
+CREATE TABLE IF NOT EXISTS `sadmin_roles_permissions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `role_id` int(11) NOT NULL,
   `permission_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `sadmin_roles_permissions`
@@ -180,12 +194,12 @@ INSERT INTO `sadmin_roles_permissions` (`id`, `role_id`, `permission_id`) VALUES
 -- Table structure for table `sadmin_tables`
 --
 
-CREATE TABLE `sadmin_tables` (
+CREATE TABLE IF NOT EXISTS `sadmin_tables` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
   `displayname` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `sadmin_tables`
@@ -200,7 +214,7 @@ INSERT INTO `sadmin_tables` (`id`, `name`, `displayname`) VALUES
 -- Table structure for table `sadmin_users`
 --
 
-CREATE TABLE `sadmin_users` (
+CREATE TABLE IF NOT EXISTS `sadmin_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `fname` varchar(20) DEFAULT NULL,
   `lname` varchar(20) DEFAULT NULL,
@@ -211,11 +225,11 @@ CREATE TABLE `sadmin_users` (
   `dateadded` bigint(20) NOT NULL,
   `lastlogin` bigint(20) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `sadmin_users`
 --
 
 INSERT INTO `sadmin_users` (`id`, `fname`, `lname`, `username`, `email`, `password`, `role_id`, `dateadded`, `lastlogin`) VALUES
-(1, '', '', 'Ali.MD', 'i@ali.md', '81dc9bdb52d04dc20036dbd8313ed055', 1, 1353160202, 1353160250);
+(1, '', '', 'Ali.MD', 'i@ali.md', 'c88f7d11e43c354d5a0042cb169708ba', 1, 1353160202, 1353160250);
