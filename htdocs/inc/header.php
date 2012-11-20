@@ -1,5 +1,8 @@
-<!DOCTYPE HTML>
-<html lang="fa-IR" dir="rtl">
+<!DOCTYPE html>
+<!--[if lt IE 7]>		<html lang="fa-IR" dir="ltr" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>			<html lang="fa-IR" dir="ltr" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>			<html lang="fa-IR" dir="ltr" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->	<html lang="fa-IR" dir="ltr" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="UTF-8" />
 	<title>Pars Engineering Co. | <?php echo $title ?></title>
