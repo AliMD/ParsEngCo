@@ -50,3 +50,32 @@ function gen_projects_list($projects_arr){
 	return $html;
 }
 
+function get_filenames($path,$types){
+	$files_ok = array();
+
+	$files = scandir($path);
+	foreach($files as $file){
+		$file_type = end( explode('.', $file) );
+		if( !in_array(strtolower($file_type),$types) ) continue;
+		$files_ok[] = $file;
+	}
+
+	return $files_ok;
+}
+
+function gen_products_list($path,$images){
+	$html = '';
+	foreach ($images as $img) {
+		$type = end(explode('.',$img));
+		$name = substr($img,0, -1*strlen($type)-1 );
+		$html .= "
+			<div class='box left'>
+				<a class='darkbox' href='$path/$img'>
+					<img src='{$path}thumbs/$img' alt='$images' width='200' height='150' />
+					<span lang='en-US'>$name</span>
+				</a>
+			</div>
+		";
+	}
+	return $html;
+} 
