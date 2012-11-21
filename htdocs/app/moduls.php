@@ -70,8 +70,8 @@ function gen_products_list($path,$images){
 		$name = substr($img,0, -1*strlen($type)-1 );
 		$html .= "
 			<div class='box left'>
-				<a class='darkbox' href='$path/$img'>
-					<img src='{$path}thumbs/$img' alt='$images' width='200' height='150' />
+				<a class='darkbox' href='$path/$img' title='کد محصول : $name'>
+					<img src='{$path}thumbs/$img' alt='Pars Engineering Product $name' width='200' height='150' />
 					<span lang='en-US'>$name</span>
 				</a>
 			</div>

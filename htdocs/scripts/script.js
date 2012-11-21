@@ -128,6 +128,13 @@
 
 	// colorbox
 
-	$('.darkbox').colorbox({rel:'darkbox',opacity:0.7});
+	$('.darkbox').colorbox({
+		rel:'darkbox',
+		speed:500,
+		opacity:0.7,
+		scrolling:false,
+		maxHeight:window.innerHeight-50,
+		maxWidth:window.innerWidth-50
+	});
 
 })(window.Zepto || window.jQuery);
