@@ -13,17 +13,18 @@
 				startIndex : 0,
 				fadeFirstImage : true,
 				zIndex : -2,
-				zIndexAct : -2
+				zIndexAct : -2,
+				returnFocus:false
 			},options);
 
 			options.startIndex--;
 
 			var nextPic,
-				pics    =this,
-				indx    =options.startIndex,
-				plen    =this.length,
-				fadeIn  ={opacity:1},
-				fadeOut ={opacity:0},
+				pics	=this,
+				indx	=options.startIndex,
+				plen	=this.length,
+				fadeIn	={opacity:1},
+				fadeOut	={opacity:0},
 				zIndexChange = options.zIndex != options.zIndexAct
 
 			var nextPic = function(){
@@ -51,9 +52,6 @@
 		}
 	});
 })(window.Zepto || window.jQuery);
-
-
-
 
 
 // site js
@@ -127,14 +125,16 @@
 	});
 
 	// colorbox
-
-	$('.darkbox').colorbox({
-		rel:'darkbox',
-		speed:500,
-		opacity:0.7,
-		scrolling:false,
-		maxHeight:window.innerHeight-50,
-		maxWidth:window.innerWidth-50
-	});
+	(function($){
+		$('.darkbox').colorbox({
+			rel			:'darkbox',
+			speed		:500,
+			opacity		:0.7,
+			scrolling	:false,
+			maxHeight	:window.innerHeight-50,
+			maxWidth	:window.innerWidth-50,
+			returnFocus	:false
+		});
+	})(window.jQuery);
 
 })(window.Zepto || window.jQuery);
