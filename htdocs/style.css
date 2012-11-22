@@ -246,9 +246,7 @@ div.menu_wrap div.hide {
 /*---------- content_wrap col2 & col3 Page ----------*/
 div.content_wrap,   /* background form in diferent page */
 div.contact-us,
-div.blog,
-div.galleria,
-div.sliderview {
+div.galleria {
 	width	: 700px;
 	color	: #fff;
 	border	: 1px solid #343434;
@@ -256,19 +254,11 @@ div.sliderview {
 }
 .lt-ie9 div.content_wrap,
 .lt-ie9 div.contact-us,
-.lt-ie9 div.blog,
-.lt-ie9 div.galleria,
-.lt-ie9 div.sliderview {
+.lt-ie9 div.galleria {
 	background: transparent;
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5000000,endColorstr=#E5000000)"; /* IE8 */
-	zoom: 1;
-}
-.lt-ie8 div.content_wrap,
-.lt-ie8 div.contact-us,
-.lt-ie8 div.blog,
-.lt-ie8 div.galleria,
-.lt-ie8 div.sliderview {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5000000,endColorstr=#E5000000);   /* IE6 & 7 */
+	zoom: 1;
 }
 
 div.content_wrap header.head h2 {
@@ -326,13 +316,6 @@ div.content_wrap div.products div.box a span {
 	-ms-transition		: all 800ms ease-out;
 	-o-transition		: all 800ms ease-out;
 }
-
-.lt-ie8 div.content_wrap div.products div.box a span {
-	background: transparent;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5000000,endColorstr=#A5000000);   /* IE6 & 7 */
-	zoom: 1;
-}
-
 
 div.content_wrap div.products div.box a:hover span {
 	opacity	: 0.7;
