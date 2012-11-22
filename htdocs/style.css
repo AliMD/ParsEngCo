@@ -220,7 +220,7 @@ div.menu li menu li a img {
 
 div.menu li menu li:hover > a img {
 	opacity	: 1;
-	filter  : alpha(opacity100);
+	filter  : alpha(opacity=100);
 }
 
 div.menu_wrap div.hide {
@@ -333,11 +333,10 @@ footer.footers{
 }
 
 footer.footers div.text {
-	direction : ltr;
-	width     : 234px;
-	font-size : 10px;
-	margin-top: 22px;
-	color     :#D6CBCB
+	margin-left: 36px;
+	font-size  : 10px;
+	margin-top : 22px;
+	color      :#D6CBCB
 }
 
 footer.footers div.text a {
@@ -721,7 +720,7 @@ div.content_wrap h1 {
         #cboxClose{position:absolute; top:4px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
         #cboxClose:hover{background-position:bottom center;}
         #cboxCurrent{font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: 17px; word-spacing: 1px;}
-        a.darkbox,a.darkbox:active{outline: 0 none !important;}
+        
 /* google search */
 
 #goog-fixurl ul {
