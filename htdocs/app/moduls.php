@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once('db.php');
+require_once('app/db.php');
 
 function get_page(){
 	return isset($_GET[page]) ? strtolower($_GET[page]) : 'home';
@@ -55,7 +55,8 @@ function get_filenames($path,$types){
 
 	$files = scandir($path);
 	foreach($files as $file){
-		$file_type = end( explode('.', $file) );
+		$tmp  = explode('.',$file);
+		$file_type = end( $tmp );
 		if( !in_array(strtolower($file_type),$types) ) continue;
 		$files_ok[] = $file;
 	}
@@ -66,7 +67,8 @@ function get_filenames($path,$types){
 function gen_products_list($path,$images){
 	$html = '';
 	foreach ($images as $img) {
-		$type = end(explode('.',$img));
+		$tmp  = explode('.',$img);
+		$type = end($tmp);
 		$name = substr($img,0, -1*strlen($type)-1 );
 		$html .= "
 			<div class='box left'>
