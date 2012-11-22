@@ -41,6 +41,6 @@ Please note that parseng.co is a curated site and that we reserve the right to r
 The [ParsEng.co](http://parseng.co) code and website is released under a [MIT License](http://opensource.org/licenses/MIT).
 
 
-### A 1devs website
-Produced by 1Devs Web Department
+### A 1Devs website
+Produced by The<i>One</i>Developers - Web Department
 

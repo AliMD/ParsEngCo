@@ -1,15 +1,25 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
 
-$sitedown = true;
+require_once('app/moduls.php');
 
-session_start();
+showunder();
 
-isset($_GET['debug']) and $_SESSION['debug']=$_GET['debug'];
-
-if($sitedown && !$_SESSION['debug']){
-	header("Location: ./underdev/");
-	exit();
+$template['page'] = get_page();
+if($template['page']=='projects'){
+	$projects = db_getrows('portfolio','*',true,'sort',40);
+	$template['projects'] = gen_projects_list($projects);
 }
 
-@include "theme.php";
+else if ($template['page']=='products') {
+	$image_dir = "images/galleries/products/";
+	$allowed_type = array('jpg','jpeg','png','gif');
+
+	$files = get_filenames($image_dir,$allowed_type);
+
+	$template['projects'] = gen_products_list($image_dir,$files);
+}
+
+inc("view",'app');
+
+finalise();

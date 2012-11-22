@@ -725,7 +725,7 @@ div.content_wrap h1 {
         .cboxIframe{background:#fff;}
         #cboxError{padding:50px; border:1px solid #ccc;}
         #cboxLoadedContent{border:5px solid #000; background:#fff;}
-        #cboxTitle{position:absolute; top:-20px; right:0; color:#ccc;}
+        #cboxTitle{position:absolute; top:-20px; right:0; color:#ccc; font-size: 18px; white-space: nowrap; direction: rtl;}
         #cboxCurrent{position:absolute; top:-20px; left:0px; color:#ccc;}
         #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
         #cboxPrevious{position:absolute; top:50%; left:4px; margin-top:-32px; background:url(images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}

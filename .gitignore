@@ -17,3 +17,6 @@ $RECYCLE.BIN/
 #Managers Files
 Designs/
 *.xmind
+
+#admin panel
+htdocs/admin
