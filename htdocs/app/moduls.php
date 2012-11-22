@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once('db.php');
+require_once('app/db.php');
 
 function get_page(){
 	return isset($_GET[page]) ? strtolower($_GET[page]) : 'home';
