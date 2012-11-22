@@ -249,7 +249,6 @@ div.sliderview {
 	width	: 700px;
 	color	: #fff;
 	border	: 1px solid #343434;
-	background-color	: #000;  /* using in IE */
 	background-color	: rgba(0,0,0,0.9);
 }
 
@@ -290,6 +289,8 @@ div.content_wrap div.products div.box a span {
 	color	: white;
 	color	: rgba(255,255,255,0.65);
 	opacity	: 0;
+	filter  : alpha(opacity=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	z-index	: 2;
 
 	line-height		: 150px;
@@ -307,9 +308,19 @@ div.content_wrap div.products div.box a span {
 	-ms-transition		: all 800ms ease-out;
 	-o-transition		: all 800ms ease-out;
 }
+.lt-ie9 div.content_wrap div.products div.box a span {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5000000,endColorstr=#A5000000)"; /* IE8 */
+      zoom: 1;
+}
+.lt-ie8 div.content_wrap div.products div.box a span {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5000000,endColorstr=#A5000000);   /* IE6 & 7 */
+}
 
-div.content_wrap div.content div.box a:hover span {
+
+div.content_wrap div.products div.box a:hover span {
 	opacity	: 0.7;
+	filter  : alpha(opacity=70);
 	transition-duration			: 500ms;
 	-webkit-transition-duration	: 500ms;
 	-moz-transition-duration	: 500ms;
