@@ -173,6 +173,7 @@ div.menu li menu {
 	display		: none;
 	padding		: 0px 7px;
 	opacity		: 0.95;
+	filter  : alpha(opacity=95);
 	border		: 1px solid #343434;
 	background-color	: #000;
 }
@@ -213,11 +214,13 @@ div.menu li li:hover {
 div.menu li menu li a img {
 	float	: right;
 	opacity	: 0;
+	filter  : alpha(opacity=0);
 	margin-right : 5px;
 }
 
 div.menu li menu li:hover > a img {
 	opacity	: 1;
+	filter  : alpha(opacity100);
 }
 
 div.menu_wrap div.hide {
@@ -250,6 +253,22 @@ div.sliderview {
 	color	: #fff;
 	border	: 1px solid #343434;
 	background-color	: rgba(0,0,0,0.9);
+}
+.lt-ie9 div.content_wrap,
+.lt-ie9 div.contact-us,
+.lt-ie9 div.blog,
+.lt-ie9 div.galleria,
+.lt-ie9 div.sliderview {
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5000000,endColorstr=#E5000000)"; /* IE8 */
+	zoom: 1;
+}
+.lt-ie8 div.content_wrap,
+.lt-ie8 div.contact-us,
+.lt-ie8 div.blog,
+.lt-ie8 div.galleria,
+.lt-ie8 div.sliderview {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E5000000,endColorstr=#E5000000);   /* IE6 & 7 */
 }
 
 div.content_wrap header.head h2 {
@@ -289,8 +308,7 @@ div.content_wrap div.products div.box a span {
 	color	: white;
 	color	: rgba(255,255,255,0.65);
 	opacity	: 0;
-	filter  : alpha(opacity=0);
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter  : alpha(opacity=0); 
 	z-index	: 2;
 
 	line-height		: 150px;
@@ -308,13 +326,11 @@ div.content_wrap div.products div.box a span {
 	-ms-transition		: all 800ms ease-out;
 	-o-transition		: all 800ms ease-out;
 }
-.lt-ie9 div.content_wrap div.products div.box a span {
-	background: transparent;
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5000000,endColorstr=#A5000000)"; /* IE8 */
-      zoom: 1;
-}
+
 .lt-ie8 div.content_wrap div.products div.box a span {
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5000000,endColorstr=#A5000000);   /* IE6 & 7 */
+	background: transparent;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#A5000000,endColorstr=#A5000000);   /* IE6 & 7 */
+	zoom: 1;
 }
 
 
@@ -327,7 +343,6 @@ div.content_wrap div.products div.box a:hover span {
 	-ms-transition-duration		: 500ms;
 	-o-transition-duration		: 500ms;
 }
-
 
 footer.footers{
 	border-top : 1px solid #646464;
@@ -449,11 +464,13 @@ div.contact-us div.content section.info ul li:first-child {
 
 div.contact-us div.content section.info iframe {
 	opacity			: 0.8;
+	filter  : alpha(opacity=80);
 	border-radius	: 3px;
 }
 
 div.contact-us div.content section.info iframe:hover {
 	opacity	: 1;
+	filter  : alpha(opacity=100);
 }
 
 #ifrm{
@@ -558,8 +575,9 @@ div.content_wrap div.content section.row article.box a span {
 	height		: 210px;
 	z-index		: 2;
 	opacity		: 0;
-	background-image	: url('images/hover_image_big.png');
+	filter  	: alpha(opacity=0);
 	background-color	: black;
+	background-image	: url('images/hover_image_big.png');
 	background-repeat	: no-repeat;
 	background-position	: center;
 	transition			: all 800ms ease-out;
@@ -572,6 +590,7 @@ div.content_wrap div.content section.row article.box a span {
 /*---------- Portfolio: 3 Columns ----------*/
 div.content_wrap div.content section.row article.box a:hover span {
 	opacity	: 0.7;
+	filter  : alpha(opacity=70);
 	transition-duration			: 500ms;
 	-webkit-transition-duration	: 500ms;
 	-moz-transition-duration	: 500ms;
@@ -643,6 +662,7 @@ div.content_wrap a.aboutPic span{
 	right	: 0;
 	z-index	: 2;
 	opacity	: 0;
+	filter  : alpha(opacity=0);
 	background-image	: url('images/hover_image_big.png');
 	background-color	: black;
 	background-repeat	: no-repeat;
@@ -655,11 +675,12 @@ div.content_wrap a.aboutPic span{
 }
 div.content_wrap a.aboutPic:hover span{
 	opacity	: 0.7;
+	filter  : alpha(opacity=70);
 	transition-duration			: 500ms;
 	-webkit-transition-duration	: 500ms;
 	-moz-transition-duration	: 500ms;
 	-ms-transition-duration		: 500ms;
-	-o-transition-duration		: 500ms;
+	-o-transition-duration		: 500ms; 
 }
 
 div.about div.content p {
