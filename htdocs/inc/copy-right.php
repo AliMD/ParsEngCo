@@ -1,6 +1,6 @@
 <footer class="mh8 cover footers">
 	<section class="copyright mh3 pb2 cover">
-		<div class="w8 left text" lang="en-US">
+		<div class="left text" lang="en-US">
 			A <a href="http://1dws.com">1Devs</a> Website. Copyright © 2012 Pars Engineering Co.
 		</div>
 		<div class="w7 mla social">

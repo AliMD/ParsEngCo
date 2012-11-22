@@ -350,10 +350,11 @@ footer.footers{
 }
 
 footer.footers div.text {
-	direction: ltr;
-	font-size: 10px;
+	direction : ltr;
+	width     : 234px;
+	font-size : 10px;
 	margin-top: 22px;
-	color:#D6CBCB
+	color     :#D6CBCB
 }
 
 footer.footers div.text a {
