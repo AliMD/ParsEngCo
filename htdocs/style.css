@@ -411,8 +411,6 @@ textarea.err:-moz-placeholder {
 }
 
 div.contact-us div.content section.form input.btn_submit {
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	border: 1px solid #2C2C2C;
 	background: #111111;
