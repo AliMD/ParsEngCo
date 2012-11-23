@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+require('app/config.php');
 require_once('app/db.php');
 
 function get_page(){
