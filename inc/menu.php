@@ -1,4 +1,3 @@
-
 <div class="menu_wrap">
 	<div class="menu">
 		<div class="logo cover" lang="en-US">
@@ -17,39 +16,39 @@
 					</a>
 				</li>
 				<li>
-					<a href="./about-us">
+					<a href="./About-Us">
 						درباره ما
 						<span>چه می کنیم</span>
 					</a>
 				</li>
 				<li>
-					<a href="./products">
+					<a href="./Products-0-All">
 						محصولات
 						<span>نمایش کارهای ما</span>
 					</a>
 					<menu>
 						<ul>
-							<li><a href="./products">پنل های ALPI</a></li>
-							<li><a href="./products">پنل های DANZER</a></li>
-							<li><a href="./products">پنل های High Glass</a></li>
+							<li><a href="./Products-1-ALPI">پنل های ALPI</a></li>
+							<li><a href="./Products-2-DANZER">پنل های DANZER</a></li>
+							<li><a href="./Products-3-High-Glass">پنل های High Glass</a></li>
 						</ul>
 					</menu>
 				</li>
 				<li>
-					<a href="./projects">
+					<a href="./Projects-0-All">
 						پروژه ها
 						<span>آخرین پروژه ها</span>
 					</a>
 					<menu>
 						<ul>
-							<li><a href="./projects">کابینت</a></li>
-							<li><a href="./projects">دکوراسیون داخلی</a></li>
-							<li><a href="./projects">درب های ساختمانی</a></li>
+							<li><a href="./Projects-1-Cabinets">کابینت</a></li>
+							<li><a href="./Projects-2-Interior-Design">دکوراسیون داخلی</a></li>
+							<li><a href="./Projects-3-Structural-Doors">درب های ساختمانی</a></li>
 						</ul>
 					</menu>
 				</li>
 				<li>
-					<a href="./contact-us">
+					<a href="./Contact-Us">
 						تماس با ما
 						<span>راههای تماس</span>
 					</a>

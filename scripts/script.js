@@ -1,8 +1,8 @@
-// Zepto/jQuery fadeLoop plugin for fade slide show effects by ali.md
 
 (function($,undefined){
+	// Zepto/jQuery fadeLoop plugin for fade slide show effects by ali.md
+	
 	var	ease = !!window.Zepto ? 'ease-out' : 'swing';
-
 	$.extend($.fn,{
 		fadeLoop :function(options){
 
@@ -54,10 +54,10 @@
 })(window.Zepto || window.jQuery);
 
 
-// site js
-
+// Website js
 (function($,undefined){
 
+	// Background images animation
 	$('.background > div').fadeLoop({
 		delay : 0,
 		freez : 6000,
@@ -65,13 +65,13 @@
 		fadeFirstImage : false
 	});
 
+	// Menu hide/show effect
 	$('#hidebtn').click(function(){
 		$('.menu_wrap').toggleClass('close');
 		return false;
 	});
 
-//Contact Form
-
+	//Contact Form
 	var	emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i,
 		validateText = function (str,len){
 			return str.length >= len;
@@ -124,7 +124,7 @@
 		return !err;
 	});
 
-	// colorbox
+	// Colorbox (jQuery only)
 	(function($){
 		$('.darkbox').colorbox({
 			rel			:'darkbox',

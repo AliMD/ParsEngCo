@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+require('app/config.php');
 require_once('app/db.php');
 
 function get_page(){
@@ -52,13 +53,15 @@ function gen_projects_list($projects_arr){
 
 function get_filenames($path,$types){
 	$files_ok = array();
-
-	$files = scandir($path);
-	foreach($files as $file){
-		$tmp  = explode('.',$file);
-		$file_type = end( $tmp );
-		if( !in_array(strtolower($file_type),$types) ) continue;
-		$files_ok[] = $file;
+	
+	if(is_dir($path)){
+		$files = scandir($path);
+		foreach($files as $file){
+			$tmp  = explode('.',$file);
+			$file_type = end( $tmp );
+			if( !in_array(strtolower($file_type),$types) ) continue;
+			$files_ok[] = $file;
+		}
 	}
 
 	return $files_ok;
@@ -72,7 +75,7 @@ function gen_products_list($path,$images){
 		$name = substr($img,0, -1*strlen($type)-1 );
 		$html .= "
 			<div class='box left'>
-				<a class='darkbox' href='$path/$img' title='کد محصول : $name'>
+				<a class='darkbox' href='$path$img' title='کد محصول : $name'>
 					<img src='{$path}thumbs/$img' alt='Pars Engineering Product $name' width='200' height='150' />
 					<span lang='en-US'>$name</span>
 				</a>

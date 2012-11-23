@@ -1,13 +1,5 @@
 <?php
 
-$db = array(
-	'con' => '',
-	'name'   => 'parsengws',
-	'server' => 'localhost',
-	'user'   => 'root',
-	'pass'   => ''
-);
-
 function db_err(){
 	$err_num = mysql_errno();
 	$err_msg = mysql_error();
