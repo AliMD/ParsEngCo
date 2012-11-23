@@ -53,13 +53,15 @@ function gen_projects_list($projects_arr){
 
 function get_filenames($path,$types){
 	$files_ok = array();
-
-	$files = scandir($path);
-	foreach($files as $file){
-		$tmp  = explode('.',$file);
-		$file_type = end( $tmp );
-		if( !in_array(strtolower($file_type),$types) ) continue;
-		$files_ok[] = $file;
+	
+	if(is_dir($path)){
+		$files = scandir($path);
+		foreach($files as $file){
+			$tmp  = explode('.',$file);
+			$file_type = end( $tmp );
+			if( !in_array(strtolower($file_type),$types) ) continue;
+			$files_ok[] = $file;
+		}
 	}
 
 	return $files_ok;

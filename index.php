@@ -11,6 +11,8 @@ if($template['page']=='projects'){
 	$cat = $_GET['cat'];
 	$projects = db_getrows('portfolio','*',($cat?"category=$cat":true),'sort',40);
 	$template['projects'] = gen_projects_list($projects);
+
+	if($template['projects']=='') $template['page']='404';
 }
 
 else if ($template['page']=='products') {
@@ -28,6 +30,8 @@ else if ($template['page']=='products') {
 			$template['projects'] .= gen_products_list($image_dir."$i/",$files);
 		}
 	}
+
+	if($template['projects']=='') $template['page']='404';
 }
 
 inc("view",'app');
