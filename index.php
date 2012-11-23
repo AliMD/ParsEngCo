@@ -6,8 +6,10 @@ require_once('app/moduls.php');
 showunder();
 
 $template['page'] = get_page();
+
 if($template['page']=='projects'){
-	$projects = db_getrows('portfolio','*',true,'sort',40);
+	$cat = $_GET['cat'];
+	$projects = db_getrows('portfolio','*',($cat?"category=$cat":true),'sort',40);
 	$template['projects'] = gen_projects_list($projects);
 }
 
