@@ -22,6 +22,60 @@ This is the source for the main ParsEngineering company website, found at [parse
 * [PHP](http://ali.md/php/)
 * [MySQL](http://ali.md/wiki/mysql)
 
+## Change Log
+
+#### HEAD (now)
+  * Dynamic Products and projects
+  * Search engine friendly urls
+  * Admi panel
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.9...master)
+
+
+#### v0.9
+  * RC for static website
+  * Javascript completed
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.8...v0.9)
+
+#### v0.8
+  * Persian pages layout.
+  * Persian fonts.
+  * Better css and layout.
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.7...v0.8)
+
+#### v0.7
+  * Persian pages layout.
+  * Persian fonts.
+  * Better css and layout.
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.6...v0.7)
+
+#### v0.6
+  * Revolution architecture for parsengco.
+  * Last english version.
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.5...v0.6)
+
+#### v0.5
+  * Complete samples page.
+  * All english sample page.
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.4...v0.5)
+
+#### v0.4
+  * Blog page.
+  * Better gallerys.
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.3...v0.4)
+
+#### v0.3
+  * More & Better Gallery Page Sample.
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.2...v0.3)
+
+#### v0.2
+  * Basic Gallery page.
+  * Contact us page.
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.1...v0.2)
+
+#### v0.1
+  * Menu and basic structure.
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/91aa4aa5be...v0.1)
+
 ## Contributing
 ♥ ParsEngCo website and want to get involved ?  
 Thanks! There are plenty of ways you can help!  
@@ -83,8 +137,7 @@ Please follow this process; it's the best way to get your work included in the p
 
 10. [Open a Pull Request](http://help.github.com/send-pull-requests/) with a
     clear title and description. Please mention which browsers you tested in.
-  
-  
+
 ## All rights reserved ###
 Please note that parseng.co is a curated site and that we reserve the right to refuse any listing for any reason.  
   
