@@ -14,12 +14,20 @@ if($template['page']=='projects'){
 }
 
 else if ($template['page']=='products') {
-	$image_dir = "images/galleries/products/";
 	$allowed_type = array('jpg','jpeg','png','gif');
+	$cat = $_GET['cat'];
+	$image_dir = "images/galleries/products/";
 
-	$files = get_filenames($image_dir,$allowed_type);
-
-	$template['projects'] = gen_products_list($image_dir,$files);
+	$template['projects']='';
+	if($cat){
+		$files=get_filenames($image_dir."$cat/",$allowed_type);
+		$template['projects'] .= gen_products_list($image_dir."$cat/",$files);
+	}else{
+		for($i=1;$i<=3;$i++){
+			$files=get_filenames($image_dir."$i/",$allowed_type);
+			$template['projects'] .= gen_products_list($image_dir."$i/",$files);
+		}
+	}
 }
 
 inc("view",'app');

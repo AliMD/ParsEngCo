@@ -22,20 +22,20 @@
 					</a>
 				</li>
 				<li>
-					<a href="./Products">
+					<a href="./Products-0-All">
 						محصولات
 						<span>نمایش کارهای ما</span>
 					</a>
 					<menu>
 						<ul>
-							<li><a href="./Products">پنل های ALPI</a></li>
-							<li><a href="./Products">پنل های DANZER</a></li>
-							<li><a href="./Products">پنل های High Glass</a></li>
+							<li><a href="./Products-1-ALPI">پنل های ALPI</a></li>
+							<li><a href="./Products-2-DANZER">پنل های DANZER</a></li>
+							<li><a href="./Products-3-High-Glass">پنل های High Glass</a></li>
 						</ul>
 					</menu>
 				</li>
 				<li>
-					<a href="./Projects-0-all">
+					<a href="./Projects-0-All">
 						پروژه ها
 						<span>آخرین پروژه ها</span>
 					</a>
