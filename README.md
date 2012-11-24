@@ -25,10 +25,15 @@ This is the source for the main ParsEngineering company website, found at [parse
 ## Change Log
 
 #### HEAD (now)
+  * Cross browser support
+  * Fix bugs
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v1.0rc1...master)
+
+#### v1.0rc1
   * Dynamic Products and projects
   * Search engine friendly urls
   * Admi panel
-  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.9...master)
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.9...v1.0rc1)
 
 
 #### v0.9
