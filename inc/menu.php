@@ -16,27 +16,27 @@
 					</a>
 				</li>
 				<li>
-					<a href="./About-Us">
+					<a href="./About+Us/درباره+ما">
 						درباره ما
 						<span>چه می کنیم</span>
 					</a>
 				</li>
 				<li>
-					<a href="./Products-0-All">
+					<a href="./Products/0/محصولات">
 						محصولات
 						<span>نمایش کارهای ما</span>
 					</a>
 					<?php echo $template['products_cats']; ?>
 				</li>
 				<li>
-					<a href="./Projects-0-All">
+					<a href="./Projects/0/پروژه+ها">
 						پروژه ها
 						<span>آخرین پروژه ها</span>
 					</a>
 					<?php echo $template['projects_cats']; ?>
 				</li>
 				<li>
-					<a href="./Contact-Us">
+					<a href="./Contact+Us/تماس+با+ما">
 						تماس با ما
 						<span>راههای تماس</span>
 					</a>

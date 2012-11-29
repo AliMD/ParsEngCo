@@ -5,7 +5,14 @@ require('app/config.php');
 require_once('app/db.php');
 
 function get_page(){
-	return isset($_GET[page]) ? strtolower($_GET[page]) : 'home';
+	return isset($_GET['page']) ? str_replace(array('+',' ','%20'), '-', strtolower($_GET[page]) ) : 'home';
+}
+
+function get_title(){
+	$title = $_GET['desc'] ? $_GET['desc'] : $_GET['page'];
+	$title = str_replace(array('-','+','%20'), ' ', $title );
+	$title = str_replace(array('/'), ' | ', $title );
+	return ucwords($title);
 }
 
 function console_log($msg){
@@ -42,11 +49,10 @@ function inc($filename,$folder='inc'){
 	@include "$folder/$filename.php";
 }
 
-//gen_submenu_cats($template['projects_cats_arr'],'projects','محصولات','/');
 function gen_submenu_cats($cats_arr,$prefix_page,$prefix_desc,$separator = "/"){
 	$html = '<menu><ul>';
 	foreach ($cats_arr as $cat) {
-		$url = str_replace(' ', '_', "$prefix_page$separator$cat[id]$separator$prefix_desc$separator$cat[name]");
+		$url = str_replace(' ', '+', "$prefix_page$separator$cat[id]$separator$prefix_desc$separator$cat[name]");
 		$html .= "<li><a href='$url'>$cat[name]</a></li>";
 	}
 	$html .= '</ul></menu>';

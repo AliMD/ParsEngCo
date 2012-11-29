@@ -43,7 +43,11 @@ RewriteEngine on
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(projects|products)-(\d)-.*$ index.php?page=$1&cat=$2 [L,NC,QSA]
+RewriteRule ^(projects|products)/(\d)/(.*)$ index.php?page=$1&cat=$2&desc=$3 [L,NC,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z_+-]+)/(.*)$ index.php?page=$1&desc=$2 [L,NC,QSA]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

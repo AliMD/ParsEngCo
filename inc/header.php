@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!-->	<html lang="fa-IR" dir="rtl"> <!--<![endif]-->
 <head>
 	<meta charset="UTF-8" />
-	<title>Pars Engineering Co. | <?php echo $title ?></title>
+	<title>شرکت مهندسی پارس | <?php echo $template['title'] ?></title>
 	<base href="<?php echo $template['url']; ?>" />
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
