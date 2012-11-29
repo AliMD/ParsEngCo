@@ -42,6 +42,17 @@ function inc($filename,$folder='inc'){
 	@include "$folder/$filename.php";
 }
 
+//gen_submenu_cats($template['projects_cats_arr'],'projects','محصولات','/');
+function gen_submenu_cats($cats_arr,$prefix_page,$prefix_desc,$separator = "/"){
+	$html = '<menu><ul>';
+	foreach ($cats_arr as $cat) {
+		$url = str_replace(' ', '_', "$prefix_page$separator$cat[id]$separator$prefix_desc$separator$cat[name]");
+		$html .= "<li><a href='$url'>$cat[name]</a></li>";
+	}
+	$html .= '</ul></menu>';
+	return $html;
+}
+
 function gen_project($project,$cls){
 	$html = '';
 	$project and $html .= "
