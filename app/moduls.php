@@ -84,17 +84,15 @@ function get_filenames($path,$types){
 	return $files_ok;
 }
 
-function gen_products_list($path,$images){
+function gen_products_list($products_arr){
 	$html = '';
-	foreach ($images as $img) {
-		$tmp  = explode('.',$img);
-		$type = end($tmp);
-		$name = substr($img,0, -1*strlen($type)-1 );
+	foreach ($products_arr as $product) {
+		$title = $product['description'] ? $product['description'] : "کد محصول : $product[code]";
 		$html .= "
 			<div class='box left'>
-				<a class='darkbox' href='$path$img' title='کد محصول : $name'>
-					<img src='{$path}thumbs/$img' alt='Pars Engineering Product $name' width='200' height='150' />
-					<span lang='en-US'>$name</span>
+				<a class='darkbox' href='images/galleries/products/$product[image]' title='$title'>
+					<img src='images/galleries/products/$product[thumb]' alt='Pars Engineering Product $title' width='200' height='150' />
+					<span lang='en-US'>$product[code]</span>
 				</a>
 			</div>
 		";

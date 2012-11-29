@@ -9,27 +9,17 @@ $template['page'] = get_page();
 
 if($template['page']=='projects'){
 	$cat = $_GET['cat'];
-	$projects = db_getrows('portfolio','*',($cat?"category=$cat":true),'sort',40);
-	$template['projects'] = gen_projects_list($projects);
+	$template['projects_arr'] = db_getrows('portfolio','*',($cat?"category=$cat":true),'sort',40);
+	$template['projects'] = gen_projects_list($template['projects_arr']);
 
 	if($template['projects']=='') $template['page']='404';
 }
 
 else if ($template['page']=='products') {
-	$allowed_type = array('jpg','jpeg','png','gif');
 	$cat = $_GET['cat'];
-	$image_dir = "images/galleries/products/";
-
-	$template['products']='';
-	if($cat){
-		$files=get_filenames($image_dir."$cat/",$allowed_type);
-		$template['products'] .= gen_products_list($image_dir."$cat/",$files);
-	}else{
-		for($i=1;$i<=3;$i++){
-			$files=get_filenames($image_dir."$i/",$allowed_type);
-			$template['products'] .= gen_products_list($image_dir."$i/",$files);
-		}
-	}
+	// images/galleries/products/
+	$template['products_arr'] = db_getrows('products','*',($cat?"category=$cat":true),'sort',60);
+	$template['products'] .= gen_products_list($template['products_arr']);
 
 	if($template['products']=='') $template['page']='404';
 }
