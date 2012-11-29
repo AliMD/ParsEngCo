@@ -3,7 +3,7 @@
 		<h1>محصولات</h1>
 	</header>
 	<div class="pb4 content cover products">
-		<?php echo $template['projects']; ?>
+		<?php echo $template['products']; ?>
 	</div>
 	<?php include 'inc/copy-right.php'; ?>
 	<?php include 'inc/slideshow.php'; ?>

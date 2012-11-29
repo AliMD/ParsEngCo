@@ -20,18 +20,18 @@ else if ($template['page']=='products') {
 	$cat = $_GET['cat'];
 	$image_dir = "images/galleries/products/";
 
-	$template['projects']='';
+	$template['products']='';
 	if($cat){
 		$files=get_filenames($image_dir."$cat/",$allowed_type);
-		$template['projects'] .= gen_products_list($image_dir."$cat/",$files);
+		$template['products'] .= gen_products_list($image_dir."$cat/",$files);
 	}else{
 		for($i=1;$i<=3;$i++){
 			$files=get_filenames($image_dir."$i/",$allowed_type);
-			$template['projects'] .= gen_products_list($image_dir."$i/",$files);
+			$template['products'] .= gen_products_list($image_dir."$i/",$files);
 		}
 	}
 
-	if($template['projects']=='') $template['page']='404';
+	if($template['products']=='') $template['page']='404';
 }
 
 inc("view",'app');
