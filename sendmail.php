@@ -39,7 +39,7 @@
 	<?php
 		error_reporting(E_ALL ^ E_NOTICE);
 
-		$admin = 'info@mydomain.com';
+		$admin = 'info@parseng.co';
 		
 		$name		= $_POST['name'];
 		$email		= $_POST['mail'];
@@ -47,7 +47,7 @@
 		$subject	= $_POST['subject'];
 
 		if( strlen($name)>=3 && strlen($email)>=7 && strlen($subject)>=5 && strlen($msg)>=8 ){
-			if( @mail ( $admin,"ParsEng.co contact : $subject", $msg, "From:$name <$email>" ) ){
+			if( @mail ( $admin,"ParsEng.co contact : $subject", $msg, "From:$admin\r\nReply-To:$name <$email>" ) ){
 				echo '<h2 class="ok">با تشکر، ایمیل شما ارسال شد.</h2>';
 			}else{
 				echo '<h2 class="err">خطا در ارسال ایمیل، لطفا دوباره تلاش کنید.</h2>';

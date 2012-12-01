@@ -5,6 +5,6 @@
 	<div class="pb4 content cover products">
 		<?php echo $template['products']; ?>
 	</div>
-	<?php include 'inc/copy-right.php'; ?>
-	<?php include 'inc/slideshow.php'; ?>
+	<?php inc('copy-right'); ?>
+	<?php inc('slideshow'); ?>
 </div>
