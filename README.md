@@ -24,6 +24,8 @@ This is the source for the main ParsEngineering company website, found at [parse
 
 ## Change Log
 
+[![Build Status](https://secure.travis-ci.org/AliMD/ParsEngCo.png?branch=master)](https://travis-ci.org/AliMD/ParsEngCo)
+
 #### HEAD (now)
   * Cross browser support
   * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v1.0rc2...master)
