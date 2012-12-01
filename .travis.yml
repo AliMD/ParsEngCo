@@ -3,7 +3,4 @@ php:
   - "5.4"
   - "5.3"
 
-script: phpunit -v index.php
-script: phpunit -v ./app/
-script: phpunit -v ./inc/
-script: phpunit -v ./pages/
+script: phpunit -v ./
