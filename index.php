@@ -7,7 +7,7 @@ showunder();
 
 $template['get'] = $_GET;
 $template['page'] = get_page();
-$template['title'] = get_title();
+$template['title'] = get_title()
 
 $template['projects_cats_arr'] = db_getrows('projects_cats','*',true,'sort,id',10);
 $template['projects_cats'] = gen_submenu_cats($template['projects_cats_arr'],'Projects','پروژه ها');
