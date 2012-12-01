@@ -26,6 +26,6 @@
 		
 		<iframe id='ifrm' name='ifrm' src="" frameborder="0" scrolling="no"></iframe>
 	</div>
-	<?php include 'inc/copy-right.php'; ?>
-	<?php include 'inc/slideshow.php'; ?>
+	<?php inc('copy-right'); ?>
+	<?php inc('slideshow'); ?>
 </div>
