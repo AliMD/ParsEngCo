@@ -30,7 +30,7 @@ This is the source for the main ParsEngineering company website, found at [parse
 
 #### v1.0rc2 (11/29/2012)
   * Improved seo
-  * Dynamic product by adin panel
+  * Dynamic product by admin panel
   * Dynamic categories and submenu
   * Fix some bugs
   * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v1.0rc1...v1.0rc2)
