@@ -826,7 +826,7 @@ li.search-goog form {
 	width	: 385px;
 }
 
-/*iE2Wall*/
+/*---------- iE2Wall ----------*/
 
 .chromeframe {
 	position	: absolute;
@@ -838,6 +838,21 @@ li.search-goog form {
 	color		:black; 
 	font-size	:17px; 
 	background-color : #FFF7A5;
+}
+
+/*---------- Page Animation ----------*/
+
+.ajax_loader {
+	-webkit-transition: all 500ms ease-out;
+}
+
+.ajax_loader.ajax_out,
+.ajax_loader.ajax_pre_in {
+	opacity: 0;
+}
+
+.ajax_pre_in {
+
 }
 
 /* THE END ! */
