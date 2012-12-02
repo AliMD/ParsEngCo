@@ -1,3 +1,7 @@
+<?php 
+	$host = strtolower($_SERVER['HTTP_HOST']);
+	if($host != "127.0.0.1" && $host != "localhost"){
+?>
 <script type="text/javascript">
 //<![CDATA[
 var owa_baseUrl = 'http://1dws.com/owa/';
@@ -15,3 +19,4 @@ owa_cmds.push(['trackDomStream']);
 }());
 //]]>
 </script>
+<?php } ?>
