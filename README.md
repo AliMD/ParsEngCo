@@ -27,26 +27,26 @@ This is the source for the main ParsEngineering company website, found at [parse
 [![Build Status](https://secure.travis-ci.org/AliMD/ParsEngCo.png?branch=master)](https://travis-ci.org/AliMD/ParsEngCo)
 
 #### HEAD (now)
-  * Cross browser support
+  * Cross browser support.
   * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v1.0rc2...master)
 
 #### v1.0rc2 (11/29/2012)
-  * Improved seo
-  * Dynamic product by admin panel
-  * Dynamic categories and submenu
-  * Fix some bugs
+  * Improved SEO.
+  * Dynamic product by admin panel.
+  * Dynamic categories and submenus.
+  * Fix some bugs.
   * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v1.0rc1...v1.0rc2)
 
 #### v1.0rc1 (11/24/2012)
-  * Dynamic Products and projects
-  * Search engine friendly urls
-  * Admin panel
+  * Dynamic Products and projects.
+  * Search engine friendly urls.
+  * Admin panel.
   * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.9...v1.0rc1)
 
 
 #### v0.9 (11/15/2012)
-  * RC for static website
-  * Javascript completed
+  * RC for static website.
+  * Javascript completed.
   * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.8...v0.9)
 
 #### v0.8 (11/14/2012)
