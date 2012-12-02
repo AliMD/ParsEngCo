@@ -826,4 +826,18 @@ li.search-goog form {
 	width	: 385px;
 }
 
+/*iE2Wall*/
+
+.chromeframe {
+	position	: absolute;
+	top			: 0;
+	left		: 0;
+	width		: 100%;
+	z-index		: 100;
+	text-align	:center;
+	color		:black; 
+	font-size	:17px; 
+	background-color : #FFF7A5;
+}
+
 /* THE END ! */
