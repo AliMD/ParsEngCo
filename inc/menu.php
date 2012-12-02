@@ -2,7 +2,7 @@
 	<div class="menu">
 		<div class="logo cover" lang="en-US">
 			<h1>
-				<a href="./" >
+				<a href="./home" >
 					<span>Pars Engineering</span>
 				</a>
 			</h1>	
@@ -10,7 +10,7 @@
 		<nav >
 			<menu>
 				<li>
-					<a href="./">
+					<a href="./home">
 						سرآغاز
 						<span>بازگشت به خانه</span>
 					</a>

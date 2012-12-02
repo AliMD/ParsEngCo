@@ -147,21 +147,24 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 	// work only in ie 10+ (ali.md/bs/history)
 	if(ie>9){
 		var skip1st = true;
+		var last_url = window.location.href; // Know issue : not work first time :(
+		var isUrlNew = function(url) {
+			return last_url != url;
+		}
 		window.onpopstate = function(event) {
 			var url = event.state ? event.state.url : window.location.href;
 			loadPage(url);
 		};
 		$('nav a').click(function(){
 			var url = $(this).attr('href');
-			window.history.pushState({url:url},'new page',url);
-			loadPage(url);
+			if(isUrlNew(url)) {
+				window.history.pushState({url:url},'new page',url);
+				loadPage(url);
+			}
 			return false;
 		});
 		loadPage = function(url){
-			if(skip1st) {
-				skip1st=false;
-				return false;
-			}
+			last_url=url;
 			console.log("Loading : "+url);
 			$('<div>').load(url+' .content_wrap',function(){
 				$('.ajax_loader').html($(this).html());
