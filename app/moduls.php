@@ -9,7 +9,7 @@ function get_page(){
 }
 
 function get_title(){
-	$title = $_GET['desc'] ? $_GET['desc'] : $_GET['page'];
+	$title = $_GET['desc'] ? $_GET['desc'] : ($_GET['page'] ? $_GET['page'] : 'سرآغاز');
 	$title = str_replace(array('-','+','%20'), ' ', $title );
 	$title = str_replace(array('/'), ' | ', $title );
 	return ucwords($title);
