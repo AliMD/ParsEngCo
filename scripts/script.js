@@ -166,9 +166,14 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 		loadPage = function(url){
 			last_url=url;
 			console.log("Loading : "+url);
+			$('.ajax_loader').addClass('ajax_out');
 			$('<div>').load(url+' .content_wrap',function(){
 				$('.ajax_loader').html($(this).html());
 				updateAjax();
+				$('.ajax_loader').removeClass('ajax_out').addClass('ajax_pre_in');
+				setTimeout(function(){
+					$('.ajax_loader').removeClass('ajax_pre_in');
+				},10);
 			});
 		}
 	}
