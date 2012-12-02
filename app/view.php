@@ -9,6 +9,8 @@ inc('header');
 
 inc('menu');
 
+echo "<div class='ajax_loader'>";
 inc($template['page'],'pages');
+echo "</div>";
 
 inc('footer');

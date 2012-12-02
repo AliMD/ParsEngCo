@@ -59,13 +59,83 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 // Website js
 (function($,undefined){
 
-	// Background images animation
-	$('.background > div').fadeLoop({
-		delay : 0,
-		freez : 6000,
-		duration : 3000,
-		fadeFirstImage : false
-	});
+	// Contact Form Validators
+	var	emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i,
+		validateText = function (str,len){
+			return str.length >= len;
+		},
+		validateEmail = function validateEmail(str){
+			return emailPattern.test(str);
+		};
+
+	(updateAjax = function(){
+		// Background images animation
+		$('.background > div').fadeLoop({
+			delay : 0,
+			freez : 6000,
+			duration : 3000,
+			fadeFirstImage : false
+		});
+
+		// Contact form
+		$('#contact-form').submit(function(){
+			var target=$('#name'), err = false;
+
+			target = $('#name');
+			if( validateText(target.val(),3) ){
+				target.removeClass('err').addClass('ok');
+			}else{
+				target.removeClass('ok').addClass('err');
+				err = true;
+			}
+
+			target = $('#subject');
+			if( validateText(target.val(),5) ){
+				target.removeClass('err').addClass('ok');
+			}else{
+				target.removeClass('ok').addClass('err');
+				err = true;
+			}
+
+			target = $('#mail');
+			if( validateEmail(target.val()) ){
+				target.removeClass('err').addClass('ok');
+			}else{
+				target.removeClass('ok').addClass('err');
+				err = true;
+			}
+
+			target = $('#msg');
+			if( validateText(target.val(),10) ){
+				target.removeClass('err').addClass('ok');
+			}else{
+				target.removeClass('ok').addClass('err');
+				err = true;
+			}
+
+			if(!err){
+				$('#ifrm').animate({
+					height:'70px'
+				},700);
+			}
+
+			return !err;
+		});
+
+		// Colorbox (jQuery only)
+		(function($){
+			$('.darkbox').colorbox({
+				rel			:'darkbox',
+				speed		:500,
+				opacity		:0.7,
+				scrolling	:false,
+				maxHeight	:window.innerHeight-50,
+				maxWidth	:window.innerWidth-50,
+				returnFocus	:false
+			});
+		})(window.jQuery);
+
+	})();
 
 	// Menu hide/show effect
 	$('#hidebtn').click(function(){
@@ -73,90 +143,30 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 		return false;
 	});
 
-	//Contact Form
-	var	emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i,
-		validateText = function (str,len){
-			return str.length >= len;
-		},
-		validateEmail = function validateEmail(str){
-			return emailPattern.test(str);
-		}
-
-	$('#contact-form').submit(function(){
-		var target=$('#name'), err = false;
-
-		target = $('#name');
-		if( validateText(target.val(),3) ){
-			target.removeClass('err').addClass('ok');
-		}else{
-			target.removeClass('ok').addClass('err');
-			err = true;
-		}
-
-		target = $('#subject');
-		if( validateText(target.val(),5) ){
-			target.removeClass('err').addClass('ok');
-		}else{
-			target.removeClass('ok').addClass('err');
-			err = true;
-		}
-
-		target = $('#mail');
-		if( validateEmail(target.val()) ){
-			target.removeClass('err').addClass('ok');
-		}else{
-			target.removeClass('ok').addClass('err');
-			err = true;
-		}
-
-		target = $('#msg');
-		if( validateText(target.val(),10) ){
-			target.removeClass('err').addClass('ok');
-		}else{
-			target.removeClass('ok').addClass('err');
-			err = true;
-		}
-
-		if(!err){
-			$('#ifrm').animate({
-				height:'70px'
-			},700);
-		}
-
-		return !err;
-	});
-
-	// Colorbox (jQuery only)
-	(function($){
-		$('.darkbox').colorbox({
-			rel			:'darkbox',
-			speed		:500,
-			opacity		:0.7,
-			scrolling	:false,
-			maxHeight	:window.innerHeight-50,
-			maxWidth	:window.innerWidth-50,
-			returnFocus	:false
-		});
-	})(window.jQuery);
-
 	// Page html5 and ajax load
 	// work only in ie 10+ (ali.md/bs/history)
-	if(false && ie>9){
+	if(ie>9){
+		var skip1st = true;
 		window.onpopstate = function(event) {
-			console.log(event.state);
 			var url = event.state ? event.state.url : window.location.href;
 			loadPage(url);
 		};
 		$('nav a').click(function(){
 			var url = $(this).attr('href');
-			var title = $(this).html();
-			window.history.pushState({url:url,title:title},title,url);
+			window.history.pushState({url:url},'new page',url);
 			loadPage(url);
 			return false;
 		});
 		loadPage = function(url){
-			console.log('loading '+url);
-			$('.content_wrap').load(url+' .content_wrap');
+			if(skip1st) {
+				skip1st=false;
+				return false;
+			}
+			console.log("Loading : "+url);
+			$('<div>').load(url+' .content_wrap',function(){
+				$('.ajax_loader').html($(this).html());
+				updateAjax();
+			});
 		}
 	}
 
