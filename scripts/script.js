@@ -1,4 +1,6 @@
 
+ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVersion.split("MSIE")[1]) : 99;
+
 (function($,undefined){
 	// Zepto/jQuery fadeLoop plugin for fade slide show effects by ali.md
 	
@@ -136,5 +138,26 @@
 			returnFocus	:false
 		});
 	})(window.jQuery);
+
+	// Page html5 and ajax load
+	// work only in ie 10+ (ali.md/bs/history)
+	if(false && ie>9){
+		window.onpopstate = function(event) {
+			console.log(event.state);
+			var url = event.state ? event.state.url : window.location.href;
+			loadPage(url);
+		};
+		$('nav a').click(function(){
+			var url = $(this).attr('href');
+			var title = $(this).html();
+			window.history.pushState({url:url,title:title},title,url);
+			loadPage(url);
+			return false;
+		});
+		loadPage = function(url){
+			console.log('loading '+url);
+			$('.content_wrap').load(url+' .content_wrap');
+		}
+	}
 
 })(window.Zepto || window.jQuery);
