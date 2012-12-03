@@ -33,6 +33,7 @@ function console_log_show(){
 }
 
 function showunder(){
+	global $template;
 	if(!$_SESSION['debug']){
 		header("Location: $template[url]underdev/");
 		exit();
