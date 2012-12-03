@@ -6,5 +6,4 @@
 		echo $template['projects'];
 	?></div>
 	<?php inc('copy-right'); ?>
-	<?php inc('slideshow'); ?>
 </div>
