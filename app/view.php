@@ -15,6 +15,8 @@ echo '<div class="container">';
 
 		inc($template['page'],'pages');
 
+		echo "<span class='ajax_page_title' hidden='hidden'>$template[title]</span>";
+
 	echo "</div>";
 
 echo '</div>';

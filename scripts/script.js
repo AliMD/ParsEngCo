@@ -136,7 +136,7 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 	});
 
 	// Page html5 and ajax load
-	// work only in ie 10+ (ali.md/bs/history)
+	// work only in modern browsers (ali.md/bs/history)
 	if( ie>9 && typeof window.history.pushState === "function" ){
 		var aniDue = 500,
 			skip1st = true,
@@ -175,14 +175,15 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 
 		var loadPage = function(url){
 			if(skip1st) return skip1st=false;
-			last_url=url;;
+			last_url=url;
 			aniGoAway();
 			var startLoad = (new Date()).getTime();
-			$('<div>').load(url+' .content_wrap',function(){
+			$('<div>').load(url+' .ajax_loader',function(){
 				var that = this,
 					timerTrick = aniDue+100 - ( (new Date()).getTime() - startLoad );
 				setTimeout(function(){
-					$('.ajax_loader').html($(that).html());
+					$('.ajax_loader').html($('.ajax_loader',that).html());
+					document.title = $('.ajax_page_title',that).html(); // +1
 					updateAjax();
 					aniWellBack();
 				},timerTrick>0?timerTrick:1);
