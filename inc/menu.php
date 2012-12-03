@@ -2,41 +2,41 @@
 	<div class="menu">
 		<div class="logo cover" lang="en-US">
 			<h1>
-				<a href="./home/سرآغاز" >
+				<a href="home/سرآغاز" >
 					<span>Pars Engineering</span>
 				</a>
-			</h1>	
+			</h1>
 		</div>
 		<nav >
 			<ul>
 				<li>
-					<a href="./home/سرآغاز">
+					<a href="home/سرآغاز">
 						سرآغاز
 						<span>بازگشت به خانه</span>
 					</a>
 				</li>
 				<li>
-					<a href="./About+Us/درباره+ما">
+					<a href="About+Us/درباره+ما">
 						درباره ما
 						<span>چه می کنیم</span>
 					</a>
 				</li>
 				<li>
-					<a href="./Products/0/محصولات">
+					<a href="Products/0/محصولات">
 						محصولات
 						<span>نمایش کارهای ما</span>
 					</a>
 					<?php echo $template['products_cats']; ?>
 				</li>
 				<li>
-					<a href="./Projects/0/پروژه+ها">
+					<a href="Projects/0/پروژه+ها">
 						پروژه ها
 						<span>آخرین پروژه ها</span>
 					</a>
 					<?php echo $template['projects_cats']; ?>
 				</li>
 				<li>
-					<a href="./Contact+Us/تماس+با+ما">
+					<a href="Contact+Us/تماس+با+ما">
 						تماس با ما
 						<span>راههای تماس</span>
 					</a>
@@ -46,7 +46,7 @@
 	</div>
 	<div class="hide">
 		<a id='hidebtn' href="#">
-			<img src="./images/menu_hide_arrow_top.png" width="48" height="48" alt="Menu Array Btn" />
+			<img src="images/menu_hide_arrow_top.png" width="48" height="48" alt="Menu Array Btn" />
 		</a>
 	</div>	
 </div>

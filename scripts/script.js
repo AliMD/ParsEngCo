@@ -1,5 +1,8 @@
 // window.Zepto = 0 ; //Remove zepto for test js file in jquery;
 ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVersion.split("MSIE")[1]) : 99;
+log = function(argument){
+	if(!!console['log']) console.log(argument);
+};
 
 (function($,undefined){
 	// Zepto/jQuery fadeLoop plugin for fade slide show effects by ali.md
@@ -140,6 +143,8 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 	if( ie>9 && typeof window.history.pushState === "function" ){
 		var aniDue = 500,
 			skip1st = true,
+			cache = [];
+			navLinks = $('nav a'),
 			last_url = window.location.href; // Know issue : not work first time :(
 		
 		var isUrlNew = function(url) {
@@ -151,7 +156,7 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 			loadPage(url);
 		};
 
-		$('nav a').click(function(){
+		navLinks.click(function(){
 			var url = $(this).attr('href');
 			if(isUrlNew(url)) {
 				window.history.pushState({url:url},'new page',url);
@@ -165,30 +170,48 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 				scale:0.94,
 				opacity : 0
 			},aniDue,ease);
-		}
-		var aniWellBack = function(){
+		},
+		aniWellBack = function(){
 			$('.ajax_loader').animate({
 				scale:1,
 				opacity : 1
 			},aniDue,ease);
-		}
-
-		var loadPage = function(url){
+		},
+		loadPage = function(url){
 			if(skip1st) return skip1st=false;
 			last_url=url;
 			aniGoAway();
 			var startLoad = (new Date()).getTime();
-			$('<div>').load(url+' .ajax_loader',function(){
-				var that = this,
-					timerTrick = aniDue+100 - ( (new Date()).getTime() - startLoad );
-				setTimeout(function(){
-					$('.ajax_loader').html($('.ajax_loader',that).html());
-					document.title = $('.ajax_page_title',that).html(); // +1
-					updateAjax();
-					aniWellBack();
-				},timerTrick>0?timerTrick:1);
-			});
+			if(!!cache[url]){
+				log('Load from cache : '+url)
+				loadContent(cache[url],startLoad);
+			}else{
+				log('Load from server : '+url)
+				cache[url] = $('<div>').load(url+' .ajax_loader',function(){
+					loadContent(this,startLoad);
+				});
+			}
+		},
+		loadContent = function(content,startLoad){
+			var timerTrick = aniDue+100 - ( (new Date()).getTime() - startLoad );
+			setTimeout(function(){
+				$('.ajax_loader').html($('.ajax_loader',content).html());
+				document.title = $('.ajax_page_title',content).html();
+				updateAjax();
+				aniWellBack();
+			},timerTrick>0?timerTrick:1);
 		};
+
+		$(window).bind('load',function(){
+			setTimeout(function(){
+				navLinks.each(function(){
+					var url = $(this).attr('href');
+					if(!cache[url]) cache[url] = $('<div>').load(url+' .ajax_loader',function(){
+						log('Pre Cached : ' + url);
+					});
+				});
+			},3000);
+		});
 	}
 
 })(window.Zepto || window.jQuery);
