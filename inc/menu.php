@@ -8,7 +8,7 @@
 			</h1>	
 		</div>
 		<nav >
-			<menu>
+			<ul>
 				<li>
 					<a href="./home">
 						سرآغاز
@@ -41,7 +41,7 @@
 						<span>راههای تماس</span>
 					</a>
 				</li>
-			</menu>	
+			</ul>	
 		</nav>
 	</div>
 	<div class="hide">

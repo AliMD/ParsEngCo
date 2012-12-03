@@ -50,12 +50,12 @@ function inc($filename,$folder='inc'){
 }
 
 function gen_submenu_cats($cats_arr,$prefix_page,$prefix_desc,$separator = "/"){
-	$html = '<menu><ul>';
+	$html = '<ul>';
 	foreach ($cats_arr as $cat) {
 		$url = str_replace(' ', '+', "$prefix_page$separator$cat[id]$separator$prefix_desc$separator$cat[name]");
 		$html .= "<li><a href='$url'>$cat[name]</a></li>";
 	}
-	$html .= '</ul></menu>';
+	$html .= '</ul>';
 	return $html;
 }
 

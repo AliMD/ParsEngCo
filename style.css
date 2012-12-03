@@ -128,22 +128,22 @@ div.menu div.logo h1 a span {
 }
 
 
-div.menu nav > menu{
+div.menu nav > ul{
 	padding		: 0 30px;
 	line-height	: 1.1;
 }
 
-div.menu nav > menu > li {
+div.menu nav > ul > li {
 	position		: relative;
 	text-align		: right;
 	border-bottom	: 1px solid #343434;
 }	 
 
-div.menu nav > menu > li:first-child {
+div.menu nav > ul > li:first-child {
 	border-top	: 1px solid #343434;
 }
 
-div.menu nav > menu > li > a {
+div.menu nav > ul > li > a {
 	display			: block;
 	padding			: 6px 7px 5px;
 	color			: #ccc;
@@ -151,17 +151,17 @@ div.menu nav > menu > li > a {
 	text-decoration	: none;
 }
 
-div.menu nav menu > li:hover > a {
+div.menu nav ul > li:hover > a {
 	color	: #fff;
 }
 
-div.menu nav > menu > li:hover {
+div.menu nav > ul > li:hover {
 	background-image	: url("images/menu_hover_arrow.png");
 	background-repeat	: no-repeat;
 	background-position	: left center;
 }
 
-div.menu nav menu li span {
+div.menu nav ul li span {
 	display			: block;
 	font-size		: 12px;
 	font-style		: italic;
@@ -169,7 +169,7 @@ div.menu nav menu li span {
 	margin-right	: 2px;
 }
 
-div.menu li menu {
+div.menu li ul {
 	position		: absolute;
 	right			: 100%;
 	top				: 0;
@@ -183,7 +183,7 @@ div.menu li menu {
 }
 
 
-div.menu li:hover > menu {
+div.menu li:hover > ul {
 	display	: block;
 }
 
@@ -216,7 +216,7 @@ div.menu li li:hover {
 	background-position	: -5px 4px;
 }
 
-div.menu li menu li a img {
+div.menu li ul li a img {
 	float		: right;
 	-ms-filter	: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter		: alpha(opacity=0);
@@ -225,7 +225,7 @@ div.menu li menu li a img {
 }
 
 
-div.menu li menu li:hover > a img {
+div.menu li ul li:hover > a img {
 	-ms-filter	: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter		: alpha(opacity=100);
 	opacity		: 1;
