@@ -7,9 +7,8 @@
 	<meta charset="utf-8" />
 	<title><?php echo $template['title'] ?></title>
 	<base href="<?php echo $template['url']; ?>" />
-	<link rel="stylesheet" type="text/css" href="1styles.css" />
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script type="text/javascript" src="./scripts/html5shiv.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.combined.css" />
+	<script type="text/javascript" defer="defer" async="async" src="script.combined.js"></script>
 	<link href='http://fonts.googleapis.com/css?family=Pacifico|PT+Sans+Narrow' rel='stylesheet' type='text/css' />
 </head>
 <body>

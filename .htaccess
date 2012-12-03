@@ -222,6 +222,29 @@ FileETag None
 #   RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 # </IfModule>
 
+# ----------------------------------------------------------------------
+# Allow concatenation from within specific js and css files
+# ----------------------------------------------------------------------
+
+# e.g. Inside of script.combined.js you could have
+#   <!--#include file="libs/jquery-1.5.0.min.js" -->
+#   <!--#include file="plugins/jquery.idletimer.js" -->
+# and they would be included into this single file.
+
+# This is not in use in the boilerplate as it stands. You may
+# choose to use this technique if you do not have a build process.
+
+<FilesMatch "\.combined\.js$">
+	Options +Includes
+	AddOutputFilterByType INCLUDES application/javascript application/json
+	SetOutputFilter INCLUDES
+</FilesMatch>
+
+<FilesMatch "\.combined\.css$">
+	Options +Includes
+	AddOutputFilterByType INCLUDES text/css
+	SetOutputFilter INCLUDES
+</FilesMatch>
 
 # ----------------------------------------------------------------------
 # Search Engine Friendly URLs (SEF) for ParsEngCo (This website only)
