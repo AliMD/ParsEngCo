@@ -162,11 +162,13 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 
 		var aniGoAway = function(){
 			$('.ajax_loader').animate({
+				scale:0.94,
 				opacity : 0
 			},aniDue,ease);
 		}
 		var aniWellBack = function(){
 			$('.ajax_loader').animate({
+				scale:1,
 				opacity : 1
 			},aniDue,ease);
 		}
@@ -178,7 +180,7 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 			var startLoad = (new Date()).getTime();
 			$('<div>').load(url+' .content_wrap',function(){
 				var that = this,
-					timerTrick = aniDue+50 - ( (new Date()).getTime() - startLoad );
+					timerTrick = aniDue+100 - ( (new Date()).getTime() - startLoad );
 				setTimeout(function(){
 					$('.ajax_loader').html($(that).html());
 					updateAjax();

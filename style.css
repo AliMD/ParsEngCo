@@ -849,19 +849,6 @@ li.search-goog form {
 /*---------- Page Animation ----------*/
 
 .ajax_loader {
-	-webkit-transition	: all 500ms ease-out;
-	-moz-transition		: all 500ms ease-out;
-	-o-transition		: all 500ms ease-out;
-	-ms-transition		: all 500ms ease-out;
-	transition			: all 500ms ease-out;
+	-webkit-transform-origin: center 300px;
 }
-
-
-.ajax_loader.out,
-.ajax_loader.pre_in {
-	-ms-filter	: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-	filter		: alpha(opacity=0);
-	opacity		: 0;
-}
-
 /* THE END ! */
