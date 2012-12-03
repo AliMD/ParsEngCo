@@ -230,17 +230,17 @@ FileETag None
 # Rewrite Projects and Products pages
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(projects|products)/(\d)/(.*)$ index.php?page=$1&cat=$2&desc=$3 [L,NC,QSA]
+RewriteRule ^(projects|products)/(\d)/(.*)$ index.php?page=$1&cat=$2&desc=$3 [L,NC,QSA,T=text/html]
 
 # Rewrite Other pages with descriptions
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([a-z_+-]+)/(.*)$ index.php?page=$1&desc=$2 [L,NC,QSA]
+RewriteRule ^([a-z_+-]+)/(.*)$ index.php?page=$1&desc=$2 [L,NC,QSA,T=text/html]
 
 # Rewrite unrouted pages for show 404 error or ...
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)$ index.php?page=$1 [L,NC,QSA]
+RewriteRule ^(.+)$ index.php?page=$1 [L,NC,QSA,T=text/html]
 
 # ----------------------------------------------------------------------
 # Prevent 404 errors for non-existing redirected folders
