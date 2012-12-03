@@ -10,7 +10,6 @@
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="style.combined.css" />
 	<script type="text/javascript" defer="defer" async="async" src="script.combined.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=Pacifico|PT+Sans+Narrow' rel='stylesheet' type='text/css' />
 </head>
 <body>
 <!--[if lt IE 9]>
