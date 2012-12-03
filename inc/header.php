@@ -5,7 +5,6 @@
 <!--[if gt IE 8]><!-->	<html lang="fa-IR" dir="rtl" class="no-ie"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
 	<title>شرکت مهندسی پارس | <?php echo $template['title'] ?></title>
 	<base href="<?php echo $template['url']; ?>" />
 	<link rel="stylesheet" type="text/css" href="1styles.css" />
