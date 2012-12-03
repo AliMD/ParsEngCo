@@ -35,7 +35,7 @@ function console_log_show(){
 function showunder(){
 	isset($_GET['debug']) and $_SESSION['debug']=$_GET['debug'];
 	if(!$_SESSION['debug']){
-		header("Location: ./underdev/");
+		header("Location: $template[url]underdev/");
 		exit();
 	}
 }
