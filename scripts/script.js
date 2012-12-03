@@ -27,7 +27,7 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 				plen	=this.length,
 				fadeIn	={opacity:1},
 				fadeOut	={opacity:0},
-				zIndexChange = options.zIndex != options.zIndexAct
+				zIndexChange = options.zIndex != options.zIndexAct;
 
 			var nextPic = function(){
 				pics.eq(indx).animate(fadeOut,options.duration,ease,function(){
@@ -42,7 +42,8 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 				},options.delay+1);
 			};
 
-			pics.css(fadeOut).css({'z-index':options.zIndex});
+			pics.css(fadeOut);
+			zIndexChange && pics.css({'z-index':options.zIndex});
 
 			if(!options.fadeFirstImage){
 				pics.eq(0).css(fadeIn).css({'z-index':options.zIndexAct});
@@ -61,9 +62,9 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 
 	// Background images animation
 	$('.background > div').fadeLoop({
-		delay : 0,
-		freez : 6000,
-		duration : 3000,
+		delay : 70,
+		freez : 7000,
+		duration : 700,
 		fadeFirstImage : false
 	});
 
