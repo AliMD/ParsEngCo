@@ -23,7 +23,8 @@ This is the source for the main ParsEngineering company website, found at [parse
 * [MySQL](http://ali.md/wiki/mysql)
 
 ## Performance Tests
-* IE9, IR DSL 128k, About page, Dulles, VA : [**BABBAX**](http://www.webpagetest.org/result/121203_53_FP0/), [Compare](http://www.webpagetest.org/video/compare.php?tests=121203_53_FP0-r%3A1-c%3A0%2C121203_53_FP0-r%3A2-c%3A0%2C121203_53_FP0-r%3A1-c%3A1%2C121203_53_FP0-r%3A2-c%3A1&thumbSize=150&ival=500&end=full) First View and Repeat View (test [new htaccess](https://github.com/AliMD/ParsEngCo/commit/8bf95b66ad4efb5c761b2c023843b8346ea7330c#.htaccess) config)
+* IE9, IR DSL 128k, About page, Dulles, VA : [**BABBAX**](http://www.webpagetest.org/result/121203_78_GMJ/), [Compare](http://www.webpagetest.org/video/compare.php?tests=121203_78_GMJ,121203_53_FP0&thumbSize=150&ival=500&end=all) with old test (test [JS and CSS combined file with SSI](https://github.com/AliMD/ParsEngCo/commit/a025f3be6e6200c826eb63299acc6627d701694f))
+* IE9, IR DSL 128k, About page, Dulles, VA : [**BABBAX**](http://www.webpagetest.org/result/121203_53_FP0/), [Compare](http://www.webpagetest.org/video/compare.php?tests=121203_53_FP0-r:1-c:0,121203_53_FP0-r:2-c:0,121203_53_FP0-r:1-c:1,121203_53_FP0-r:2-c:1&thumbSize=150&ival=500&end=all) First View and Repeat View (test [new htaccess](https://github.com/AliMD/ParsEngCo/commit/8bf95b66ad4efb5c761b2c023843b8346ea7330c#.htaccess) config)
 * Chrome, Dial 56k, About page, Miami, FL: [**FAC?BX**](http://www.webpagetest.org/result/121203_04_DK5/)
 * Chrome, DSL 1.5m, Products page, Miami, FL: [**DABAAX**](http://www.webpagetest.org/result/121203_04_DK5/)
 * Chrome, DSL 1.5m, Underdev page, Asheville, NC : [**DAAAAX**](http://www.webpagetest.org/result/121203_6X_9V9/)
