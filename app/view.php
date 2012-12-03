@@ -7,10 +7,22 @@ console_log($template);
 
 inc('header');
 
-inc('menu');
+echo '<div class="container">';
 
-echo "<div class='ajax_loader'>";
-inc($template['page'],'pages');
-echo "</div>";
+	inc('menu');
+
+	echo "<div class='ajax_loader'>";
+
+		inc($template['page'],'pages');
+
+	echo "</div>";
+
+echo '</div>';
+
+inc('slideshow');
+
+inc('analytic');
+
+console_log_show();
 
 inc('footer');
