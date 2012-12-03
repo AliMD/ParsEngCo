@@ -1,4 +1,4 @@
-
+// window.Zepto='Remove zepto for test js file in jquery';
 ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVersion.split("MSIE")[1]) : 99;
 
 (function($,undefined){
@@ -59,6 +59,14 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 // Website js
 (function($,undefined){
 
+	// Background images animation
+	$('.background > div').fadeLoop({
+		delay : 0,
+		freez : 6000,
+		duration : 3000,
+		fadeFirstImage : false
+	});
+
 	// Contact Form Validators
 	var	emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i,
 		validateText = function (str,len){
@@ -69,14 +77,7 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 		};
 
 	(updateAjax = function(){
-		// Background images animation
-		$('.background > div').fadeLoop({
-			delay : 0,
-			freez : 6000,
-			duration : 3000,
-			fadeFirstImage : false
-		});
-
+		
 		// Contact form
 		$('#contact-form').submit(function(){
 			var target=$('#name'), err = false;
@@ -146,15 +147,19 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 	// Page html5 and ajax load
 	// work only in ie 10+ (ali.md/bs/history)
 	if(ie>9){
-		var skip1st = true;
-		var last_url = window.location.href; // Know issue : not work first time :(
+		var aniDue = 550,
+			skip1st = true,
+			last_url = window.location.href; // Know issue : not work first time :(
+		
 		var isUrlNew = function(url) {
 			return last_url != url;
-		}
+		};
+
 		window.onpopstate = function(event) {
 			var url = event.state ? event.state.url : window.location.href;
 			loadPage(url);
 		};
+
 		$('nav a').click(function(){
 			var url = $(this).attr('href');
 			if(isUrlNew(url)) {
@@ -163,19 +168,25 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 			}
 			return false;
 		});
-		loadPage = function(url){
+
+		var loadPage = function(url){
+			if(skip1st) return skip1st=false;
 			last_url=url;
-			console.log("Loading : "+url);
-			$('.ajax_loader').addClass('ajax_out');
+			$('.ajax_loader').addClass('out');
+			var startLoad = (new Date()).getTime();
 			$('<div>').load(url+' .content_wrap',function(){
-				$('.ajax_loader').html($(this).html());
-				updateAjax();
-				$('.ajax_loader').removeClass('ajax_out').addClass('ajax_pre_in');
+				var that = this,
+					timerTrick = aniDue - ( (new Date()).getTime() - startLoad );
 				setTimeout(function(){
-					$('.ajax_loader').removeClass('ajax_pre_in');
-				},10);
+					$('.ajax_loader').html($(that).html());
+					updateAjax();
+					$('.ajax_loader').removeClass('out').addClass('pre_in');
+					setTimeout(function(){
+						$('.ajax_loader').removeClass('pre_in');
+					},10);
+				},timerTrick>0?timerTrick:1);
 			});
-		}
+		};
 	}
 
 })(window.Zepto || window.jQuery);
