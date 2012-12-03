@@ -23,8 +23,9 @@ This is the source for the main ParsEngineering company website, found at [parse
 * [MySQL](http://ali.md/wiki/mysql)
 
 ## Performance Tests
-* [Last Underdev page test : **DAAAAX**](http://www.webpagetest.org/result/121203_6X_9V9/3/details/)
-* [Last Products page Test : **DABAAX**](http://www.webpagetest.org/result/121203_04_DK5/1/details/)
+* Chrome, DSL 1.5m, Underdev page, Asheville, NC : [**DAAAAX**](http://www.webpagetest.org/result/121203_6X_9V9/3/details/)
+* Chrome, DSL 1.5m, Products page, Miami, FL: [**DABAAX**](http://www.webpagetest.org/result/121203_04_DK5/1/details/)
+* Chrome, Dial 56k, About page, Miami, FL: [**FAC?BX**](http://www.webpagetest.org/result/121203_04_DK5/1/details/)
 * [All Pages Test history](http://www.webpagetest.org/testlog.php?days=365&filter=parseng.co&all=on)
 
 ## Change Log
