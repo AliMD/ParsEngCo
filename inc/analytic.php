@@ -1,6 +1,6 @@
 <?php 
 	$host = strtolower($_SERVER['HTTP_HOST']);
-	if($host != "127.0.0.1" && $host != "localhost"){
+	if( !($template['debug'] or $host == "127.0.0.1" or $host == "localhost") ){
 ?>
 <script type="text/javascript">
 //<![CDATA[
