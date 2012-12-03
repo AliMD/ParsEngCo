@@ -1,4 +1,4 @@
-// window.Zepto='Remove zepto for test js file in jquery';
+// window.Zepto = 0 ; //Remove zepto for test js file in jquery;
 ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVersion.split("MSIE")[1]) : 99;
 
 (function($,undefined){
@@ -14,8 +14,6 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 				delay : 10,
 				startIndex : 0,
 				fadeFirstImage : true,
-				zIndex : -2,
-				zIndexAct : -2,
 				returnFocus:false
 			},options);
 
@@ -26,27 +24,22 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 				indx	=options.startIndex,
 				plen	=this.length,
 				fadeIn	={opacity:1},
-				fadeOut	={opacity:0},
-				zIndexChange = options.zIndex != options.zIndexAct;
+				fadeOut	={opacity:0};
 
 			var nextPic = function(){
-				pics.eq(indx).animate(fadeOut,options.duration,ease,function(){
-					zIndexChange && $(this).css({'z-index':options.zIndex});
-
-				});
+				pics.eq(indx).animate(fadeOut,options.duration,ease);
 				indx=indx<plen-1?indx+1:0;
 				setTimeout(function(){
-					pics.eq(indx).css(zIndexChange?{'z-index':options.zIndexAct}:{}).animate(fadeIn,options.duration,ease,function(){
+					pics.eq(indx).animate(fadeIn,options.duration,ease,function(){
 						setTimeout(nextPic,options.freez);
 					});
 				},options.delay+1);
 			};
 
 			pics.css(fadeOut);
-			zIndexChange && pics.css({'z-index':options.zIndex});
 
 			if(!options.fadeFirstImage){
-				pics.eq(0).css(fadeIn).css({'z-index':options.zIndexAct});
+				pics.eq(0).css(fadeIn);
 				indx++;
 				setTimeout(nextPic,options.freez);
 			}else{
@@ -54,11 +47,8 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 			}
 		}
 	});
-})(window.Zepto || window.jQuery);
 
-
-// Website js
-(function($,undefined){
+	// Website js
 
 	// Background images animation
 	$('.background > div').fadeLoop({
@@ -147,8 +137,8 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 
 	// Page html5 and ajax load
 	// work only in ie 10+ (ali.md/bs/history)
-	if(ie>9){
-		var aniDue = 550,
+	if( ie>9 && typeof window.history.pushState === "function" ){
+		var aniDue = 500,
 			skip1st = true,
 			last_url = window.location.href; // Know issue : not work first time :(
 		
@@ -170,21 +160,29 @@ ie = (navigator.appVersion.indexOf("MSIE") != -1) ? parseFloat(navigator.appVers
 			return false;
 		});
 
+		var aniGoAway = function(){
+			$('.ajax_loader').animate({
+				opacity : 0
+			},aniDue,ease);
+		}
+		var aniWellBack = function(){
+			$('.ajax_loader').animate({
+				opacity : 1
+			},aniDue,ease);
+		}
+
 		var loadPage = function(url){
 			if(skip1st) return skip1st=false;
-			last_url=url;
-			$('.ajax_loader').addClass('out');
+			last_url=url;;
+			aniGoAway();
 			var startLoad = (new Date()).getTime();
 			$('<div>').load(url+' .content_wrap',function(){
 				var that = this,
-					timerTrick = aniDue - ( (new Date()).getTime() - startLoad );
+					timerTrick = aniDue+50 - ( (new Date()).getTime() - startLoad );
 				setTimeout(function(){
 					$('.ajax_loader').html($(that).html());
 					updateAjax();
-					$('.ajax_loader').removeClass('out').addClass('pre_in');
-					setTimeout(function(){
-						$('.ajax_loader').removeClass('pre_in');
-					},10);
+					aniWellBack();
 				},timerTrick>0?timerTrick:1);
 			});
 		};
