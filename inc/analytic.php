@@ -16,7 +16,7 @@ owa_cmds.push(['trackDomStream']);
 	owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
 	_owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
 	var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
-}());
+})();
 //]]>
 </script>
 <?php } ?>
