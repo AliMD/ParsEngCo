@@ -1,23 +1,287 @@
-# This directive specifies a default value for the media type charset parameter (the name of a character encoding) to be added to a response if and only if the response's content-type is either text/plain or text/html.
-AddDefaultCharset utf-8
+# ----------------------------------------------------------------------
+# Better website experience for IE users
+# ----------------------------------------------------------------------
 
-# There will be times when the server is asked to provide a document whose type cannot be determined by its MIME types mappings.
-DefaultType text/html
+# Force the latest IE version, in various cases when it may fall back to IE7 mode
+#  github.com/rails/rails/commit/123eb25#commitcomment-118920
+# Use ChromeFrame if it's installed for a better experience for the poor IE folk
 
-# change order of index file. in index.php not found goto sitedown
-DirectoryIndex index.php underdev.php
+<IfModule mod_headers.c>
+	Header set X-UA-Compatible "IE=Edge,chrome=1"
+	# mod_headers can't match by content-type, but we don't want to send this header on *everything*...
+	<FilesMatch "\.(js|css|gif|png|jpe?g|pdf|xml|oga|ogg|m4a|ogv|mp4|m4v|webm|svg|svgz|eot|ttf|otf|woff|ico|webp|appcache|manifest|htc|crx|oex|xpi|safariextz|vcf)$" >
+		Header unset X-UA-Compatible
+	</FilesMatch>
+</IfModule>
 
-# Don't show directory listings for URLs which map to a directory.
-Options -Indexes
+# ----------------------------------------------------------------------
+# Cross-domain AJAX requests
+# ----------------------------------------------------------------------
 
-# Follow symbolic links in this directory.
-Options +FollowSymLinks
+# Serve cross-domain Ajax requests, disabled by default.
+# enable-cors.org
+# code.google.com/p/html5security/wiki/CrossOriginRequestSecurity
 
-# Multiviews creates problems with aliased URLs
-Options -Multiviews
+<IfModule mod_headers.c>
+	Header set Access-Control-Allow-Origin "*"
+</IfModule>
 
-# Make handle any errors.
+# ----------------------------------------------------------------------
+# Proper MIME type for all files
+# ----------------------------------------------------------------------
 
+# JavaScript
+#   Normalize to standard type (it's sniffed in IE anyways)
+#   tools.ietf.org/html/rfc4329#section-7.2
+AddType application/javascript			js jsonp
+AddType application/json				json
+
+# Audio
+AddType audio/ogg						oga ogg
+AddType audio/mp4						m4a f4a f4b
+
+# Video
+AddType video/ogg						ogv
+AddType video/mp4						mp4 m4v f4v f4p
+AddType video/webm						webm
+AddType video/x-flv						flv
+
+# SVG
+#   Required for svg webfonts on iPad
+#   twitter.com/FontSquirrel/status/14855840545
+AddType image/svg+xml					svg svgz
+AddEncoding gzip						svgz
+
+# Webfonts
+AddType application/vnd.ms-fontobject	eot
+AddType application/x-font-ttf			ttf ttc
+AddType font/opentype					otf
+AddType application/x-font-woff			woff
+
+# Assorted types
+AddType image/x-icon					ico
+AddType image/webp						webp
+AddType text/cache-manifest				appcache manifest
+AddType text/x-component				htc
+AddType application/xml					rss atom xml rdf
+AddType application/x-chrome-extension	crx
+AddType application/x-opera-extension	oex
+AddType application/x-xpinstall			xpi
+AddType application/octet-stream		safariextz
+AddType application/x-web-app-manifest+json	webapp
+AddType text/x-vcard					vcf
+AddType application/x-shockwave-flash	swf
+AddType text/vtt						vtt
+
+# ----------------------------------------------------------------------
+# Expires headers (for better cache control)
+# ----------------------------------------------------------------------
+
+# These are pretty far-future expires headers.
+# They assume you control versioning with filename-based cache busting
+# Additionally, consider that outdated proxies may miscache
+#   www.stevesouders.com/blog/2008/08/23/revving-filenames-dont-use-querystring/
+
+# If you don't use filenames to version, lower the CSS and JS to something like
+# "access plus 1 week".
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+
+# Perhaps better to whitelist expires rules? Perhaps.
+	ExpiresDefault							"access plus 1 month"
+
+# cache.appcache needs re-requests in FF 3.6 (thanks Remy ~Introducing HTML5)
+	ExpiresByType text/cache-manifest		"access plus 0 seconds"
+
+# Your document html
+	ExpiresByType text/html					"access plus 1 hour"
+
+# Data
+	ExpiresByType text/xml					"access plus 0 seconds"
+	ExpiresByType application/xml			"access plus 0 seconds"
+	ExpiresByType application/json			"access plus 0 seconds"
+
+# Feed
+	ExpiresByType application/rss+xml		"access plus 1 hour"
+	ExpiresByType application/atom+xml		"access plus 1 hour"
+
+# Favicon (cannot be renamed)
+	ExpiresByType image/x-icon				"access plus 1 week"
+
+# Media: images, video, audio
+	ExpiresByType image/gif					"access plus 1 month"
+	ExpiresByType image/png					"access plus 1 month"
+	ExpiresByType image/jpeg				"access plus 1 month"
+	ExpiresByType video/ogg					"access plus 1 month"
+	ExpiresByType audio/ogg					"access plus 1 month"
+	ExpiresByType video/mp4					"access plus 1 month"
+	ExpiresByType video/webm				"access plus 1 month"
+
+# HTC files (css3pie)
+	ExpiresByType text/x-component			"access plus 1 month"
+
+# Webfonts
+	ExpiresByType application/x-font-ttf	"access plus 1 month"
+	ExpiresByType font/opentype				"access plus 1 month"
+	ExpiresByType application/x-font-woff	"access plus 1 month"
+	ExpiresByType image/svg+xml				"access plus 1 month"
+	ExpiresByType application/vnd.ms-fontobject	"access plus 1 month"
+
+# CSS and JavaScript
+	ExpiresByType text/css					"access plus 1 year"
+	ExpiresByType application/javascript	"access plus 1 year"
+</IfModule>
+
+# ----------------------------------------------------------------------
+# ETag removal
+# ----------------------------------------------------------------------
+
+# FileETag None is not enough for every server.
+<IfModule mod_headers.c>
+	Header unset ETag
+</IfModule>
+
+# Since we're sending far-future expires, we don't need ETags for
+# static content.
+#   developer.yahoo.com/performance/rules.html#etags
+FileETag None
+
+# ----------------------------------------------------------------------
+# Set Keep-Alive Header
+# ----------------------------------------------------------------------
+
+# Keep-Alive allows the server to send multiple requests through one
+# TCP-connection. Be aware of possible disadvantages of this setting. Turn on
+# if you serve a lot of static content.
+
+<IfModule mod_headers.c>
+	Header set Connection Keep-Alive
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Start rewrite engine
+# ----------------------------------------------------------------------
+
+# Turning on the rewrite engine is necessary for the following rules and
+# features. FollowSymLinks must be enabled for this to work.
+
+# Some cloud hosting services require RewriteBase to be set: goo.gl/HOcPN
+# If using the h5bp in a subdirectory, use `RewriteBase /foo` instead where
+# 'foo' is your directory.
+
+# If your web host doesn't allow the FollowSymlinks option, you may need to
+# comment it out and use `Options +SymLinksOfOwnerMatch`, but be aware of the
+# performance impact: http://goo.gl/Mluzd
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymlinks
+#	Options +SymLinksIfOwnerMatch
+	RewriteEngine On
+#	RewriteBase /
+</IfModule>
+
+# ----------------------------------------------------------------------
+# Suppress or force the "www." at the beginning of URLs
+# ----------------------------------------------------------------------
+
+# The same content should never be available under two different URLs -
+# especially not with and without "www." at the beginning, since this can cause
+# SEO problems (duplicate content). That's why you should choose one of the
+# alternatives and redirect the other one.
+
+# By default option 1 (no "www.") is activated.
+# no-www.org/faq.php?q=class_b
+
+# If you'd prefer to use option 2, just comment out all option 1 lines
+# and uncomment option 2.
+
+# IMPORTANT: NEVER USE BOTH RULES AT THE SAME TIME!
+
+# ----------------------------------------------------------------------
+
+# Option 1:
+# Rewrite "www.example.com -> example.com".
+
+<IfModule mod_rewrite.c>
+	RewriteCond %{HTTPS} !=on
+	RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+	RewriteRule ^ http://%1%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# ----------------------------------------------------------------------
+
+# Option 2:
+# Rewrite "example.com -> www.example.com".
+# Be aware that the following rule might not be a good idea if you use "real"
+# subdomains for certain parts of your website.
+
+# <IfModule mod_rewrite.c>
+#   RewriteCond %{HTTPS} !=on
+#   RewriteCond %{HTTP_HOST} !^www\..+$ [NC]
+#   RewriteRule ^ http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# </IfModule>
+
+# ----------------------------------------------------------------------
+# Allow concatenation from within specific js and css files
+# ----------------------------------------------------------------------
+
+# e.g. Inside of script.combined.js you could have
+#   <!--#include file="libs/jquery-1.5.0.min.js" -->
+#   <!--#include file="plugins/jquery.idletimer.js" -->
+# and they would be included into this single file.
+
+# This is not in use in the boilerplate as it stands. You may
+# choose to use this technique if you do not have a build process.
+
+<FilesMatch "\.combined\.js$">
+	Options +Includes
+	AddOutputFilterByType INCLUDES application/javascript application/json
+	SetOutputFilter INCLUDES
+</FilesMatch>
+
+<FilesMatch "\.combined\.css$">
+	Options +Includes
+	AddOutputFilterByType INCLUDES text/css
+	SetOutputFilter INCLUDES
+</FilesMatch>
+
+# ----------------------------------------------------------------------
+# Search Engine Friendly URLs (SEF) for ParsEngCo (This website only)
+# ----------------------------------------------------------------------
+
+# Rewrite Projects and Products pages
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(projects|products)/(\d)/(.*)$ index.php?page=$1&cat=$2&desc=$3 [L,NC,QSA,T=text/html]
+
+# Rewrite Other pages with descriptions
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([a-z_+-]+)/(.*)$ index.php?page=$1&desc=$2 [L,NC,QSA,T=text/html]
+
+# Rewrite unrouted pages for show 404 error or ...
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?page=$1 [L,NC,QSA,T=text/html]
+
+# ----------------------------------------------------------------------
+# Prevent 404 errors for non-existing redirected folders
+# ----------------------------------------------------------------------
+
+# without -MultiViews, Apache will give a 404 for a rewrite if a folder of the
+# same name does not exist.
+# webmasterworld.com/apache/3808792.htm
+
+Options -MultiViews
+
+# ----------------------------------------------------------------------
+# Custom pages err
+# ----------------------------------------------------------------------
+
+# You can add custom pages to handle 500 or 403 pretty easily, if you like.
+# If you are hosting your site in subdirectory, adjust this accordingly
+#    e.g. ErrorDocument 404 /subdir/404.html
 ErrorDocument 400 /err/?e=400
 ErrorDocument 401 /err/?e=401
 ErrorDocument 402 /err/?e=402
@@ -38,20 +302,51 @@ ErrorDocument 508 /err/?e=508
 ErrorDocument 509 /err/?e=509
 ErrorDocument 510 /err/?e=510
 
-# Various rewrite rules.
-RewriteEngine on
+# ----------------------------------------------------------------------
+# UTF-8 encoding
+# ----------------------------------------------------------------------
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(projects|products)/(\d)/(.*)$ index.php?page=$1&cat=$2&desc=$3 [L,NC,QSA]
+# Use UTF-8 encoding for anything served text/plain or text/html
+AddDefaultCharset utf-8
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([a-z_+-]+)/(.*)$ index.php?page=$1&desc=$2 [L,NC,QSA]
+# Force UTF-8 for a number of file formats
+AddCharset utf-8 .atom .css .js .json .rss .vtt .xml
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)$ index.php?page=$1 [L,NC,QSA]
+# ----------------------------------------------------------------------
+# A little more security
+# ----------------------------------------------------------------------
 
-# Set files cache on client
-# removed for debug ...
+# To avoid displaying the exact version number of Apache being used, add the
+# following to httpd.conf (it will not work in .htaccess):
+# ServerTokens Prod
+
+# "-Indexes" will have Apache block users from browsing folders without a
+# default document Usually you should leave this activated, because you
+# shouldn't allow everybody to surf through every folder on your server (which
+# includes rather private places like CMS system folders).
+<IfModule mod_autoindex.c>
+	Options -Indexes
+</IfModule>
+
+# Block access to "hidden" directories or files whose names begin with a
+# period. This includes directories used by version control systems such as
+# Subversion or Git.
+<IfModule mod_rewrite.c>
+	RewriteCond %{SCRIPT_FILENAME} -d [OR]
+	RewriteCond %{SCRIPT_FILENAME} -f
+	RewriteRule "(^|/)\." - [F]
+</IfModule>
+
+# Block access to backup and source files. These files may be left by some
+# text/html editors and pose a great security danger, when anyone can access
+# them.
+<FilesMatch "(\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist)|~)$">
+	Order allow,deny
+	Deny from all
+	Satisfy All
+</FilesMatch>
+
+# Increase cookie security
+<IfModule php5_module>
+	php_value session.cookie_httponly true
+</IfModule>

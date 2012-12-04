@@ -3,11 +3,14 @@ error_reporting(E_ALL ^ E_NOTICE);
 
 require_once('app/moduls.php');
 
+isset($_GET['debug']) and $_SESSION['debug']=!!$_GET['debug'];
+
 showunder();
 
 $template['get'] = $_GET;
 $template['page'] = get_page();
-$template['title'] = get_title();
+$template['debug'] = $_SESSION['debug'];
+$template['title'] = 'شرکت مهندسی پارس | ' . get_title();
 
 $template['projects_cats_arr'] = db_getrows('projects_cats','*',true,'sort,id',10);
 $template['projects_cats'] = gen_submenu_cats($template['projects_cats_arr'],'Projects','پروژه ها');

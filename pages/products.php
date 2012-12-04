@@ -6,5 +6,4 @@
 		<?php echo $template['products']; ?>
 	</div>
 	<?php inc('copy-right'); ?>
-	<?php inc('slideshow'); ?>
 </div>

@@ -1,0 +1,34 @@
+/*---------- Fonts ----------*/
+
+@font-face {
+	font-family: 'Nazanin';
+	src: url('fonts/BNazanin.eot');
+	src: url('fonts/BNazanin.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/BNazanin.woff') format('woff'),
+		 url('fonts/BNazanin.ttf') format('truetype');
+	font-weight	: normal;
+	font-style	: normal;
+	-webkit-font-smoothing	: antialiased;
+}
+
+@font-face {
+	font-family: 'Pacifico';
+	src: url('fonts/Pacifico-Regular.eot');
+	src: url('fonts/Pacifico-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/Pacifico-Regular.woff') format('woff'),
+		 url('fonts/Pacifico-Regular.ttf') format('truetype');
+	font-weight	: 400;
+	font-style	: normal;
+	-webkit-font-smoothing	: antialiased;
+}
+
+@font-face {
+	font-family: 'PT Sans Narrow';
+	src: url('fonts/PTSans-Narrow.eot');
+	src: url('fonts/PTSans-Narrow.eot?#iefix') format('embedded-opentype'),
+		 url('fonts/PTSans-Narrow.woff') format('woff'),
+		 url('fonts/PTSans-Narrow.ttf') format('truetype');
+	font-weight	: 400;
+	font-style	: normal;
+	-webkit-font-smoothing	: antialiased;
+}
