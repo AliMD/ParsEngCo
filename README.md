@@ -23,7 +23,7 @@ This is the source for the main ParsEngineering company website, found at [parse
 * [MySQL](http://ali.md/wiki/mysql)
 
 ## Performance Tests
-* Chrome, Cable, About page, Dulles, VA : [**AAAAA**](http://www.webpagetest.org/result/121205_9D_M4J/):+1: **First View : 1.45s** - **Repeat View : 0.28s** (no change)
+* Chrome, Cable, About page, Dulles, VA : [**AAAAA**](http://www.webpagetest.org/result/121205_WS_MVX/) **First View : 1.44s** - **Repeat View : 0.21s** :+1:
 * Chrome, DSL 1.5m, About page, Dulles, VA : [**AAAAA** Compare](http://www.webpagetest.org/video/compare.php?tests=121205_8C_JVW%2C121205_BF_JR3%2C121205_BV_K4X%2C121205_CM_KB7&thumbSize=200&ival=100&end=all) **First View : 2s** - **Repeat View : 0.5s** ([More Info](https://github.com/AliMD/ParsEngCo/issues/21))
 * Chrome, DSL 1.5m, About page, Dulles, VA : [**AAAAA**](http://www.webpagetest.org/result/121205_HV_GZY/) **First View : 2.2s** - **Repeat View : 0.3s** (fast memory caching and gzip l6)
 * Chrome, DSL 1.5m, About page, Miami, FL : [**BAFAA**](http://www.webpagetest.org/result/121205_5Z_50A/) **First View : 3.5s** (Unistall nginx on server)
@@ -42,7 +42,7 @@ This is the source for the main ParsEngineering company website, found at [parse
   * Cross browser support.
   * Fast memoty caching system
   * Optimize images size
-  * Improve page laod performance upto 0.3s
+  * Improve page laod performance upto 0.2s
   * Improve webpagetest site grade upto AAAAA
   * Fixed some bugs
   * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v1.0rc2...master)
