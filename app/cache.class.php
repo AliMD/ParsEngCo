@@ -15,7 +15,7 @@
 
 class MicroCache {
   public $patch = 'cachetmp/';
-  public $lifetime = 3600; // default value - 1 hour
+  public $lifetime = 180; // default value - 1 hour
   public $c_type = 'memcache';
   public $cache_on = true;
   public $is_cached = false;
