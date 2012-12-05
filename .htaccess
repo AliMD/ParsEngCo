@@ -133,6 +133,19 @@ AddType text/vtt						vtt
 	ExpiresByType application/javascript	"access plus 1 year"
 </IfModule>
 
+# ----------------------------------------------------------------------
+# ETag removal
+# ----------------------------------------------------------------------
+
+# FileETag None is not enough for every server.
+<IfModule mod_headers.c>
+	Header unset ETag
+</IfModule>
+
+# Since we're sending far-future expires, we don't need ETags for
+# static content.
+#   developer.yahoo.com/performance/rules.html#etags
+FileETag None
 
 # ----------------------------------------------------------------------
 # Set Keep-Alive Header
