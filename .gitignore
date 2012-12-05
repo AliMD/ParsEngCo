@@ -24,3 +24,6 @@ admin/
 #Private files
 backup/*_admin.sql
 app/config.php
+
+#Cache temp dir
+cachetmp/
