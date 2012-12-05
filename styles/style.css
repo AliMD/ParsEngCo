@@ -215,7 +215,7 @@ div.menu_wrap div.hide {
 	width	: 240px;
 	height	: 115px;
 	padding	: 5px 0;
-	background-image	: url('images/hide_menu_back.png');
+	/*background-image	: url('images/hide_menu_back.png');*/
 	background-repeat	: no-repeat;
 	background-position	: left top;
 }
@@ -821,4 +821,3 @@ li.search-goog form {
 .ajax_loader {
 	-webkit-transform-origin: center 300px;
 }
-/* THE END ! */

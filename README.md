@@ -24,7 +24,7 @@ This is the source for the main ParsEngineering company website, found at [parse
 
 ## Performance Tests
 * Chrome, Cable, About page, Dulles, VA : [**AAAAA**](http://www.webpagetest.org/result/121205_CZ_GVK/):+1: **First View : 1.5s** - **Repeat View : 0.3s** (fast memory caching and gzip l6)
-* Chrome, DSL 1.5m, About page, Miami, FL : [**AAAAA**](http://www.webpagetest.org/result/121205_HV_GZY/) **First View : 2.1s** - **Repeat View : 0.3s** (fast memory caching and gzip l6)
+* Chrome, DSL 1.5m, About page, Dulles, VA : [**AAAAA**](http://www.webpagetest.org/result/121205_HV_GZY/) **First View : 2.1s** - **Repeat View : 0.3s** (fast memory caching and gzip l6)
 * Chrome, DSL 1.5m, About page, Miami, FL : [**BAFAA**](http://www.webpagetest.org/result/121205_5Z_50A/) **First View : 3.5s** (Unistall nginx on server)
 * Chrome, DSL 1.5m, About page, Miami, FL : [**CAAAA**](http://www.webpagetest.org/result/121203_EB_JJV/) **First View : 2.4s** (no code changed)
 * IE9, DSL 128k, About page, Dulles, VA : [**CAAAA**](http://www.webpagetest.org/result/121203_NA_J8K/), [Compare](http://www.webpagetest.org/video/compare.php?tests=121203_78_GMJ,121203_53_FP0,121203_NA_J8K&thumbSize=150&ival=500&end=all) with old test ([Compare changes](https://github.com/AliMD/ParsEngCo/compare/bdcf99813812e495be97c427d349c416a5399a80...7fdacb7b5ad9ff9c8f33a6d707461cef73cdf50f))
@@ -39,9 +39,10 @@ This is the source for the main ParsEngineering company website, found at [parse
 
 #### HEAD (now)
   * Cross browser support.
-  * Improve page laod performance
   * Fast memoty caching system
-  * Improve webpagetest site grade to BAAAA
+  * Optimize images size
+  * Improve page laod performance upto 0.3s
+  * Improve webpagetest site grade upto AAAAA
   * Fixed some bugs
   * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v1.0rc2...master)
 
