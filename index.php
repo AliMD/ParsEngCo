@@ -1,14 +1,14 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
 
-/*require_once('app/cache.class.php');
+require_once('app/cache.class.php');
 $cache = new MicroCache($_SERVER['QUERY_STRING']);
 
 if($cache->check()){
 	die($cache->out());
 }else{
 	$cache->start();
-}*/
+}
 
 require_once('app/moduls.php');
 
@@ -48,4 +48,4 @@ inc("view",'app');
 
 db_close();
 
-//$cache->end();
+$cache->end();
