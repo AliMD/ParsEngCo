@@ -9,6 +9,7 @@
 	<base href="<?php echo $template['url']; ?>" />
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="style.combined.css" />
+	<link rel="stylesheet" type="text/css" href="styles/images.css" />
 	<script type="text/javascript" defer="defer" async="async" src="script.combined.js"></script>
 </head>
 <body>
