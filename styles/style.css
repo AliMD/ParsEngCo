@@ -19,19 +19,6 @@ div.container {
 }
 
 /*---------- Background Slider ----------*/
-div.noise {
-	position	: fixed;
-	top			: 0;
-	left		: 0;
-	right		: 0;
-	bottom		: 0;
-	z-index		: -1;
-	background-position	: left top;
-	background-repeat	: repeat;
-	background-image	: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjRFQTAyRkM5MEI4MTExRTJBRDhBQjhEMjE2RTY4NkM5IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjRFQTAyRkNBMEI4MTExRTJBRDhBQjhEMjE2RTY4NkM5Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NEVBMDJGQzcwQjgxMTFFMkFEOEFCOEQyMTZFNjg2QzkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NEVBMDJGQzgwQjgxMTFFMkFEOEFCOEQyMTZFNjg2QzkiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5AHK43AAAAGUlEQVR42mJmYGBw+P///wNmEAHkMAAEGABJyggBddvkywAAAABJRU5ErkJggg==');
-	/*background-image	: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI3Nzk1OUFEMEI4MTExRTJBOTU3ODg5RDdBQTI2N0ZEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI3Nzk1OUFFMEI4MTExRTJBOTU3ODg5RDdBQTI2N0ZEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Qjc3OTU5QUIwQjgxMTFFMkE5NTc4ODlEN0FBMjY3RkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Qjc3OTU5QUMwQjgxMTFFMkE5NTc4ODlEN0FBMjY3RkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5aJzp6AAAAGklEQVR42mL6//8/AwgDgQOcAaUhDBAGCDAAdJwSseFBkxUAAAAASUVORK5CYII=');*/
-	/*background-image	: url('data:images/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAD9JREFUeNpiZGJi4mXAA5gZGRnZ2djYJIWFhVV+//7N+Pfv3y/IfCaQKgEBAXFcNFjBhw8fXuKiGQeBGwACDADX/jYJqLIeywAAAABJRU5ErkJggg==');*/
-}
 
 section.background {
 	position	: fixed;
@@ -94,7 +81,7 @@ div.menu_wrap {
 
 
 div.menu_wrap div.menu {
-	background-image	: url('images/menu_back.png'); 
+	/*background-image	: url('images/menu_back.png'); */
 	background-repeat	: repeat-y;
 	background-position	: top left;
 	padding-bottom: 25px;
@@ -103,7 +90,7 @@ div.menu_wrap div.menu {
 div.menu div.logo h1 a {
 	display	: block;
 	height 	: 215px;
-	background-image	: url('images/swas.png');
+	/*background-image	: url('images/swas.png'); */
 	background-repeat	: no-repeat;
 	background-position	: center 65px;
 	text-decoration		: none;
@@ -148,7 +135,7 @@ div.menu nav ul > li:hover > a {
 }
 
 div.menu nav > ul > li:hover {
-	background-image	: url("images/menu_hover_arrow.png");
+	/*background-image	: url("images/menu_hover_arrow.png");*/
 	background-repeat	: no-repeat;
 	background-position	: left center;
 }
@@ -203,7 +190,7 @@ div.menu li li:first-child > a {
 }
 
 div.menu li li:hover {
-	background-image	: url("images/submenu_hover_arrow.png");
+	/*background-image	: url("images/submenu_hover_arrow.png");*/
 	background-repeat	: no-repeat;
 	background-position	: -5px 4px;
 }
@@ -233,15 +220,12 @@ div.menu_wrap div.hide {
 	background-position	: left top;
 }
 
-#hidebtn{
+#hidebtn {
 	display	: block;
 	width	: 48px;
 	height	: 48px;
 	margin	: 12px auto 0;
-}
-
-#hidebtn img{
-	display	: block;
+	/*background-image: url('images/menu_hide_arrow_top.png');*/
 }
 
 /*---------- content_wrap col2 & col3 Page ----------*/
