@@ -56,8 +56,8 @@ log = function(argument){
 	// Background images animation
 	$('.background > div').fadeLoop({
 		delay : 70,
-		freez : 7000,
-		duration : 700,
+		freez : 8000,
+		duration : 600,
 		fadeFirstImage : false
 	});
 
@@ -141,7 +141,7 @@ log = function(argument){
 	// Page html5 and ajax load
 	// work only in modern browsers (ali.md/bs/history)
 	if( ie>9 && typeof window.history.pushState === "function" ){
-		var aniDue = 500,
+		var aniDue = 350,
 			skip1st = true,
 			cache = [];
 			navLinks = $('nav a'),
@@ -159,7 +159,7 @@ log = function(argument){
 		navLinks.click(function(){
 			var url = $(this).attr('href');
 			if(isUrlNew(url)) {
-				window.history.pushState({url:url},'new page',url);
+				window.history.pushState(url,url,url);
 				loadPage(url);
 			}
 			return false;
@@ -193,7 +193,7 @@ log = function(argument){
 			}
 		},
 		loadContent = function(content,startLoad){
-			var timerTrick = aniDue+100 - ( (new Date()).getTime() - startLoad );
+			var timerTrick = aniDue+50 - ( (new Date()).getTime() - startLoad );
 			setTimeout(function(){
 				$('.ajax_loader').html($('.ajax_loader',content).html());
 				document.title = $('.ajax_page_title',content).html();

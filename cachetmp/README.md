@@ -1,0 +1,1 @@
+Php caching temp directory if memcatche not available

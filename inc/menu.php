@@ -45,8 +45,6 @@
 		</nav>
 	</div>
 	<div class="hide">
-		<a id='hidebtn' href="#">
-			<img src="images/menu_hide_arrow_top.png" width="48" height="48" alt="Menu Array Btn" />
-		</a>
+		<a id='hidebtn' href="#"></a>
 	</div>	
 </div>

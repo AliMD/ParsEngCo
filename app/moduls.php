@@ -40,10 +40,6 @@ function showunder(){
 	}
 }
 
-function finalise (){
-	db_close();
-}
-
 function inc($filename,$folder='inc'){
 	global $template;
 	@include "$folder/$filename.php";

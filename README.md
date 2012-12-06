@@ -23,12 +23,16 @@ This is the source for the main ParsEngineering company website, found at [parse
 * [MySQL](http://ali.md/wiki/mysql)
 
 ## Performance Tests
-* Canary, DSL 1.5m, About page, Miami, FL : [**CAAAAX**](http://www.webpagetest.org/result/121203_EB_JJV/) **First View (2.4s)** (no code change, server nginx reconfig and server reboot)
-* IE9, IR DSL 128k, About page, Dulles, VA : [**CAAAAX**](http://www.webpagetest.org/result/121203_NA_J8K/), [Compare](http://www.webpagetest.org/video/compare.php?tests=121203_78_GMJ,121203_53_FP0,121203_NA_J8K&thumbSize=150&ival=500&end=all) with old test ([Compare changes](https://github.com/AliMD/ParsEngCo/compare/bdcf99813812e495be97c427d349c416a5399a80...7fdacb7b5ad9ff9c8f33a6d707461cef73cdf50f))
-* IE9, IR DSL 128k, About page, Dulles, VA : [**BABBAX**](http://www.webpagetest.org/result/121203_53_FP0/), [Compare](http://www.webpagetest.org/video/compare.php?tests=121203_53_FP0-r:1-c:0,121203_53_FP0-r:2-c:0,121203_53_FP0-r:1-c:1,121203_53_FP0-r:2-c:1&thumbSize=150&ival=500&end=all) First View and Repeat View (test [new htaccess](https://github.com/AliMD/ParsEngCo/commit/8bf95b66ad4efb5c761b2c023843b8346ea7330c#.htaccess) config)
-* Chrome, Dial 56k, About page, Miami, FL: [**FAC?BX**](http://www.webpagetest.org/result/121203_04_DK5/)
-* Chrome, DSL 1.5m, Products page, Miami, FL: [**DABAAX**](http://www.webpagetest.org/result/121203_04_DK5/)
-* Chrome, DSL 1.5m, Underdev page, Asheville, NC : [**DAAAAX**](http://www.webpagetest.org/result/121203_6X_9V9/)
+* Chrome, Cable, About page, Dulles, VA : [**AAAAA**](http://www.webpagetest.org/result/121205_WS_MVX/) **First View : 1.44s** - **Repeat View : 0.21s** :+1:
+* Chrome, DSL 1.5m, About page, Dulles, VA : [**AAAAA** Compare](http://www.webpagetest.org/video/compare.php?tests=121205_8C_JVW%2C121205_BF_JR3%2C121205_BV_K4X%2C121205_CM_KB7&thumbSize=200&ival=100&end=all) **First View : 2s** - **Repeat View : 0.5s** ([More Info](https://github.com/AliMD/ParsEngCo/issues/21))
+* Chrome, DSL 1.5m, About page, Dulles, VA : [**AAAAA**](http://www.webpagetest.org/result/121205_HV_GZY/) **First View : 2.2s** - **Repeat View : 0.3s** (fast memory caching and gzip l6)
+* Chrome, DSL 1.5m, About page, Miami, FL : [**BAFAA**](http://www.webpagetest.org/result/121205_5Z_50A/) **First View : 3.5s** (Unistall nginx on server)
+* Chrome, DSL 1.5m, About page, Miami, FL : [**CAAAA**](http://www.webpagetest.org/result/121203_EB_JJV/) **First View : 2.4s** (no code changed)
+* IE9, DSL 128k, About page, Dulles, VA : [**CAAAA**](http://www.webpagetest.org/result/121203_NA_J8K/), [Compare](http://www.webpagetest.org/video/compare.php?tests=121203_78_GMJ,121203_53_FP0,121203_NA_J8K&thumbSize=150&ival=500&end=all) with old test ([Compare changes](https://github.com/AliMD/ParsEngCo/compare/bdcf99813812e495be97c427d349c416a5399a80...7fdacb7b5ad9ff9c8f33a6d707461cef73cdf50f))
+* IE9, DSL 128k, About page, Dulles, VA : [**BABBA**](http://www.webpagetest.org/result/121203_53_FP0/), [Compare](http://www.webpagetest.org/video/compare.php?tests=121203_53_FP0-r:1-c:0,121203_53_FP0-r:2-c:0,121203_53_FP0-r:1-c:1,121203_53_FP0-r:2-c:1&thumbSize=150&ival=500&end=all) First View and Repeat View (test [new htaccess](https://github.com/AliMD/ParsEngCo/commit/8bf95b66ad4efb5c761b2c023843b8346ea7330c#.htaccess) config)
+* Chrome, Dial 56k, About page, Miami, FL: [**FAC?B**](http://www.webpagetest.org/result/121203_04_DK5/)
+* Chrome, DSL 1.5m, Products page, Miami, FL: [**DABAA**](http://www.webpagetest.org/result/121203_04_DK5/)
+* Chrome, DSL 1.5m, Underdev page, Asheville, NC : [**DAAAA**](http://www.webpagetest.org/result/121203_6X_9V9/)
 * [All Pages Test history](http://www.webpagetest.org/testlog.php?days=365&filter=parseng.co&all=on)
 
 ## Change Log
@@ -36,6 +40,11 @@ This is the source for the main ParsEngineering company website, found at [parse
 
 #### HEAD (now)
   * Cross browser support.
+  * Fast memoty caching system
+  * Optimize images size
+  * Improve page laod performance upto 0.2s
+  * Improve webpagetest site grade upto AAAAA
+  * Fixed some bugs
   * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v1.0rc2...master)
 
 #### v1.0rc2 (11/29/2012)
