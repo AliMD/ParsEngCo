@@ -2,9 +2,11 @@
 error_reporting(E_ALL ^ E_NOTICE);
 
 require_once('app/cache.class.php');
-$cache = new MicroCache($_SERVER['QUERY_STRING']);
+$cache = new MicroCache("index $_GET[page] $_GET[cat]");
+$cache->lifetime = 7*24*60*60; // 1 week
+$cache->patch = 'cachetmp/';
 
-if($cache->check()){
+if(!isset($_GET['clear_cache']) && $cache->check()){
 	die($cache->out());
 }else{
 	$cache->start();
