@@ -18,5 +18,4 @@
 		<script src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js"></script>
 	</div>
 	<?php inc('copy-right'); ?>
-	<?php inc('slideshow'); ?>
 </div>

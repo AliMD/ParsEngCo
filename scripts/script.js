@@ -152,7 +152,7 @@ log = function(argument){
 		};
 
 		window.onpopstate = function(event) {
-			var url = event.state ? event.state.url : window.location.href;
+			var url = event.state ? event.state : window.location.href;
 			loadPage(url);
 		};
 
