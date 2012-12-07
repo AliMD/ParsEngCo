@@ -15,14 +15,17 @@
 
 class MicroCache {
   public $patch = 'cachetmp/';
-  public $lifetime = 180; // default value - 1 hour
+  public $lifetime = 3600; // default value - 1 hour
   public $c_type = 'memcache';
-  public $cache_on = false;
+  public $cache_on = true;
   public $is_cached = false;
+  public $memcache_compressed = false;
   public $file, $key;
   private $memcache;
 
-  function __construct($key) {
+  function __construct($key=false) {
+    if($key===false) $key = $_SERVER["REQUEST_URI"];
+
     if(!class_exists('Memcache')) $this->c_type = 'file';
 
     if($this->c_type != 'file'){
@@ -32,7 +35,7 @@ class MicroCache {
     }
 
     $this->key = md5($key);
-    $this->file = $this->patch . $this->key;
+    $this->file = $this->patch . $this->key . '.cache';
   }
 
   public function check() {
@@ -79,15 +82,16 @@ class MicroCache {
 
     if ($this->cache_on) {
       if ($this->c_type == 'file') {
-        $fp = fopen($this->file, 'w');
-        if ( flock($fp, LOCK_EX)) {
+        $fp = @fopen($this->file, 'w') or die("Cannot create cache file : {$this->file}");
+        if ( @flock($fp, LOCK_EX)) {
           fwrite($fp, $buffer);
+          fflush($fp);
           flock($fp, LOCK_UN);
           fclose($fp);
         }
       }
       else
-        $this->memcache->set($this->key, $buffer, false, $this->lifetime);
+        $this->memcache->set($this->key, $buffer, $this->memcache_compressed, $this->lifetime);
     }
     die ($buffer);
   }
