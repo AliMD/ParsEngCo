@@ -236,13 +236,13 @@ FileETag None
 
 <FilesMatch "\.combined\.js$">
 	Options +Includes
-	AddOutputFilterByType INCLUDES application/javascript application/json
+	#AddOutputFilterByType INCLUDES application/javascript application/json
 	SetOutputFilter INCLUDES
 </FilesMatch>
 
 <FilesMatch "\.combined\.css$">
 	Options +Includes
-	AddOutputFilterByType INCLUDES text/css
+	#AddOutputFilterByType INCLUDES text/css
 	SetOutputFilter INCLUDES
 </FilesMatch>
 
