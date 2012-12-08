@@ -62,7 +62,10 @@ div.menu_wrap {
 	top	: -485px;
 }
 
-#hidebtn img {
+#hidebtn .img {
+	display	: block;
+	width	: inherit;
+	height	: inherit;
 	-webkit-transition	: all 800ms ease-in-out;
 	-moz-transition		: all 800ms ease-in-out;
 	-o-transition		: all 800ms ease-in-out;
@@ -71,7 +74,7 @@ div.menu_wrap {
 }
 
 
-.menu_wrap.close #hidebtn img {
+.menu_wrap.close #hidebtn .img {
 	-webkit-transform	: rotate(180deg);
 	-moz-transform		: rotate(180deg);
 	-o-transform		: rotate(180deg);
