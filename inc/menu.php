@@ -45,6 +45,8 @@
 		</nav>
 	</div>
 	<div class="hide">
-		<a id='hidebtn' href="#"></a>
+		<a id='hidebtn' href="#">
+			<span class="img"></span>
+		</a>
 	</div>	
 </div>
