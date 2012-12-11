@@ -39,13 +39,17 @@ This is the source for the main ParsEngineering company website, found at [parse
 [![Build Status](https://secure.travis-ci.org/AliMD/ParsEngCo.png?branch=master)](https://travis-ci.org/AliMD/ParsEngCo)
 
 #### HEAD (now)
+  * I have no idea.
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v1.0stable...master)
+
+#### v1.0 (12/08/2012)
   * Cross browser support.
-  * Fast memoty caching system
-  * Optimize images size
-  * Improve page laod performance upto 0.2s
-  * Improve webpagetest site grade upto AAAAA
-  * Fixed some bugs
-  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v1.0rc2...master)
+  * Fast memoty caching system.
+  * Optimize images size.
+  * Improve page laod performance upto 0.2s.
+  * Improve webpagetest site grade upto AAAAA.
+  * Fixed some bugs.
+  * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v1.0rc2...v1.0stable)
 
 #### v1.0rc2 (11/29/2012)
   * Improved SEO.
