@@ -17,10 +17,11 @@ if(!isset($_GET['clear_cache']) && $cache->check()){
 	$cache->start();
 }
 
-$template['get'] = $_GET;
-$template['page'] = get_page();
-$template['debug'] = $_SESSION['debug'];
-$template['title'] = 'شرکت مهندسی پارس | ' . get_title();
+$template['get']	= $_GET;
+$template['page']	= get_page();
+$template['debug']	= $_SESSION['debug'];
+$template['title']	= 'شرکت مهندسی پارس | ' . get_title();
+$template['c_type'] = $cache->c_type;
 
 $template['projects_cats_arr'] = db_getrows('projects_cats','*',true,'sort,id',10);
 $template['projects_cats'] = gen_submenu_cats($template['projects_cats_arr'],'Projects','پروژه ها');
