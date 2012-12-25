@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+isset($_GET['debug']) and $_SESSION['debug']=!!$_GET['debug'];
+
 require('app/config.php');
 require_once('app/db.php');
 

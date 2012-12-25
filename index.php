@@ -7,17 +7,15 @@ $cache = new MicroCache("index ".strtolower($_GET['page']).$_GET['cat']);
 $cache->lifetime = 7*24*60*60; // 1 week
 $cache->patch = 'cachetmp/';
 
+require_once('app/moduls.php');
+
+$template['underdev'] and showunder();
+
 if(!isset($_GET['clear_cache']) && $cache->check()){
 	die($cache->out());
 }else{
 	$cache->start();
 }
-
-require_once('app/moduls.php');
-
-isset($_GET['debug']) and $_SESSION['debug']=!!$_GET['debug'];
-
-showunder();
 
 $template['get'] = $_GET;
 $template['page'] = get_page();
