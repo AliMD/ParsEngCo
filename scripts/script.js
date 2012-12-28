@@ -196,14 +196,14 @@ clearCacheCheat = function(){
 
 		var aniGoAway = function(){
 			$('.ajax_loader').animate({
-				scale:0.94,
-				opacity : 0
+				scale	:0.94,
+				opacity	:0
 			},aniDue,ease);
 		},
 		aniWellBack = function(){
 			$('.ajax_loader').animate({
-				scale:1,
-				opacity : 1
+				scale	:1,
+				opacity	:1
 			},aniDue,ease);
 		},
 		loadPage = function(url){
@@ -211,22 +211,30 @@ clearCacheCheat = function(){
 			last_url=url;
 			aniGoAway();
 			var startLoad = (new Date()).getTime();
-			console.log(cache[url]);
-			if(!!cache[url]){
-				log('Load from cache : '+url)
+			if(!!$('.ajax_loader',cache[url]).html()){
+				log('Load from cache : '+url);
 				loadContent(cache[url],startLoad);
 			}else{
-				log('Load from server : '+url)
-				cache[url] = $('<div>').load(url+' .ajax_loader',function(){
-					loadContent(this,startLoad);
-				});
+				loadPageServer(url);
 			}
+		},
+		loadPageServer = function(url){
+			log('Load from server : '+url)
+			var timer_id = setTimeout(function(){
+				window.location.href=url;
+			},5000);
+			cache[url] = $('<div>').load(url+' .ajax_loader',function(){
+				if(!!$('.ajax_loader',this).html()){
+					clearInterval(timer_id);
+					loadContent(this,startLoad);
+				}
+			});
 		},
 		loadContent = function(content,startLoad){
 			var timerTrick = aniDue+50 - ( (new Date()).getTime() - startLoad );
 			setTimeout(function(){
-				$('.ajax_loader').html($('.ajax_loader',content).html());
-				document.title = $('.ajax_page_title',content).html();
+				$('.ajax_loader').html($('.ajax_loader',content).html()+''); // if .html return null + '' convert it to empty string
+				document.title = $('.ajax_page_title',content).html()+'';
 				updateAjax();
 				aniWellBack();
 			},timerTrick>0?timerTrick:1);
