@@ -29,6 +29,9 @@ function db_close(){
 function db_getrows($table, $sellect = '*', $where = true, $order = '', $limit=1000, $skip=0){
 	$order AND $order="ORDER BY $order";
 	$res = db_query("SELECT $sellect FROM $table WHERE $where $order LIMIT $skip, $limit");
-	while( $row = mysql_fetch_array($res,MYSQL_ASSOC) ) $rows[] = $row;
+	$rows = array();
+	if(@mysql_num_rows($res))
+		while( $row = mysql_fetch_array($res,MYSQL_ASSOC) )
+			$rows[] = $row;
 	return $rows;
 }
