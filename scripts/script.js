@@ -172,14 +172,24 @@ clearCacheCheat = function(){
 
 		window.onpopstate = function(event) {
 			var url = event.state ? event.state : window.location.href;
-			loadPage(url);
+			try{
+				loadPage(url);
+			}catch(e){
+				log(e);
+				window.location.href = url;
+			}
 		};
 
 		navLinks.click(function(){
 			var url = $(this).attr('href');
-			if(isUrlNew(url)) {
-				window.history.pushState(url,url,url);
-				loadPage(url);
+			try{
+				if(isUrlNew(url)) {
+					window.history.pushState(url,url,url);
+					loadPage(url);
+				}
+			}catch(e){
+				log(e);
+				return true;
 			}
 			return false;
 		});
@@ -201,6 +211,7 @@ clearCacheCheat = function(){
 			last_url=url;
 			aniGoAway();
 			var startLoad = (new Date()).getTime();
+			console.log(cache[url]);
 			if(!!cache[url]){
 				log('Load from cache : '+url)
 				loadContent(cache[url],startLoad);
@@ -221,15 +232,17 @@ clearCacheCheat = function(){
 			},timerTrick>0?timerTrick:1);
 		};
 
+		// pre cache all pages
 		$(window).bind('load',function(){
 			setTimeout(function(){
 				navLinks.each(function(){
 					var url = $(this).attr('href');
-					if(!cache[url]) cache[url] = $('<div>').load(url+' .ajax_loader',function(){
-						log('Pre Cached : ' + url);
-					});
+					if(!cache[url])
+						cache[url] = $('<div>').load(url+' .ajax_loader',function(a){
+							log('Pre Cached : ' + url,a);
+						});
 				});
-			},3000);
+			},5000);
 		});
 	}
 
