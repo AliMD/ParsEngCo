@@ -106,7 +106,7 @@ function gen_products_list($products_arr){
 		$html .= "
 			<div class='box left'>
 				<a class='darkbox' href='images/galleries/products/$product[image]' title='$title'>
-					<img src='images/galleries/products/$product[thumb]' alt='Pars Engineering Product $title' width='200' height='150' />
+					<img src='images/galleries/products/thumbs/$product[thumb]' alt='Pars Engineering Product $title' width='200' height='150' />
 					<span lang='en-US'>$product[code]</span>
 				</a>
 			</div>
