@@ -70,11 +70,15 @@ clearCacheCheat = function(){
 
 	// Contact Form Validators
 	var	emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i,
+		tellPattern = /^[0-9)(\s+-]{11,20}$/i,
 		validateText = function (str,len){
 			return str.length >= len;
 		},
-		validateEmail = function validateEmail(str){
+		validateEmail = function (str){
 			return emailPattern.test(str);
+		},
+		validateTell = function (str){
+			return tellPattern.test(str);
 		};
 
 	(updateAjax = function(){
@@ -93,6 +97,14 @@ clearCacheCheat = function(){
 
 			target = $('#subject');
 			if( validateText(target.val(),5) ){
+				target.removeClass('err').addClass('ok');
+			}else{
+				target.removeClass('ok').addClass('err');
+				err = true;
+			}
+
+			target = $('#tell');
+			if( validateTell(target.val()) ){
 				target.removeClass('err').addClass('ok');
 			}else{
 				target.removeClass('ok').addClass('err');

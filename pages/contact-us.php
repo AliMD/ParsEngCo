@@ -7,6 +7,7 @@
 			<br/>
 			<form id="contact-form" action="sendmail.php" method="post" target='ifrm'>
 				<input title="نام" type="text" name="name" id="name" placeholder='نام' />
+				<input title="تلفن همراه" type="text" name="tell" id="tell" placeholder='تلفن همراه' />
 				<input title="پست الکترونیکی" type="text" name="mail" id="mail" placeholder='پست الکترونیکی' />
 				<input title="موضوع" type="text" name="subject" id="subject" placeholder='موضوع' />
 				<textarea title="متن پیام" name="msg" id="msg" cols="45" rows="12" placeholder='متن پیام'></textarea>
