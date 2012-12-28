@@ -215,10 +215,10 @@ clearCacheCheat = function(){
 				log('Load from cache : '+url);
 				loadContent(cache[url],startLoad);
 			}else{
-				loadPageServer(url);
+				loadPageServer(url,startLoad);
 			}
 		},
-		loadPageServer = function(url){
+		loadPageServer = function(url,startLoad){
 			log('Load from server : '+url)
 			var timer_id = setTimeout(function(){
 				window.location.href=url;
