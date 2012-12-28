@@ -358,16 +358,21 @@ div.contact-us div.content section.form input {
 	transition			: border 500ms;
 }
 
+div.contact-us div.content section.form input#mail,
+div.contact-us div.content section.form input#tell{
+	direction: ltr;
+	text-align: right;
+}
 
 div.contact-us div.content section.form input.err {
 	border: 1px solid red;
 }
 
-input.err::-webkit-input-placeholder {
+div.contact-us div.content section.form input.err::-webkit-input-placeholder {
 	color : red;
 }
 
-input.err:-moz-placeholder {
+div.contact-us div.content section.form input.err:-moz-placeholder {
 	color : red;
 }
 
@@ -387,15 +392,14 @@ div.contact-us div.content section.form textarea {
 	transition			: border 500ms;
 }
 
-
 div.contact-us div.content section.form textarea.err {
 	border : 1px solid red;
 }
 
-textarea.err::-webkit-input-placeholder {
+div.contact-us div.content section.form textarea.err::-webkit-input-placeholder {
 	color : red;
 }
-textarea.err:-moz-placeholder {
+div.contact-us div.content section.form textarea.err:-moz-placeholder {
 	color : red;
 }
 
