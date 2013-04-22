@@ -78,9 +78,8 @@ This is the source for the main ParsEngineering company website, found at [parse
   * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.7...v0.8)
 
 #### v0.7 (11/06/2012)
-  * Persian pages layout.
-  * Persian fonts.
-  * Better css and layout.
+  * Static version.
+  * All pages layout and style are completed
   * [View full changes](https://github.com/AliMD/ParsEngCo/compare/v0.6...v0.7)
 
 #### v0.6 (11/05/2012)
