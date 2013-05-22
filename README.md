@@ -9,7 +9,7 @@ This is the source for the main ParsEngineering company website, found at [parse
 ## THANKS (Contributors)
 * [Omid Gharib `omidgharib`](https://github.com/omidgharib) Developer / Programmer
 * [Yashar Ahmadi `YasharAMD`](https://github.com/YasharAMD) Developer / Programmer
-* [Nick Shylo `Denoizzed`](https://github.com/Denoizzed) Graphic Designer
+* [Nick Shylo `Denoizzed`](https://github.com/Denoizzed) Graphic Designer 
 
 ## TECHNOLOGY
 * [HTML5](http://ali.md/wiki/html5)
