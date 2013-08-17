@@ -830,11 +830,12 @@ li.search-goog form {
 }
 
 div.suggest {
-	width: 200px;
+	width: 195px;
 	height: 158px;
 	position: fixed;
-	bottom: -130px;
-	left: 0;
+	/*bottom: -130px;*/
+	bottom: 0;
+	left: 5px;
 	background-color: #ecf0f1;
 	-webkit-border-radius: 10px 10px 0 0;
 	border-radius: 10px 10px 0 0;
@@ -847,8 +848,9 @@ div.suggest {
 	transition: all 500ms;
 	pointer-events: auto;
 }
-div.suggest:hover {
-	bottom: 0;
+div.suggest:hover,
+div.suggest.active {
+	/*bottom: 0;*/
 }
 div.suggest p {
 	background-color: #333;
@@ -884,7 +886,7 @@ div.suggest form input {
 }
 div.suggest form input[type="text"] {
 	background-color: #fff;
-	width: 166px;
+	width: 161px;
 	padding: 5px 10px;
 	margin-bottom: 6px;
 	font-size: 14px;
