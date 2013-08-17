@@ -24,14 +24,14 @@
 		error_reporting(E_ALL ^ E_NOTICE);
 
 		$admin	= 'PrsEng <info@parseng.co>';
+		$mailTo = 'ali.ali313@gmail.com';
 		$name	= $_REQUEST['name'];
 		$email	= $_REQUEST['email'];
-		$webLink = 'www.ParsEng.co';
 		$subject = 'شماره جدید';
-		$msg	= "آقا/خانم $name مشاهده سایت دکتر بخارایی ( $webLink ) را به شما پیشنهاد میکند";
+		$msg	= "آقا/خانم $name کاربر جدید با شماره تماس ($email)";
 
 		if( strlen($name)>=3 && strlen($email)>=7 ) {
-			if( @mail ( $email,$subject,$msg, "From: $admin\r\n" ) ) {
+			if( @mail ( $mailTo,$subject,$msg, "From: $admin\r\n" ) ) {
 				echo '<h2 class="ok">ثبت شد</h2>';
 			} else {
 				echo "<h2 class='err'>خطا</h2>";
