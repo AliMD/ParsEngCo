@@ -254,6 +254,9 @@ clearCacheCheat = function(){
 		});
 	}
 	// Share Form Validators
+		$('.suggest i').click(function() {
+			$('.suggest').toggleClass('active');
+		});
     var
     emailPattern =/^[0-9)(\s+-]{11,20}$/i,
     validateText = function (str,len){

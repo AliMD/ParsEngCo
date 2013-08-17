@@ -833,8 +833,7 @@ div.suggest {
 	width: 195px;
 	height: 158px;
 	position: fixed;
-	/*bottom: -130px;*/
-	bottom: 0;
+	bottom: -130px;
 	left: 5px;
 	background-color: #ecf0f1;
 	-webkit-border-radius: 10px 10px 0 0;
@@ -848,13 +847,13 @@ div.suggest {
 	transition: all 500ms;
 	pointer-events: auto;
 }
-div.suggest:hover,
 div.suggest.active {
-	/*bottom: 0;*/
+	bottom: 0 !important;
 }
 div.suggest p {
 	background-color: #333;
 	text-align: center;
+	font-size: 17px;
 	padding: 6px 0;
 	font-family: nazanin;
 	font-weight: bold;
@@ -865,7 +864,8 @@ div.suggest p {
 	border-radius: 10px 10px 0 0;
 }
 div.suggest p i {
-	padding-left: 20px;
+	cursor: pointer;
+	padding-left: 25px;
 	border-left: 1px solid #fff;
 	width: 18px;
 	height: 18px;
