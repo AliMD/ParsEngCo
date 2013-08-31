@@ -953,3 +953,7 @@ div.suggest #share-frm:hover {
 	-ms-filter: none;
 	filter: none;
 }
+
+li.long-menu ul {
+	top: -70px !important;
+}

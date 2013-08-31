@@ -18,6 +18,7 @@
 			<h3 class='pb2 font'>راههای تماس با ما!</h3>
 			<ul class='pb2' lang="en-US">
 				<li style="background:url('./images/icons/phone_Android.png') no-repeat right 9px ">+98 511 848 0122</li>
+				<li style="background:url('./images/icons/phone_Android.png') no-repeat right 9px ">+98 511 846 4328</li>
 				<li style="background:url('./images/icons/phone_Android.png') no-repeat right 9px ">+98 915 324 1559</li>
 				<li style="background:url('./images/icons/email.png') no-repeat right 9px ">info@parseng.co</li>
 				<li lang="fa-IR" class="fa" style="background:url('./images/icons/house.png') no-repeat right 9px ">مشهد، خیابان سناباد، سناباد ۲۶ پلاک ۱۰، طبقه ی اول</li>
