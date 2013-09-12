@@ -23,15 +23,15 @@ $template['debug']	= $_SESSION['debug'];
 $template['title']	= 'شرکت مهندسی پارس | ' . get_title();
 $template['c_type'] = $cache->c_type;
 
-$template['projects_cats_arr'] = db_getrows('projects_cats','*',true,'sort,id',10);
+$template['projects_cats_arr'] = db_getrows('projects_cats','*',true,'sort,id',20);
 $template['projects_cats'] = gen_submenu_cats($template['projects_cats_arr'],'Projects','پروژه ها');
 
-$template['products_cats_arr'] = db_getrows('products_cats','*',true,'sort,id',10);
+$template['products_cats_arr'] = db_getrows('products_cats','*',true,'sort,id',20);
 $template['products_cats'] = gen_submenu_cats($template['products_cats_arr'],'Products','محصولات');
 
 if($template['page']=='projects'){
 	$cat = $_GET['cat'];
-	$template['projects_arr'] = db_getrows('portfolio','*',($cat?"category=$cat":true),'sort',40);
+	$template['projects_arr'] = db_getrows('portfolio','*',($cat?"category=$cat":true),'sort',60);
 	$template['projects'] = gen_projects_list($template['projects_arr']);
 
 	if($template['projects']=='') $template['page']='404';
