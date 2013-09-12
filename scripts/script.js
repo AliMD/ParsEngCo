@@ -253,5 +253,43 @@ clearCacheCheat = function(){
 			},5000);
 		});
 	}
+	// Share Form Validators
+		$('.suggest i').click(function() {
+			$('.suggest').toggleClass('active');
+		});
+    var
+    emailPattern =/^[0-9)(\s+-]{11,20}$/i,
+    validateText = function (str,len){
+      return str.length >= len;
+    },
+    validateEmail = function (str){
+      return emailPattern.test(str);
+    };
+    $('#share').submit(function(){
+      var target=$('#share-name'), err = false;
 
+      target = $('#share-name');
+      if( validateText(target.val(),3) ){
+        target.removeClass('err').addClass('ok');
+      }else{
+        target.removeClass('ok').addClass('err');
+        err = true;
+      }
+
+      target = $('#share-email');
+      if( validateEmail(target.val()) ){
+        target.removeClass('err').addClass('ok');
+      }else{
+        target.removeClass('ok').addClass('err');
+        err = true;
+      }
+
+      if(!err){
+        $('#share-frm').animate({
+          height:'35px'
+        },700);
+      }
+
+      return !err;
+    });
 })(window.Zepto || window.jQuery);

@@ -688,8 +688,8 @@ div.content_wrap h1 {
 
 
 /*
-    ColorBox Core Style:
-    The following CSS is consistent between example themes and should not be altered.
+		ColorBox Core Style:
+		The following CSS is consistent between example themes and should not be altered.
 */
 #colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
 #cboxOverlay{position:fixed; width:100%; height:100%;}
@@ -704,29 +704,29 @@ div.content_wrap h1 {
 #colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box;}
 
 /* 
-    User Style:
-    Change the following styles to modify the appearance of ColorBox.  They are
-    ordered & tabbed in a way that represents the nesting of the generated HTML.
+		User Style:
+		Change the following styles to modify the appearance of ColorBox.  They are
+		ordered & tabbed in a way that represents the nesting of the generated HTML.
 */
 #cboxOverlay{background:#000;}
 #colorbox{}
-    #cboxContent{margin-top:20px;}
-        .cboxIframe{background:#fff;}
-        #cboxError{padding:50px; border:1px solid #ccc;}
-        #cboxLoadedContent{border:5px solid #000; background:#fff;}
-        #cboxTitle{position:absolute; top:-20px; right:0; color:#ccc; font-size: 18px; white-space: nowrap; direction: rtl;}
-        #cboxCurrent{position:absolute; top:-20px; left:0px; color:#ccc;}
-        #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
-        #cboxPrevious{position:absolute; top:50%; left:4px; margin-top:-32px; background:url(images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
-        #cboxPrevious:hover{background-position:bottom left;}
-        #cboxNext{position:absolute; top:50%; right:4px; margin-top:-32px; background:url(images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
-        #cboxNext:hover{background-position:bottom right;}
-        #cboxLoadingOverlay{background:#000;}
-        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
-        #cboxClose{position:absolute; top:4px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
-        #cboxClose:hover{background-position:bottom center;}
-        #cboxCurrent{font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: 17px; word-spacing: 1px;}
-        
+		#cboxContent{margin-top:20px;}
+				.cboxIframe{background:#fff;}
+				#cboxError{padding:50px; border:1px solid #ccc;}
+				#cboxLoadedContent{border:5px solid #000; background:#fff;}
+				#cboxTitle{position:absolute; top:-20px; right:0; color:#ccc; font-size: 18px; white-space: nowrap; direction: rtl;}
+				#cboxCurrent{position:absolute; top:-20px; left:0px; color:#ccc;}
+				#cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
+				#cboxPrevious{position:absolute; top:50%; left:4px; margin-top:-32px; background:url(images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
+				#cboxPrevious:hover{background-position:bottom left;}
+				#cboxNext{position:absolute; top:50%; right:4px; margin-top:-32px; background:url(images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
+				#cboxNext:hover{background-position:bottom right;}
+				#cboxLoadingOverlay{background:#000;}
+				#cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+				#cboxClose{position:absolute; top:4px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
+				#cboxClose:hover{background-position:bottom center;}
+				#cboxCurrent{font-family: 'PT Sans Narrow', 'Helvetica Neue', Arial, sans-serif; font-size: 17px; word-spacing: 1px;}
+				
 /* google search */
 
 #goog-fixurl ul {
@@ -827,4 +827,133 @@ li.search-goog form {
 
 .ajax_loader {
 	-webkit-transform-origin: center 300px;
+}
+
+div.suggest {
+	width: 195px;
+	height: 158px;
+	position: fixed;
+	bottom: -130px;
+	left: 5px;
+	background-color: #ecf0f1;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+	z-index: 1000;
+	direction: rtl;
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	-o-transition: all 500ms;
+	-ms-transition: all 500ms;
+	transition: all 500ms;
+	pointer-events: auto;
+}
+div.suggest.active {
+	bottom: 0 !important;
+}
+div.suggest p {
+	background-color: #333;
+	text-align: center;
+	font-size: 17px;
+	padding: 6px 0;
+	font-family: nazanin;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.3;
+	color: #fff;
+	-webkit-border-radius: 10px 10px 0 0;
+	border-radius: 10px 10px 0 0;
+}
+div.suggest p i {
+	cursor: pointer;
+	padding-left: 25px;
+	border-left: 1px solid #fff;
+	width: 18px;
+	height: 18px;
+	display: block;
+	float: right;
+	margin-right: 5px;
+	background-image: url('images/phone.png');
+	background-repeat: no-repeat;
+	background-position: 12px center;
+}
+div.suggest form {
+	margin: 10px 6px 0 6px;
+}
+div.suggest form input {
+	display: block;
+	border: 1px solid #ccc;
+	font-family: nazanin;
+}
+div.suggest form input[type="text"] {
+	background-color: #fff;
+	width: 161px;
+	padding: 5px 10px;
+	margin-bottom: 6px;
+	font-size: 14px;
+	color: #555;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+div.suggest form input[type="text"].err {
+	border-color: #ff7000;
+}
+div.suggest form input[type="submit"] {
+	padding: 2px 20px;
+	font-size: 15px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	float: left;
+	color: #333;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(255,255,255,0.75);
+	cursor: pointer;
+	background-color: #f5f5f5;
+	background-repeat: repeat-x;
+	border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+	border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+	border-bottom-color: #b3b3b3;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+}
+div.suggest form input[type="submit"]:hover {
+	color: #333;
+	text-decoration: none;
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	-moz-transition: background-position 0.1s linear;
+	-o-transition: background-position 0.1s linear;
+	-ms-transition: background-position 0.1s linear;
+	transition: background-position 0.1s linear;
+}
+div.suggest #share-frm {
+	display: block;
+	height: 0;
+	width: 100px;
+	opacity: 0.8;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	filter: alpha(opacity=80);
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+	border: none 0;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+div.suggest #share-frm:hover {
+	opacity: 1;
+	-ms-filter: none;
+	filter: none;
+}
+
+li.long-menu ul {
+	top: -70px !important;
 }

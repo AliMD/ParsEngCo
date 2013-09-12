@@ -10,4 +10,4 @@ $db = array(
 
 $template['url'] = 'http://localhost/ParsEngCo/';
 
-$template['underdev'] = true;
+$template['underdev'] = false;
